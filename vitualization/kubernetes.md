@@ -19,3 +19,5 @@ Kubernetes is
 Kubernetes is not a traditional, all-inclusive PaaS (Platform as a Service) system.
 On the other hand, a number of PaaS systems run on Kubernetes, such as Openshift, Deis, and Eldarion. You can also roll your own custom PaaS, integrate with a CI system of your choice, or use only Kubernetes by deploying your container images on Kubernetes.
 
+## Architecture
+![alt text](images/kubernetes_architecture.jpg)
