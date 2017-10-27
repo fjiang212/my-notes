@@ -42,3 +42,5 @@ To login as administrator:
 * https://docs.openshift.com/enterprise/3.0/cli_reference/get_started_cli.html
 * oc config view
 
+## Architecture
+![alt text](openshift_architecture.jpg)
