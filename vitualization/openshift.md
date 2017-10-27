@@ -35,4 +35,4 @@ To login as administrator:
 * oc config view
 
 # Architecture
-![alt text](openshift_architecture.jpg)
+![alt text](images/openshift_architecture.jpg)
