@@ -7,9 +7,9 @@
 ```
 Set HOMEDRIVE=C:\Users\xxxx
 setproxy
+minishift delete
 minishift config set vm-driver virtualbox 
 minishift config set memory 4096
-minishift delete
 minishift start 
 ```
 ```
@@ -33,6 +33,12 @@ To login as administrator:
 ## OC Reference
 * https://docs.openshift.com/enterprise/3.0/cli_reference/get_started_cli.html
 * oc config view
+* login
+```
+Set HOMEDRIVE=C:\Users\xxxx
+oc login
+```
+
 
 # Architecture
 ![alt text](images/openshift_architecture.jpg)
