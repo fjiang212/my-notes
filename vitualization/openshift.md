@@ -36,7 +36,7 @@ To login as administrator:
 * login
 ```
 Set HOMEDRIVE=C:\Users\xxxx
-oc login
+oc login -u system:admin
 ```
 
 
