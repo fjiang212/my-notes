@@ -42,3 +42,6 @@ oc login -u system:admin
 
 # Architecture
 ![alt text](images/openshift_architecture.jpg)
+
+# Deployment
+https://blog.openshift.com/multiple-deployment-methods-openshift/
