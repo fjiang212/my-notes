@@ -1,3 +1,13 @@
+# Plan
+1. CI/CD tools 
+2. The whole CI CD Intergration
+3. Clound Native
+4. Build CI CD on cloud
+5. Build MicroSerivce on Liberty
+6. Build Microservice on Cloud
+7. Big Data User case and example
+
+
 # Docker
 
 
