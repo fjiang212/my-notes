@@ -34,6 +34,14 @@ openssl pkcs12 -export -in server.crt -inkey server.key > server.p12
 ```
 Keytool  -importkeystore -srckeystore server.p12 -destkeystore server.keystore.jks -srcstoretype pkcs12 -destalias  kafkaserver
 ```
+* Others
+```
+keytool -genkey -dname "CN=elk.dev.example.com, OU=example.com, O=EXAMPLE, L=TORONTO, ST=ONTARIO, C=CA" -alias elk -keyalg RSA -keysize 2048 -keystore elk.keystore -storepass password keytool -certreq -alias elk -file server.dev.example.com.csr -keystore server.keystore -storepass password
+keytool -list -v -keystore C:\path-to-keystore\server.keystore
+keytool -import -trustcacerts -alias elk -file C:\Certificate\certnew.p7b -keystore C:\path-to-keystore\server.keystore
+```
+# Add trust root certificate
+http://kb.kerio.com/product/kerio-connect/server-configuration/ssl-certificates/adding-trusted-root-certificates-to-the-server-1605.html
 
 # Trouble shooting
 ```
