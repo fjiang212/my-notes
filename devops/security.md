@@ -12,3 +12,25 @@
 ## Verify generated private key is matched with certificate
 *	openssl rsa -noout -modulus -in server.key | openssl md5
 *	openssl x509 -noout -modulus -in server.crt | openssl md5
+
+## Generate keystore
+* Create keystore
+```
+keytool -keystore server.keystore.jks -alias localhost -validity 365 -keyalg RSA -genkey
+```
+*	list keystore
+```
+keytool -list -v -keystore server.keystore.jks
+```
+*	Delete certificate
+```
+keytool -delete -alias localhost -keystore server.keystore.jks
+```
+*	combine private key and certricate to P12 ketstore
+```
+openssl pkcs12 -export -in server.crt -inkey server.key > server.p12
+```
+*	Import server.p12 to empty keystore with "Keystroe Explorer" or
+```
+Keytool  -importkeystore -srckeystore server.p12 -destkeystore server.keystore.jks -srcstoretype pkcs12 -destalias  kafkaserver
+```
