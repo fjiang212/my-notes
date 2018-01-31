@@ -48,11 +48,11 @@ https://blog.openshift.com/multiple-deployment-methods-openshift/
 
 ## Redeploy from git Dockerfile
 ```
-oc delete bc -all
-oc delete dc -all
-oc delete service -all
-oc delete is -all
-oc delete pod -all
+oc delete bc --all
+oc delete dc --all
+oc delete service --all
+oc delete is --all
+oc delete pod --all
 
 oc new-app https:/xxx.net/scm/app/test.git --name=test --context-dir=<dirname> -o yaml > myapp.yaml
 oc create -f myapp.yaml
