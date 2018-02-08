@@ -56,7 +56,7 @@ oc delete pod --all
 
 oc new-app https:/xxx.net/scm/app/test.git --name=test --context-dir=<dirname> -o yaml > myapp.yaml
 oc create -f myapp.yaml
-set environment  GIT_SSL_NO_VERIFY=true in the deopoyment configuration
+set environment  GIT_SSL_NO_VERIFY=true in the build
 oc deploy test --latest -n <project name>
 oc expose service myapp --hostname=myapp-project.example.com
 ```
