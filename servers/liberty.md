@@ -11,3 +11,7 @@ bin/installUtility install javaee-7.0
 bin/server start 
 ```
 * To deploy an application, copy the .war file to the server’s dropins directory: usr/servers/server-name/dropins
+
+# Eclipse 
+https://www.ibm.com/blogs/bluemix/2016/05/liberty-and-eclipse-installing-dev-environment-p9/
+
