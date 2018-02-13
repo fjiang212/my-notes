@@ -24,6 +24,7 @@
 # Openshift
 
 * [OpenShift 3 Demos](https://www.youtube.com/playlist?list=PLaR6Rq6Z4Iqficb-XqeydZD_ZTD3XEwBp)
+* [Openshift 3.3] (https://www.youtube.com/watch?v=KBuvZd7xuwE&list=PLaR6Rq6Z4IqfJZiukpniJ8rSvxQFoa1kY)
 * [Openshift Commons Briefing](https://www.youtube.com/watch?v=OtrmMzQWqfA&list=PLaR6Rq6Z4IqdIM7LtosKqi3LlYXyxjwnj)
 * https://www.youtube.com/watch?v=h0OdaZ-j6YI
 # Bamboo
