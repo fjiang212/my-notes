@@ -27,6 +27,7 @@ To login as administrator:
 ```
 * Login to minishift VM
 ```
+minishift ssh
 Login as docker/tcuser
 sudo su
 ```
