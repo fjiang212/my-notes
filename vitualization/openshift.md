@@ -10,6 +10,8 @@ setproxy
 minishift delete
 minishift config set vm-driver virtualbox 
 minishift config set memory 4096
+minishift config set http-proxy http://user:pwd@ip:pord
+minishift config set https-proxy https://user:pwd@ip:pord
 minishift start 
 ```
 ```
