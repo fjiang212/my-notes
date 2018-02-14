@@ -25,6 +25,11 @@ You are logged in as:
 To login as administrator:
     oc login -u system:admin
 ```
+* Login to minishift VM
+```
+Login as docker/tcuser
+sudo su
+```
 
 # Openshift Client
 ## Installing openshift client in Windows
