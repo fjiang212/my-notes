@@ -25,6 +25,7 @@ You are logged in as:
 To login as administrator:
     oc login -u system:admin
 ```
+* download the latest oc tool:  https://github.com/openshift/origin/releases/latest
 * Login to minishift VM
 ```
 minishift ssh
