@@ -2,13 +2,15 @@
 1. [ ] CI/CD tools 
 2. [ ] The whole CI CD Intergration
 3. [ ] Clound Native
-4. [ ] Build CI CD on cloud
-5. [ ] Build MicroSerivce on Liberty
-6. [ ] Build Microservice on Cloud
-7. [ ] Big Data User case and example
+4. [ ] Openshift [Feb 28, 2018]
+5. [ ] Build CI CD on cloud
+6. [ ] Build MicroSerivce on Liberty [March 31, 2018]
+7. [ ] Build Microservice on Cloud [March 31, 2018]
+8. [ ] Big Data User case and example
+
 
 # Accounts
-* Github: https://github.com/fjiang212/
+* Github: https://github.com/fjiang212/ 
 * Docker hub: https://hub.docker.com/
 * Openshift: https://www.openshift.com/
 * Bluemix: https://console.bluemix.net/catalog/
