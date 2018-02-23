@@ -3,14 +3,15 @@
 - [ ] The whole CI CD Intergration
 - [ ] Build CI CD on cloud
 - - - -
-- [ ] Docker on Linux
-- [ ] Clound Native
+- [ ] Docker on Linux [Feb 28, 2018]
 - [ ] Openshift [Feb 28, 2018]
 - [ ] Build MicroSerivce on Liberty [March 31, 2018]
+- [ ] Clound Native
 - [ ] Build Microservice on Cloud [March 31, 2018]
 - - - -
+- [ ] Mogodb
 - [ ] Big Data User case and example
-
+ 
 
 # Accounts
 * Github: https://github.com/fjiang212/ 
