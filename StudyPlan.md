@@ -1,12 +1,15 @@
 # Plan
-1. [ ] CI/CD tools 
-2. [ ] The whole CI CD Intergration
-3. [ ] Clound Native
-4. [ ] Openshift [Feb 28, 2018]
-5. [ ] Build CI CD on cloud
-6. [ ] Build MicroSerivce on Liberty [March 31, 2018]
-7. [ ] Build Microservice on Cloud [March 31, 2018]
-8. [ ] Big Data User case and example
+- [ ] CI/CD tools 
+- [ ] The whole CI CD Intergration
+- [ ] Build CI CD on cloud
+
+- [ ] Docker on Linux
+- [ ] Clound Native
+- [ ] Openshift [Feb 28, 2018]
+- [ ] Build MicroSerivce on Liberty [March 31, 2018]
+- [ ] Build Microservice on Cloud [March 31, 2018]
+
+- [ ] Big Data User case and example
 
 
 # Accounts
