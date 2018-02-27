@@ -1,9 +1,15 @@
 # Install
 https://docs.docker.com/install/linux/docker-ce/centos/#upgrade-docker-after-using-the-convenience-script
 
+# Concepts
+* An **image** is an executable package that includes everything needed to run an application–the code, a runtime, libraries, environment variables, and configuration files
+* A **container** is a runtime instance of an image–what the image becomes in memory when executed (that is, an image with state, or a user process)
+
 
 # Docker Commands
-
+```
+docker info #view details about your docker installation
+```
 ```
 docker build -t friendlyname .  # Create image using this directory's Dockerfile
 docker run -p 4000:80 friendlyname  # Run "friendlyname" mapping port 4000 to 80
