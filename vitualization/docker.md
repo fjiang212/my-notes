@@ -1,5 +1,5 @@
 # Install
-https://docs.docker.com/install/linux/docker-ce/centos/#upgrade-docker-after-using-the-convenience-script
+https://docs.docker.com/install/linux/docker-ce/centos/
 
 # Concepts
 * An **image** is an executable package that includes everything needed to run an application–the code, a runtime, libraries, environment variables, and configuration files
