@@ -3,7 +3,7 @@
 - [ ] The whole CI CD Intergration
 - [ ] Build CI CD on cloud
 - - - -
-- [x] Docker on Linux [Feb 28, 2018]
+- [x] Docker on Linux
 - [ ] Openshift [Feb 28, 2018]
 - [ ] Build MicroSerivce on Liberty [March 31, 2018]
 - [ ] Clound Native
