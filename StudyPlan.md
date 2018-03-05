@@ -15,7 +15,7 @@
 
 # Accounts
 * Github: https://github.com/fjiang212/ 
-* Docker hub: https://hub.docker.com/(jiangfeng212X7)
+* Docker hub: https://hub.docker.com/ (jiangfeng212X7)
 * Openshift: https://www.openshift.com/
 * Bluemix: https://console.bluemix.net/catalog/
 * Amazon: 
