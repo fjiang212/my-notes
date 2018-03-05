@@ -11,9 +11,15 @@ https://docs.docker.com/engine/docker-overview/
 https://docs.docker.com/install/linux/docker-ce/centos/
 
 # Docker Commands
+* Docker information
 ```
 docker info #view details about your docker installation
 ```
+* Set up docker daemon proxy
+
+https://docs.docker.com/config/daemon/systemd/#httphttps-proxy
+
+* Docker basic commands
 ```
 docker build -t friendlyname .  # Create image using this directory's Dockerfile
 docker run -p 4000:80 friendlyname  # Run "friendlyname" mapping port 4000 to 80
