@@ -3,9 +3,12 @@
 * A **container** is a runtime instance of an image–what the image becomes in memory when executed (that is, an image with state, or a user process)
 
 # Architecture
-https://docs.docker.com/engine/docker-overview/
-
+* Overview https://docs.docker.com/engine/docker-overview/
 ![alt text](images/architecture.svg)
+
+* Storage https://docs.docker.com/storage/
+![alt text](images/types-of-mounts.png)
+
 
 # Install
 https://docs.docker.com/install/linux/docker-ce/centos/
