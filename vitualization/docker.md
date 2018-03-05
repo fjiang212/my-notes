@@ -4,9 +4,11 @@
 
 # Architecture
 * Overview https://docs.docker.com/engine/docker-overview/
+
 ![alt text](images/architecture.svg)
 
 * Storage https://docs.docker.com/storage/
+
 ![alt text](images/types-of-mounts.png)
 
 
