@@ -48,6 +48,28 @@ server {
 }
 
 ```
+## Reserve proxy with basic authentication
+https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/
 
+```
+server {
+    listen       80;
+    server_name  localhost;
+
+    #charset koi8-r;
+    access_log  /var/log/nginx/kibana_server.access.log  main;
+
+    auth_basic "Private Property";
+    auth_basic_user_file /etc/nginx/.htpasswd;
+
+    location / {
+        #root   /usr/share/nginx/html;
+        #index  index.html index.htm;
+        proxy_pass http://10.0.2.15:5601;
+        proxy_read_timeout 90;
+    }
+....
+}
+```
 ## Issues
 * permission denied:  https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx
