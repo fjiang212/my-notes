@@ -3,6 +3,11 @@
 * **Fedora** is the main project, and it’s a communitity-based, free distro focused on quick releases of new features and functionality.
 * **Redhat** is the corporate version based on the progress of that project, and it has slower releases, comes with support, and isn’t free.
 * **CentOS** is basically the community version of Redhat. So it’s pretty much identical, but it is free and support comes from the community as opposed to Redhat itself.
+
+## EPEL
+EPEL (Extra Packages for Enterprise Linux) is open source and free community based repository project from Fedora team which provides 100% high quality add-on software packages for Linux distribution including RHEL (Red Hat Enterprise Linux), CentOS, and Scientific Linux. 
+https://www.tecmint.com/how-to-enable-epel-repository-for-rhel-centos-6-5/
+
 ## How to set environment variable for everyone under my linux system?
 When bash is invoked as an interactive login shell, or as a non-interactive shell with the --login option, it first reads and executes commands from the file /etc/profile, if that file exists. After reading that file, it looks for ~/.bash_profile, ~/.bash_login, and ~/.profile, in that order, and reads and executes commands from the first one that exists and is readable. The --noprofile option may be used when the shell is started to inhibit this behavior.
 ...
