@@ -23,3 +23,31 @@ nginx -v
 
 
 # Configuration
+## Reserve proxy with kibana
+```
+server {
+    listen       80;
+    server_name  localhost;
+
+    #charset koi8-r;
+    access_log  /var/log/nginx/kibana_server.access.log  main;
+
+    location / {
+        proxy_pass http://10.0.2.15:5601;
+        proxy_read_timeout 90;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+
+```
+
+## Issues
+* permission denied:  https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx
