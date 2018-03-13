@@ -52,6 +52,10 @@ server {
 https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/
 
 ```
+sudo yum install -y httpd-tools
+sudo htpasswd -c /etc/nginx/.htpasswd nginx
+```
+```
 server {
     listen       80;
     server_name  localhost;
