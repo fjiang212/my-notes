@@ -1,6 +1,7 @@
 # Unix Security
 ## group
 * By default, on CentOS 7, users who belong to the "wheel" group are allowed to use the sudo command.
+* Set up SSH keys: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
 
 # Generate CA Signed certificate
 ## Create CSR
