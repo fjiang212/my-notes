@@ -2,6 +2,37 @@
 ## Basic
 * By default, on CentOS 7, users who belong to the "wheel" group are allowed to use the sudo command.
 * Set up SSH keys: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
+# Generate self-signed certificate
+* Simple one
+```
+openssl req -newkey rsa:2048 -nodes -x509 -days 3650 -keyout kibana.key -out kibana.crt
+```
+* With SAN.conf
+https://support.citrix.com/article/CTX135602
+```
+[req]
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+C = CA
+ST = ON
+L = Toronto
+O = Example
+OU = ELK
+CN = www.example.com
+[v3_req]
+keyUsage = keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = localhost
+IP.1 = 127.0.0.1
+IP.2 = 10.0.2.15
+```
+```
+openssl req -newkey rsa:2048 -nodes -x509 -days 3650 -keyout kibana.key -out kibana.crt -config SAN.conf 
+```
 
 # Generate CA Signed certificate
 ## Create CSR
