@@ -48,5 +48,6 @@ docker run username/repository:tag                   # Run image from a registry
 ```
 
 # Develop images
-
+## Guide and reference
 * [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/#escape)
+* https://docs.openshift.com/container-platform/3.7/creating_images/guidelines.html
