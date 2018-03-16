@@ -58,7 +58,12 @@ docker volume prune
 ```
 For unused images, use docker image prune -a (for removing dangling and ununsed images). Warning: 'unused' means "images not referenced by any container": be careful before using -a.
 
-
+* Attach to running docker container
+```
+$ sudo docker exec -i -t 665b4a1e17b6 /bin/bash #by ID
+or
+$ sudo docker exec -i -t loving_heisenberg /bin/bash #by Name
+```
 # Develop images
 ## Guide and reference
 * [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/#escape)
