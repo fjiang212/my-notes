@@ -15,9 +15,30 @@ https://docs.docker.com/storage/
 * tmpfs mounts are stored in the host system’s memory only, and are never written to the host system’s filesystem.
 
 ![alt text](images/types-of-mounts.png)
-# Install
+# Install & Config
+## Installation
 https://docs.docker.com/install/linux/docker-ce/centos/
 
+## Configuration
+* Config docker service to use insecure registry
+https://github.com/Juniper/contrail-docker/wiki/Configure-docker-service-to-use-insecure-registry
+```
+Edit the file /etc/docker/daemon.json
+{
+  "insecure-registries" : ["10.84.34.155:5000"]
+}
+```
+* Get an Oauth token to Artifactory for future interactions
+```
+curl -k -u username:password "https://artifactory:8444/artifactory/api/docker/docker-dev-local2/v1/auth" > ~/.dockercfg
+You could check the results using:
+cat .dockercfg
+{
+"https://artifactory:8444" : {
+"auth" : "longauthtokenasgeneratedbyartifactoryhere",
+"email" : "your.email@test.com"
+}
+```
 # Docker Commands
 * Docker information
 ```
