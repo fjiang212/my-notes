@@ -47,6 +47,18 @@ docker push username/repository:tag            # Upload tagged image to registry
 docker run username/repository:tag                   # Run image from a registry
 ```
 
+* Docker cleanup
+docker system prune will delete ALL dangling data (i.e. In order: containers stopped, volumes without containers and images with no containers). Even unused data, with -a option.
+You also have:
+```
+docker container prune
+docker image prune
+docker network prune
+docker volume prune
+```
+For unused images, use docker image prune -a (for removing dangling and ununsed images). Warning: 'unused' means "images not referenced by any container": be careful before using -a.
+
+
 # Develop images
 ## Guide and reference
 * [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/#escape)
