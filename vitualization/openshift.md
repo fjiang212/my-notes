@@ -61,6 +61,9 @@ oc login -u system:admin
 # Architecture
 ![alt text](images/openshift_architecture.jpg)
 
+## Routes
+https://docs.openshift.com/container-platform/3.7/architecture/networking/routes.html
+
 # Deployment
 https://blog.openshift.com/multiple-deployment-methods-openshift/
 
