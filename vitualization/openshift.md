@@ -73,7 +73,9 @@ oc edit route logstash
 https://docs.openshift.com/container-platform/3.7/dev_guide/secrets.html
 ```
 oc get secrets
- 
+oc create secret generic database-user-name   --from-literal=database-user-name=acutal_user
+oc create secret generic database-password    --from-literal=database-password=acutal_password
+oc create secret generic keystoresecret --from-file=<jks file> 
 ```
 # Openshift Development Guide
 https://docs.openshift.com/container-platform/3.7/dev_guide/index.html
