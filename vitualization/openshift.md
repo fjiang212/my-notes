@@ -64,6 +64,9 @@ oc login -u system:admin
 ## Routes
 https://docs.openshift.com/container-platform/3.7/architecture/networking/routes.html
 
+## Secrets
+https://docs.openshift.com/container-platform/3.7/dev_guide/secrets.html
+
 # Openshift Development Guide
 https://docs.openshift.com/container-platform/3.7/dev_guide/index.html
 
