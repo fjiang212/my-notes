@@ -64,10 +64,12 @@ oc login -u system:admin
 ## Routes
 https://docs.openshift.com/container-platform/3.7/architecture/networking/routes.html
 
-# Deployment
-https://blog.openshift.com/multiple-deployment-methods-openshift/
+# Openshift Development Guide
+https://docs.openshift.com/container-platform/3.7/dev_guide/index.html
 
-## Redeploy from git Dockerfile
+## Deployment
+https://blog.openshift.com/multiple-deployment-methods-openshift/
+### Redeploy from git Dockerfile
 ```
 oc delete bc --all
 oc delete dc --all
