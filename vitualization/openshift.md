@@ -76,6 +76,8 @@ https://docs.openshift.com/container-platform/3.7/dev_guide/secrets.html
 https://docs.openshift.com/container-platform/3.7/dev_guide/index.html
 
 * Using SSL: https://www.youtube.com/watch?v=rpT5qwcL3bE&list=PLaR6Rq6Z4Iqficb-XqeydZD_ZTD3XEwBp&index=18
+...Edge Termination
+...Passthrough Termination
 * 
 ## Deployment
 https://blog.openshift.com/multiple-deployment-methods-openshift/
