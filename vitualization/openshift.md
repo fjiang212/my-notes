@@ -71,13 +71,17 @@ oc edit route logstash
 
 ## Secrets
 https://docs.openshift.com/container-platform/3.7/dev_guide/secrets.html
-
+```
+oc get secrets
+ 
+```
 # Openshift Development Guide
 https://docs.openshift.com/container-platform/3.7/dev_guide/index.html
 
 * Using SSL: https://www.youtube.com/watch?v=rpT5qwcL3bE&list=PLaR6Rq6Z4Iqficb-XqeydZD_ZTD3XEwBp&index=18
 1. Edge Termination
 2. Passthrough Termination
+3. Re-Encrpty Termination
 
 * 
 ## Deployment
