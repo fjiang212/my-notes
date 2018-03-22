@@ -61,6 +61,9 @@ oc login -u system:admin
 # Architecture
 ![alt text](images/openshift_architecture.jpg)
 
+# Openshift Development Guide
+https://docs.openshift.com/container-platform/3.7/dev_guide/index.html
+
 ## Routes
 https://docs.openshift.com/container-platform/3.7/architecture/networking/routes.html
 ```
@@ -68,6 +71,11 @@ oc get routes
 oc get route/logstash
 oc edit route logstash
 ```
+
+* Using SSL: https://www.youtube.com/watch?v=rpT5qwcL3bE&list=PLaR6Rq6Z4Iqficb-XqeydZD_ZTD3XEwBp&index=18
+1. Edge Termination
+2. Passthrough Termination
+3. Re-Encrpty Termination
 
 ## Secrets
 https://docs.openshift.com/container-platform/3.7/dev_guide/secrets.html
@@ -86,18 +94,10 @@ oc create secret generic my-secret --from-file=ssh-privatekey= /.ssh/id_rsa --fr
 # Create a new secret named my-secret with key1=supersecret and key2=topsecret
 oc create secret generic my-secret --from-literal=key1=supersecret --from-literal=key2=topsecret
 ```
-# Openshift Development Guide
-https://docs.openshift.com/container-platform/3.7/dev_guide/index.html
 
-* Using SSL: https://www.youtube.com/watch?v=rpT5qwcL3bE&list=PLaR6Rq6Z4Iqficb-XqeydZD_ZTD3XEwBp&index=18
-1. Edge Termination
-2. Passthrough Termination
-3. Re-Encrpty Termination
-
-* 
-## Deployment
+# Openshift Deployment Guide
 https://blog.openshift.com/multiple-deployment-methods-openshift/
-### Redeploy from git Dockerfile
+## Redeploy from git Dockerfile
 ```
 oc delete bc --all
 oc delete dc --all
