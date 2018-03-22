@@ -76,6 +76,15 @@ oc get secrets
 oc create secret generic database-user-name   --from-literal=database-user-name=acutal_user
 oc create secret generic database-password    --from-literal=database-password=acutal_password
 oc create secret generic keystoresecret --from-file=<jks file> 
+
+# Create a new secret named my-secret with keys for each file in folder bar
+oc create secret generic my-secret --from-file=path/to/bar
+  
+# Create a new secret named my-secret with specified keys instead of names on disk
+oc create secret generic my-secret --from-file=ssh-privatekey= /.ssh/id_rsa --from-file=ssh-publickey= /.ssh/id_rsa.pub
+  
+# Create a new secret named my-secret with key1=supersecret and key2=topsecret
+oc create secret generic my-secret --from-literal=key1=supersecret --from-literal=key2=topsecret
 ```
 # Openshift Development Guide
 https://docs.openshift.com/container-platform/3.7/dev_guide/index.html
