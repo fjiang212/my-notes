@@ -63,6 +63,11 @@ oc login -u system:admin
 
 ## Routes
 https://docs.openshift.com/container-platform/3.7/architecture/networking/routes.html
+```
+oc get routes
+oc get route/logstash
+oc edit route logstash
+```
 
 ## Secrets
 https://docs.openshift.com/container-platform/3.7/dev_guide/secrets.html
