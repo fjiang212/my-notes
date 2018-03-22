@@ -33,7 +33,10 @@ IP.2 = 10.0.2.15
 ```
 openssl req -newkey rsa:2048 -nodes -x509 -days 3650 -keyout kibana.key -out kibana.crt -config SAN.conf 
 ```
-
+* Create self sign certificate in the keystore
+```
+keytool -genkey -keyalg RSA -alias selfsinged -keystore keystore.jks -storepass supersecret -validity 360 -keysize 2048
+```
 # Generate CA Signed certificate
 ## Create CSR
 *	mkdir ~/machine01.example.com.ssl
