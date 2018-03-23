@@ -35,4 +35,31 @@ oc types
 * Deployment Configuration [dc]: Defines the template for a pod and manages deploying new images or configuration changes whenever those change. 
 * Replication Controllers [rc]: A replication controller maintains a specific number of pods based on a template that match a set of labels. 
 
+Object Type | Abbreviated Version
+--- | ---
+build
+`buildConfig` | bc
+`deploymentConfig` | dc
+event | ev
+imageStream | is
+imageStreamTag | istag
+imageStreamImage | isimage
+job
+LimitRange | limits
+node
+`pod` | po
+ResourceQuota | quota
+`replicationController` | rc
+`secrets`
+`service` | svc
+ServiceAccount | serviceaccounts
+persistentVolume | pv
+`persistentVolumeClaim` | pvc
+# OC Basic Operation
+https://docs.openshift.com/enterprise/3.2/cli_reference/basic_cli_operations.html
+```
+oc <action> <object_type> <object_name>
+```
+Action: get, describe, edit, delete, expose, create, update, export...
+
 
