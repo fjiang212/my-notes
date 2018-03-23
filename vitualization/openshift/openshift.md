@@ -61,3 +61,21 @@ set environment  GIT_SSL_NO_VERIFY=true in the build
 oc deploy test --latest -n <project name>
 oc expose service myapp --hostname=myapp-project.example.com
 ```
+
+## Creating an Application From a Template
+https://docs.openshift.com/enterprise/3.2/dev_guide/new_app.html#specifying-a-template
+```
+oc create -f examples/sample-app/application-template-stibuild.json
+oc new-app ruby-helloworld-sample
+
+#Template Parameters
+oc new-app ruby-helloworld-sample \
+    -p ADMIN_USERNAME=admin,ADMIN_PASSWORD=mypassword
+
+# SPECIFYING ENVIRONMENT VARIABLES
+$ oc new-app openshift/postgresql-92-centos7 \
+    -e POSTGRESQL_USER=user \
+    -e POSTGRESQL_DATABASE=db \
+    -e POSTGRESQL_PASSWORD=password
+
+```
