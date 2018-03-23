@@ -56,10 +56,20 @@ ServiceAccount | serviceaccounts
 persistentVolume | pv
 `persistentVolumeClaim` | pvc
 # OC Basic Operation
+## Overview
 https://docs.openshift.com/enterprise/3.2/cli_reference/basic_cli_operations.html
 ```
 oc <action> <object_type> <object_name>
 ```
 Action: get, describe, edit, delete, expose, create, update, export...
 
+## Troubleshooting and Debugging CLI Operations
+```
+oc logs -f <pod>
+oc exec <pod> [-c <container>] <command>
+oc rsh <pod>
+oc rsync <local_dir> <pod>:<pod_dir> -c <container>
+oc port-forward <pod> <local_port>:<remote_port>
+oc proxy --port=<port> --www=<static_directory>
+```
 
