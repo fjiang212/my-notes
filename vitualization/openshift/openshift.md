@@ -15,7 +15,7 @@ oc login -u system:admin
 
 
 # Architecture
-![alt text](images/openshift_architecture.jpg)
+![alt text](../images/openshift_architecture.jpg)
 
 # Openshift Development Guide
 https://docs.openshift.com/container-platform/3.7/dev_guide/index.html
