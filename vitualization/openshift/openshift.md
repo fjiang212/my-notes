@@ -35,6 +35,16 @@ oc create secret generic my-secret --from-file=ssh-privatekey= /.ssh/id_rsa --fr
 oc create secret generic my-secret --from-literal=key1=supersecret --from-literal=key2=topsecret
 ```
 
+## Templates
+https://docs.openshift.org/latest/dev_guide/templates.html
+```
+# Generating a List of Objects
+oc process <template_name>
+
+# Creating a Template from Existing Objects
+oc export all --as-template=<template_name> > <template_filename>
+```
+
 # Openshift Deployment Guide
 https://blog.openshift.com/multiple-deployment-methods-openshift/
 ## Redeploy from git Dockerfile
