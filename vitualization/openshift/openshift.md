@@ -43,6 +43,10 @@ oc process <template_name>
 
 # Creating a Template from Existing Objects
 oc export all --as-template=<template_name> > <template_filename>
+
+
+# To upload a template to your current project’s template library
+oc create -f <filename>
 ```
 
 # Openshift Deployment Guide
