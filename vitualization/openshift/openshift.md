@@ -68,6 +68,9 @@ oc expose service myapp --hostname=myapp-project.example.com
 
 ## Creating an Application From a Template
 https://docs.openshift.com/enterprise/3.2/dev_guide/new_app.html#specifying-a-template
+
+
+* Example 1
 ```
 oc create -f examples/sample-app/application-template-stibuild.json
 oc new-app ruby-helloworld-sample
@@ -81,5 +84,20 @@ $ oc new-app openshift/postgresql-92-centos7 \
     -e POSTGRESQL_USER=user \
     -e POSTGRESQL_DATABASE=db \
     -e POSTGRESQL_PASSWORD=password
+
+```
+
+* Example 2: Redeploy from template
+```
+oc delete dc,service,route  -l app=sample
+oc delete template sample-v1
+	
+#Create build configuration
+#Create secret
+oc create secret generic sample-secret --from-literal=sample-user=sample4 --from-literal=sample-password=aaaaa --from-literal=sample-server=test.sample.com
+	
+# Deploy from template
+oc create -f sample.json
+oc new-app --template= sample-v1
 
 ```
