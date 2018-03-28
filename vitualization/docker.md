@@ -85,6 +85,17 @@ $ sudo docker exec -i -t 665b4a1e17b6 /bin/bash #by ID
 or
 $ sudo docker exec -i -t loving_heisenberg /bin/bash #by Name
 ```
+
+* Run docker with enviroment varialbe and binding volume
+```
+docker run -it \
+-e SAMPLE_SEVER='test.sample.com' \
+-e SAMPLE_USER='AAAA' \
+-e SAMPLE_PASSWORD='AAAA' \
+-v /home/vagrant/certs/non-production:/usr/share/sample/certs
+sample:latest bash 
+
+```
 # Develop images
 ## Guide and reference
 * [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/#escape)
