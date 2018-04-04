@@ -4,7 +4,7 @@
 - [ ] Build CI CD on cloud
 - - - -
 - [x] Docker on Linux
-- [ ] Openshift [Feb 28, 2018]
+- [x] Openshift [Feb 28, 2018]
 - [ ] Build MicroSerivce on Liberty [March 31, 2018]
 - [ ] Clound Native
 - [ ] Build Microservice on Cloud [March 31, 2018]
@@ -18,7 +18,7 @@
 * Docker hub: https://hub.docker.com/ (jiangfeng212X7)
 * Openshift: https://www.openshift.com/ (jiangfeng212@Xr7)
 * Bluemix: https://console.bluemix.net/catalog/
-* Amazon: 
+* Amazon: https://portal.aws.amazon.com (jiangfeng212@Xa8)
 * Azure:
 * PCF(Pivotal Cloud Foundry): https://pivotal.io/platform
 * Google Clound: https://cloud.google.com
