@@ -1,4 +1,5 @@
 # HDPCD: SPARK EXAM
+https://hortonworks.com/services/training/certification/hdp-certified-spark-developer/
 https://hortonworks.com/services/training/certification/exam-objectives/#hdpcdspark
 ## Core Spark
 ### Write a Spark Core application in Python or Scala
