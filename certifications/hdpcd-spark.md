@@ -23,4 +23,6 @@ https://hortonworks.com/services/training/certification/exam-objectives/#hdpcdsp
 
 
 # Reference
+* https://spark.apache.org/docs/latest/index.html 
 * https://spark.apache.org/docs/latest/rdd-programming-guide.html
+* 
