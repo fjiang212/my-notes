@@ -20,3 +20,7 @@ https://hortonworks.com/services/training/certification/exam-objectives/#hdpcdsp
 ### Write a Spark SQL application
 ### Use Hive with ORC from Spark SQL
 ### Write a Spark SQL application that reads and writes data from Hive tables
+
+
+# Reference
+* https://spark.apache.org/docs/latest/rdd-programming-guide.html
