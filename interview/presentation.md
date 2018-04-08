@@ -13,6 +13,6 @@ So let's start with
 
 ## Technical key words
 * `Operation metrics for insight into health of xx services`
-* `Scale up` Vs `Scale out
+* `Scale up` Vs `Scale out`
 * `Growing exponentially`
 * `Make it enterprise viable(kexing)`
