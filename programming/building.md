@@ -1,3 +1,8 @@
+# Table of Contents
+1. [Maven](#maven)
+2. [Gradle](#gradle)
+3. [SBT](#sbt)
+
 # Maven
 # Gradle
 # SBT
