@@ -16,3 +16,5 @@ So let's start with
 * `Scale up` Vs `Scale out`
 * `Growing exponentially`
 * `Make it enterprise viable(kexing)`
+* `Bandwidth scales linearly with the nubmer of ... and ...`
+* `MapReduce offers a solution by bring computation close to data thereby minimizing data movement`
