@@ -1,3 +1,8 @@
+# Table of Contents
+1. [Architecture](#architecture)
+2. [Openshift Development Guide](#openshift-development-guide)
+3. [Openshift Deployment Guide](#openshift-deployment-guide)
+
 # Architecture
 ![alt text](../images/openshift_architecture.jpg)
 
