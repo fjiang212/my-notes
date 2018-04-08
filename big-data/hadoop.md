@@ -10,4 +10,5 @@ https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSys
 # Tutoirals
 ## HDP
 * https://hortonworks.com/tutorial/hadoop-tutorial-getting-started-with-hdp/
+> Apache Hadoop is an open source framework for `distributed storage` and `processing` of large sets of data on  `commodity hardware`.
 * 
