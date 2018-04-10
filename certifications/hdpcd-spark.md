@@ -33,30 +33,20 @@ https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2015
 
 
 # Experience
-* Experiece 1
+* Experience 1
 ```
 I have appeared today for my HDP-spark exam which lasted for 2 hours having 7 questions in total.
-
 Points experienced today :
-
 1.Please go through all the 7 questions first, Prioritize the questions based on your comfort level.
-
 2.Expect the typical Cent-OS cluster behavior such as Ctrl+U , Ctrl+L won’t work in HDP-cluster.
-
 3.No select pattern copy paste as we are able to do in our normal unix box.
-
 4.Cluster is very slow, Please go with recommended bandwidth > 20 MBPS.
-
 5.PSI support may take long time in solving environment issues like exam not getting delivered, DNS configuration at your browser.Please be ready for that.
-
 6.As it’s a time constraint exam, Please don’t waste time on any ques more than 15 mins..
-
 7.Concentrate more on string parsing , input parsing .Remember guys there is no time to think there.We won’t be able to complete 5 ques then.
 
 Personal experience :
-
 People said at many places we need to solve 4/7 ,its actually 5/7 we need to solve. Try to have the exam on desktop machine rather taking on laptop with descent monitor screen.Don’t compromise on bandwidth.
-
 So Best Of luck guys....practice hard before an attempt.
 ```
 * Experience 2
@@ -91,22 +81,15 @@ The exam is not really difficult if you work through the exam objectives
 * Experience 3
 ```
 couple notes on the exam
-
 1. know RDD and dataframe api well. Go through all the docs in the test web page.
-
 2. know how to import and export RDD/dataframe from/to csv files.
-
 3. there is no limit on how you finish the task, so choose the technical you are most familiar with either the API or Spark SQL
-
 4. test environment is quite slow in response, so be patient with it and leave enough time for tasks.
 ```
 
 * spark environment
 ```
 There is no IDE available on the Spark exam. You can use pyspark or spark-shell to execute your code.
-
 You do NOT have access to google or the internet. You DO have access to the Spark doc pages, the Python and Scala doc pages, and the Hortonworks documentation as well.
-
 There is currently no practice exam for the Spark exam. If you need experience writing Spark applications on HDP using Python or Scala, I recommend downloading the Sandbox and working through the Hortonworks Spark tutorials.
-
 ```
