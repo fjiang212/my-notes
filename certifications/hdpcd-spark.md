@@ -25,12 +25,13 @@ https://hortonworks.com/services/training/certification/exam-objectives/#hdpcdsp
 # Reference
 * https://spark.apache.org/docs/latest/index.html 
 * https://spark.apache.org/docs/latest/rdd-programming-guide.html
-* 
 
-# Practice Exam
+# Tasks
+## Tutorial
+- [ ] https://hortonworks.com/tutorial/hands-on-tour-of-apache-spark-in-5-minutes/
 
-https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/HDPCD-PracticeExamGuide1.pdf
-
+## Practice Exam
+- [ ] https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/HDPCD-PracticeExamGuide1.pdf
 
 # Experience
 * Experience 1
