@@ -6,6 +6,7 @@ https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSys
 
 * `hadoop dfs {args}`: dfs is very specific to HDFS. would work for operation relates to HDFS. This has been deprecated and we should use hdfs dfs instead.
 * `hdfs dfs {args}`
+https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html
 
 # Tutoirals
 ## HDP
