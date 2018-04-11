@@ -13,15 +13,19 @@
 ### Create an RDD
 ### Create an RDD from a file or directory in HDFS
 Q1. How to load local file in sc.textFile, instead of HDFS
->Try explicitly specify sc.textFile("file:///path to the file/"). The error occurs when Hadoop environment is set.
->SparkContext.textFile internally calls org.apache.hadoop.mapred.FileInputFormat.getSplits, which in turn uses org.apache.hadoop.fs.getDefaultUri if schema is absent. This method reads "fs.defaultFS" parameter of Hadoop conf. If you set HADOOP_CONF_DIR environment variable, the parameter is usually set as "hdfs://..."; otherwise "file://".
->HDP `core-site.xml` set fs.defaultFS as `hdfs://sandbox.hortonworks.com:8020`
+* Try explicitly specify sc.textFile("file:///path to the file/"). The error occurs when Hadoop environment is set.
+SparkContext.textFile internally calls org.apache.hadoop.mapred.FileInputFormat.getSplits, which in turn uses org.apache.hadoop.fs.getDefaultUri if schema is absent. This method reads "fs.defaultFS" parameter of Hadoop conf. If you set HADOOP_CONF_DIR environment variable, the parameter is usually set as "hdfs://..."; otherwise "file://".
+* HDP `core-site.xml` set fs.defaultFS as `hdfs://sandbox.hortonworks.com:8020`
 
 > def textFile(path: String, minPartitions: Int = defaultMinPartitions): RDD[String]
 > Read a text file from HDFS, a local file system (available on all nodes), or any Hadoop-supported file system URI, and return it as an RDD of Strings(`array of line string`).
 
 ### Persist an RDD in memory or on disk
 ### Perform Spark transformations on an RDD
+Q1. What is the difference between map and flatMap?
+* `map` transforms an RDD of length N into another RDD of length N.
+* But `flatMap` (loosely speaking) transforms an RDD of length N into a collection of N collections(ex: through split), then flattens these into a single RDD of results.
+
 ### Perform Spark actions on an RDD
 ### Create and use broadcast variables and accumulators
 ### Configure Spark properties
