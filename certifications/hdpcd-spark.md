@@ -73,6 +73,9 @@ res2: Int = 10
 ## Practice Exam
 - [ ] https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/HDPCD-PracticeExamGuide1.pdf
 
+## Excises
+- [ ] Read data from file and run differernt transformation and action
+
 # Experience
 * Experience 1
 ```
