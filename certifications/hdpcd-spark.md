@@ -4,7 +4,9 @@
     * https://hortonworks.com/services/training/certification/exam-objectives/#hdpcdspark
 * Available link in the exam
     * http://spark.apache.org/docs/1.6.0/api/scala/index.html#org.apache.spark.package
-    
+* Other spark docuemnts
+    * http://spark.apache.org/docs/1.6.0/
+    * http://spark.apache.org/docs/1.6.0/programming-guide.html
 
 ## Core Spark
 ### Write a Spark Core application in Python or Scala
