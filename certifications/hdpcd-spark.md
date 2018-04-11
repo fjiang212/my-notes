@@ -1,6 +1,11 @@
 # HDPCD: SPARK EXAM
-https://hortonworks.com/services/training/certification/hdp-certified-spark-developer/
-https://hortonworks.com/services/training/certification/exam-objectives/#hdpcdspark
+* Exam Information
+    * https://hortonworks.com/services/training/certification/hdp-certified-spark-developer/
+    * https://hortonworks.com/services/training/certification/exam-objectives/#hdpcdspark
+* Available link in the exam
+    * http://spark.apache.org/docs/1.6.0/api/scala/index.html#org.apache.spark.package
+    
+
 ## Core Spark
 ### Write a Spark Core application in Python or Scala
 ### Initialize a Spark application
@@ -11,6 +16,10 @@ Q1. How to load local file in sc.textFile, instead of HDFS
 >Try explicitly specify sc.textFile("file:///path to the file/"). The error occurs when Hadoop environment is set.
 >SparkContext.textFile internally calls org.apache.hadoop.mapred.FileInputFormat.getSplits, which in turn uses org.apache.hadoop.fs.getDefaultUri if schema is absent. This method reads "fs.defaultFS" parameter of Hadoop conf. If you set HADOOP_CONF_DIR environment variable, the parameter is usually set as "hdfs://..."; otherwise "file://".
 >HDP `core-site.xml` set fs.defaultFS as `hdfs://sandbox.hortonworks.com:8020`
+
+> def textFile(path: String, minPartitions: Int = defaultMinPartitions): RDD[String]
+> Read a text file from HDFS, a local file system (available on all nodes), or any Hadoop-supported file system URI, and return it as an RDD of Strings(`array of line string`).
+
 ### Persist an RDD in memory or on disk
 ### Perform Spark transformations on an RDD
 ### Perform Spark actions on an RDD
