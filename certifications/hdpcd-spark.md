@@ -13,6 +13,7 @@
 ## Core Spark
 ### Write a Spark Core application in Python or Scala
 ### Initialize a Spark application
+* http://spark.apache.org/docs/1.6.0/configuration.html
 ### Run a Spark job on YARN
 * http://spark.apache.org/docs/1.6.0/cluster-overview.html
 * http://spark.apache.org/docs/1.6.0/submitting-applications.html
