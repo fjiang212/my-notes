@@ -34,6 +34,14 @@ Q1. How to print RDD element
 * To print all elements on the driver, one can use the `collect()` method to first bring the RDD to the driver node thus: `rdd.collect().foreach(println)`. This can cause the driver to run out of memory, though, because collect() fetches the entire RDD to a single machine; 
 * if you only need to print a few elements of the RDD, a safer approach is to use the `take()`: `rdd.take(100).foreach(println)`.
 ### Create and use broadcast variables and accumulators
+* Broadcast variables are created from a variable v by calling SparkContext.broadcast(v). The broadcast variable is a wrapper around v, and its value can be accessed by calling the value method
+```
+scala> val broadcastVar = sc.broadcast(Array(1, 2, 3))
+broadcastVar: org.apache.spark.broadcast.Broadcast[Array[Int]] = Broadcast(0)
+
+scala> broadcastVar.value
+res0: Array[Int] = Array(1, 2, 3)
+```
 ### Configure Spark properties
 
 ## Spark SQL
