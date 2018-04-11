@@ -43,6 +43,19 @@ broadcastVar: org.apache.spark.broadcast.Broadcast[Array[Int]] = Broadcast(0)
 scala> broadcastVar.value
 res0: Array[Int] = Array(1, 2, 3)
 ```
+* Accumulators are variables that are only “added” to through an associative operation and can therefore be efficiently supported in parallel. 
+* Only the driver program can read the accumulator’s value, using its value method.
+```
+scala> val accum = sc.accumulator(0, "My Accumulator")
+accum: spark.Accumulator[Int] = 0
+
+scala> sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum += x)
+...
+10/09/29 18:41:08 INFO SparkContext: Tasks finished in 0.317106 s
+
+scala> accum.value
+res2: Int = 10
+```
 ### Configure Spark properties
 
 ## Spark SQL
