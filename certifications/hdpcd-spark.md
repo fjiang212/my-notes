@@ -7,6 +7,8 @@
 * Other spark docuemnts
     * http://spark.apache.org/docs/1.6.0/
     * http://spark.apache.org/docs/1.6.0/programming-guide.html
+* Scala Coding
+    * http://spark.apache.org/docs/1.6.0/programming-guide.html#passing-functions-to-spark
 
 ## Core Spark
 ### Write a Spark Core application in Python or Scala
