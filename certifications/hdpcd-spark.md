@@ -39,11 +39,6 @@ Q1. What is the difference between map and flatMap?
 ### Use Hive with ORC from Spark SQL
 ### Write a Spark SQL application that reads and writes data from Hive tables
 
-
-# Reference
-* https://spark.apache.org/docs/latest/index.html 
-* https://spark.apache.org/docs/latest/rdd-programming-guide.html
-
 # Tasks
 ## Tutorial
 - [ ] https://hortonworks.com/tutorial/hands-on-tour-of-apache-spark-in-5-minutes/
