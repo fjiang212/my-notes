@@ -30,6 +30,9 @@ Q1. What is the difference between map and flatMap?
 * But `flatMap` (loosely speaking) transforms an RDD of length N into a collection of N collections(ex: through split), then flattens these into a single RDD of results.
 
 ### Perform Spark actions on an RDD
+Q1. How to print RDD element
+* To print all elements on the driver, one can use the `collect()` method to first bring the RDD to the driver node thus: `rdd.collect().foreach(println)`. This can cause the driver to run out of memory, though, because collect() fetches the entire RDD to a single machine; 
+* if you only need to print a few elements of the RDD, a safer approach is to use the `take()`: `rdd.take(100).foreach(println)`.
 ### Create and use broadcast variables and accumulators
 ### Configure Spark properties
 
