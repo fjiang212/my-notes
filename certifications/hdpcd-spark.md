@@ -7,6 +7,10 @@ https://hortonworks.com/services/training/certification/exam-objectives/#hdpcdsp
 ### Run a Spark job on YARN
 ### Create an RDD
 ### Create an RDD from a file or directory in HDFS
+Q1. How to load local file in sc.textFile, instead of HDFS
+>Try explicitly specify sc.textFile("file:///path to the file/"). The error occurs when Hadoop environment is set.
+>SparkContext.textFile internally calls org.apache.hadoop.mapred.FileInputFormat.getSplits, which in turn uses org.apache.hadoop.fs.getDefaultUri if schema is absent. This method reads "fs.defaultFS" parameter of Hadoop conf. If you set HADOOP_CONF_DIR environment variable, the parameter is usually set as "hdfs://..."; otherwise "file://".
+>HDP `core-site.xml` set fs.defaultFS as `hdfs://sandbox.hortonworks.com:8020`
 ### Persist an RDD in memory or on disk
 ### Perform Spark transformations on an RDD
 ### Perform Spark actions on an RDD
