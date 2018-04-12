@@ -10,6 +10,7 @@
     * [X] http://spark.apache.org/docs/1.6.0/monitoring.html
 * Scala Coding
     * [ ] http://spark.apache.org/docs/1.6.0/programming-guide.html#passing-functions-to-spark
+    * [ ] https://docs.scala-lang.org/tutorials/FAQ/finding-symbols.html
 * HPD Sanbox Links
     * Ambari: http://127.0.0.1:8080/#/login
     * SparkContext Spark-UI: http://localhost:4040/
