@@ -17,3 +17,13 @@ https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-hdfs/HDFSComman
 Q1. What are SUCCESS and part-00000 files in hadoop
 * On the successful completion of a job, the MapReduce runtime creates a _SUCCESS file in the output directory. This may be useful for applications that need to see if a result set is complete just by inspecting HDFS. (MAPREDUCE-947)
 * The output files are by default named part-yyyyy where: yyyyy is the mapper or reducer task number (zero based) So a job which has 32 reducers will have files named part-r-00000 to part-r-00031, one for each reducer task.
+
+Q2. Where is hdfs data directory
+* /usr/hdp/current/hadoop-client/conf/hdfs-site.xml
+```
+    <property>
+      <name>dfs.datanode.data.dir</name>
+      <value>/hadoop/hdfs/data</value>
+      <final>true</final>
+    </property>
+```
