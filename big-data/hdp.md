@@ -6,3 +6,5 @@
 ## HDP Ecosystems
 * https://hortonworks.com/ecosystems/
 ![alt text](images/hdp-projects.PNG)
+* https://hortonworks.com/apache/hdfs/
+* https://hortonworks.com/apache/spark/
