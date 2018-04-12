@@ -5,10 +5,14 @@
 * Available link in the exam
     * http://spark.apache.org/docs/1.6.0/api/scala/index.html#org.apache.spark.package
 * Other spark docuemnts
-    * http://spark.apache.org/docs/1.6.0/
-    * http://spark.apache.org/docs/1.6.0/programming-guide.html
+    * [ ] http://spark.apache.org/docs/1.6.0/
+    * [X] http://spark.apache.org/docs/1.6.0/programming-guide.html
+    * [ ] http://spark.apache.org/docs/1.6.0/monitoring.html
 * Scala Coding
-    * http://spark.apache.org/docs/1.6.0/programming-guide.html#passing-functions-to-spark
+    * [ ] http://spark.apache.org/docs/1.6.0/programming-guide.html#passing-functions-to-spark
+* HPD Sanbox Links
+    * Ambari: http://127.0.0.1:8080/#/login
+    * Spark-UI: http://localhost:4040/
 
 ## Core Spark
 ### Write a Spark Core application in Python or Scala
