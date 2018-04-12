@@ -36,9 +36,14 @@ Read a text file from HDFS, a local file system (available on all nodes), or any
 
 ### Persist an RDD in memory or on disk
 ### Perform Spark transformations on an RDD
-Q1. What is the difference between map and flatMap?
+Q1. What is the difference between `map` and `flatMap`?
 * `map` transforms an RDD of length N into another RDD of length N.
 * But `flatMap` (loosely speaking) transforms an RDD of length N into a collection of N collections(ex: through split), then flattens these into a single RDD of results.
+
+Q2. What is the difference between `groupByKey`, `reduceByKey` and `reduce`?
+* **groupByKey([numTasks])**: Transformation, When called on a dataset of (K, V) pairs, returns a dataset of `(K, Iterable<V>)` pairs.groupByKey can cause out of disk problems as data is sent over the network and collected on the reduce workers. 
+* **reduceByKey(func, [numTasks])**: Transformation,When called on a dataset of (K, V) pairs, returns a dataset of (K, V) pairs where the values for each key are aggregated using the given reduce function func, which must be of type (V,V) => V. Data is combined at each partition , only one output for one key at each partition to send over network. reduceByKey required combining all your values into another value with the exact same type.
+* **reduce(func)**: Action,	Aggregate the elements of the dataset using a function func (which takes two arguments and returns one). The function should be commutative and associative so that it can be computed correctly in parallel.
 
 ### Perform Spark actions on an RDD
 Q1. How to print RDD element
