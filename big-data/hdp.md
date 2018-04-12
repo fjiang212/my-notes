@@ -5,3 +5,4 @@
 # HDP 
 ## HDP Ecosystems
 https://hortonworks.com/ecosystems/
+![alt text](images/hdp-projects.PNG)
