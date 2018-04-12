@@ -12,7 +12,8 @@
     * [ ] http://spark.apache.org/docs/1.6.0/programming-guide.html#passing-functions-to-spark
 * HPD Sanbox Links
     * Ambari: http://127.0.0.1:8080/#/login
-    * Spark-UI: http://localhost:4040/
+    * SparkContext Spark-UI: http://localhost:4040/
+    * Spark History Server: http://localhost:18080/ (/usr/hdp/current/spark-historyserver/sbin/start|stop-history-server.sh)
 
 ## Core Spark
 ### Write a Spark Core application in Python or Scala
