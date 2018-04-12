@@ -7,7 +7,7 @@
 * Other spark docuemnts
     * [ ] http://spark.apache.org/docs/1.6.0/
     * [X] http://spark.apache.org/docs/1.6.0/programming-guide.html
-    * [ ] http://spark.apache.org/docs/1.6.0/monitoring.html
+    * [X] http://spark.apache.org/docs/1.6.0/monitoring.html
 * Scala Coding
     * [ ] http://spark.apache.org/docs/1.6.0/programming-guide.html#passing-functions-to-spark
 * HPD Sanbox Links
