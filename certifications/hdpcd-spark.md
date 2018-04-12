@@ -86,8 +86,8 @@ res2: Int = 10
 # Tasks
 ## Tutorial
 - [X] https://hortonworks.com/tutorial/hands-on-tour-of-apache-spark-in-5-minutes/
-- [X] https://hortonworks.com/tutorial/hands-on-tour-of-apache-spark-in-5-minutes/
-- [ ] 
+- [X] https://hortonworks.com/tutorial/word-count-sparkr-repl-examples/
+
 
 ## Practice Exam
 - [ ] https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/HDPCD-PracticeExamGuide1.pdf
