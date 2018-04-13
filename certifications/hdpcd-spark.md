@@ -48,6 +48,8 @@ Q2. What is the difference between `groupByKey`, `reduceByKey` , `aggregateByKey
 val WordcountsWithReduce = wordPairsRDD.reduceByKey(_+_).collect()
 val wordCountsWithGroup = wordPairsRDD.groupByKey().map(t = > t._1, t_2.sum)).collect()
 ```
+![alt text](images/compare1.PNG)
+
 * **reduceByKey(func, [numTasks])**: Transformation,When called on a dataset of (K, V) pairs, returns a dataset of (K, V) pairs where the values for each key are aggregated using the given reduce function func, which must be of type (V,V) => V. Data is combined at each partition , only one output for one key at each partition to send over network. reduceByKey required combining all your values into another value with the exact same type.
 ```
 Examples
@@ -62,9 +64,6 @@ step 2: x=3, y=3 ==> x => 6 (final value)
 
 # if the value is tuple then
 reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2))
-
-Different key is in the differnt partition/node. 
-reduce result in the differnt partition has differnt key. No need to merge. 
 ```
 * **reduce(func)**: Action,	Aggregate the elements of the dataset using a function func (which takes two arguments and returns one). The function should be commutative and associative so that it can be computed correctly in parallel.
 
