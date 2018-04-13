@@ -65,6 +65,9 @@ step 2: x=3, y=3 ==> x => 6 (final value)
 # if the value is tuple then
 reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2))
 ```
+* **aggregateByKey(zeroValue)(seqOp, combOp, [numTasks])**: Transformation, When called on a dataset of (K, V) pairs, returns a dataset of (K, U) pairs where the values for each key are aggregated using the given combine functions and a neutral "zero" value. Allows an aggregated value type that is different than the input value type, while avoiding unnecessary allocations.
+    * seqOp: Calculate the value on the local partition
+    * combOp: Combine the intrmediate value from seqOp
 * **reduce(func)**: Action,	Aggregate the elements of the dataset using a function func (which takes two arguments and returns one). The function should be commutative and associative so that it can be computed correctly in parallel.
 
 ### Perform Spark actions on an RDD
