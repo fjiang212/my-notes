@@ -44,6 +44,10 @@ Q1. What is the difference between `map` and `flatMap`?
 
 Q2. What is the difference between `groupByKey`, `reduceByKey` , `aggregateByKey` and `reduce`?
 * **groupByKey([numTasks])**: Transformation, When called on a dataset of (K, V) pairs, returns a dataset of `(K, Iterable<V>)` pairs.groupByKey can cause out of disk problems as data is sent over the network and collected on the reduce workers. 
+```
+val WordcountsWithReduce = wordPairsRDD.reduceByKey(_+_).collect()
+val wordCountsWithGroup = wordPairsRDD.groupByKey().map(t = > t._1, t_2.sum)).collect()
+```
 * **reduceByKey(func, [numTasks])**: Transformation,When called on a dataset of (K, V) pairs, returns a dataset of (K, V) pairs where the values for each key are aggregated using the given reduce function func, which must be of type (V,V) => V. Data is combined at each partition , only one output for one key at each partition to send over network. reduceByKey required combining all your values into another value with the exact same type.
 ```
 Examples
