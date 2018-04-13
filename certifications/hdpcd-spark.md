@@ -50,6 +50,7 @@ val wordCountsWithGroup = wordPairsRDD.groupByKey().map(t = > t._1, t_2.sum)).co
 ```
 ![alt text](images/compare1.PNG)
 
+**Notes: reduceByKey is doing map side combiner, groupByKey is not** 
 * **reduceByKey(func, [numTasks])**: Transformation,When called on a dataset of (K, V) pairs, returns a dataset of (K, V) pairs where the values for each key are aggregated using the given reduce function func, which must be of type (V,V) => V. Data is combined at each partition , only one output for one key at each partition to send over network. reduceByKey required combining all your values into another value with the exact same type.
 ```
 Examples
