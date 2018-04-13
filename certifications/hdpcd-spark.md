@@ -42,9 +42,26 @@ Q1. What is the difference between `map` and `flatMap`?
 * `map` transforms an RDD of length N into another RDD of length N.
 * But `flatMap` (loosely speaking) transforms an RDD of length N into a collection of N collections(ex: through split), then flattens these into a single RDD of results.
 
-Q2. What is the difference between `groupByKey`, `reduceByKey` and `reduce`?
+Q2. What is the difference between `groupByKey`, `reduceByKey` , `aggregateByKey` and `reduce`?
 * **groupByKey([numTasks])**: Transformation, When called on a dataset of (K, V) pairs, returns a dataset of `(K, Iterable<V>)` pairs.groupByKey can cause out of disk problems as data is sent over the network and collected on the reduce workers. 
 * **reduceByKey(func, [numTasks])**: Transformation,When called on a dataset of (K, V) pairs, returns a dataset of (K, V) pairs where the values for each key are aggregated using the given reduce function func, which must be of type (V,V) => V. Data is combined at each partition , only one output for one key at each partition to send over network. reduceByKey required combining all your values into another value with the exact same type.
+```
+Examples
+=========
+k1, 1
+k1, 2
+K1, 3
+
+# Do the caluation step by step, x and y are both data set
+step 1: x=1, y=2 ==> x => 3(intermediate value)
+step 2: x=3, y=3 ==> x => 6 (final value)
+
+# if the value is tuple then
+reduceByKey((x, y) => (x._1 + y._1, x._2 + y._2))
+
+Different key is in the differnt partition/node. 
+reduce result in the differnt partition has differnt key. No need to merge. 
+```
 * **reduce(func)**: Action,	Aggregate the elements of the dataset using a function func (which takes two arguments and returns one). The function should be commutative and associative so that it can be computed correctly in parallel.
 
 ### Perform Spark actions on an RDD
