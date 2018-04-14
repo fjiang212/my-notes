@@ -76,7 +76,7 @@ key is date, value is float.
 
 val revenuePerDay = orderJoinMap.aggregateByKey((0.0, 0))(
     (acc, value) => (acc._1 + value, acc._2 + 1),
-    (total1, total2) => (total1._1 + total2._1, total1._2, total2._2)
+    (total1, total2) => (total1._1 + total2._1, total1._2 + total2._2)
  )
 ```
 **Note: Any xxxByKey fuction will take value as parameter**
