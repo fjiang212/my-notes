@@ -19,17 +19,17 @@
     * Spark History Server: http://localhost:18080/ (/usr/hdp/current/spark-historyserver/sbin/start|stop-history-server.sh)
 
 ## Core Spark
-### Write a Spark Core application in Python or Scala
-### Initialize a Spark application
+### [ ] Write a Spark Core application in Python or Scala
+### [ ] Initialize a Spark application
 * http://spark.apache.org/docs/1.6.0/configuration.html
-### Run a Spark job on YARN
+### [ ] Run a Spark job on YARN
 * http://spark.apache.org/docs/1.6.0/cluster-overview.html
 * http://spark.apache.org/docs/1.6.0/submitting-applications.html
 * http://spark.apache.org/docs/1.6.0/spark-standalone.html
 * http://spark.apache.org/docs/1.6.0/running-on-yarn.html
 * 
-### Create an RDD
-### Create an RDD from a file or directory in HDFS
+### [ ] Create an RDD
+### [X] Create an RDD from a file or directory in HDFS
 Q1. How to load local file in sc.textFile, instead of HDFS
 * Try explicitly specify sc.textFile("file:///path to the file/"). The error occurs when Hadoop environment is set.
 SparkContext.textFile internally calls org.apache.hadoop.mapred.FileInputFormat.getSplits, which in turn uses org.apache.hadoop.fs.getDefaultUri if schema is absent. This method reads "fs.defaultFS" parameter of Hadoop conf. If you set HADOOP_CONF_DIR environment variable, the parameter is usually set as "hdfs://..."; otherwise "file://".
@@ -37,8 +37,8 @@ SparkContext.textFile internally calls org.apache.hadoop.mapred.FileInputFormat.
 * `def textFile(path: String, minPartitions: Int = defaultMinPartitions): RDD[String]`
 Read a text file from HDFS, a local file system (available on all nodes), or any Hadoop-supported file system URI, and return it as an RDD of Strings(`array of line string`).
 
-### Persist an RDD in memory or on disk
-### Perform Spark transformations on an RDD
+### [ ] Persist an RDD in memory or on disk
+### [X] Perform Spark transformations on an RDD
 Q1. What is the difference between `map` and `flatMap`?
 * `map` transforms an RDD of length N into another RDD of length N.
 * But `flatMap` (loosely speaking) transforms an RDD of length N into a collection of N collections(ex: through split), then flattens these into a single RDD of results.
@@ -84,11 +84,11 @@ val revenuePerDay = orderJoinMap.aggregateByKey((0.0, 0))(
 
 * **reduce(func)**: Action,	Aggregate the elements of the dataset using a function func (which takes two arguments and returns one). The function should be commutative and associative so that it can be computed correctly in parallel.
 
-### Perform Spark actions on an RDD
+### [X] Perform Spark actions on an RDD
 Q1. How to print RDD element
 * To print all elements on the driver, one can use the `collect()` method to first bring the RDD to the driver node thus: `rdd.collect().foreach(println)`. This can cause the driver to run out of memory, though, because collect() fetches the entire RDD to a single machine; 
 * if you only need to print a few elements of the RDD, a safer approach is to use the `take()`: `rdd.take(100).foreach(println)`.
-### Create and use broadcast variables and accumulators
+### [X] Create and use broadcast variables and accumulators
 * Broadcast variables allow the programmer to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks.
 * Broadcast variables are created from a variable v by calling SparkContext.broadcast(v). The broadcast variable is a wrapper around v, and its value can be accessed by calling the value method
 ```
@@ -111,15 +111,15 @@ scala> sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum += x)
 scala> accum.value
 res2: Int = 10
 ```
-### Configure Spark properties
+### [ ] Configure Spark properties
 
 ## Spark SQL
 
-### Create Spark DataFrames from an existing RDD
-### Perform operations on a DataFrame
-### Write a Spark SQL application
-### Use Hive with ORC from Spark SQL
-### Write a Spark SQL application that reads and writes data from Hive tables
+### [ ] Create Spark DataFrames from an existing RDD
+### [ ] Perform operations on a DataFrame
+### [ ] Write a Spark SQL application
+### [ ] Use Hive with ORC from Spark SQL
+### [ ] Write a Spark SQL application that reads and writes data from Hive tables
 
 # Tasks
 ## Tutorial
