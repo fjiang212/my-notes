@@ -14,6 +14,7 @@
     * [ ] https://docs.scala-lang.org/tutorials/FAQ/finding-symbols.html
 * HPD Sanbox Links
     * Ambari: http://127.0.0.1:8080/#/login
+    * Zeppelin: http://localhost:9995
     * SparkContext Spark-UI: http://localhost:4040/
     * Spark History Server: http://localhost:18080/ (/usr/hdp/current/spark-historyserver/sbin/start|stop-history-server.sh)
 
