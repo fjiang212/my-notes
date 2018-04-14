@@ -41,6 +41,7 @@ Read a text file from HDFS, a local file system (available on all nodes), or any
 Q1. What is the difference between `map` and `flatMap`?
 * `map` transforms an RDD of length N into another RDD of length N.
 * But `flatMap` (loosely speaking) transforms an RDD of length N into a collection of N collections(ex: through split), then flattens these into a single RDD of results.
+* map(rec => xxx), flatMap(rec=>xxx): first element in the fuction is the record in the original RDD
 
 Q2. What is the difference between `groupByKey`, `reduceByKey` , `aggregateByKey` and `reduce`?
 * **groupByKey([numTasks])**: Transformation, When called on a dataset of (K, V) pairs, returns a dataset of `(K, Iterable<V>)` pairs.groupByKey can cause out of disk problems as data is sent over the network and collected on the reduce workers. 
