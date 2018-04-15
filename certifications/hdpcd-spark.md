@@ -19,7 +19,7 @@
     * Spark History Server: http://localhost:18080/ (/usr/hdp/current/spark-historyserver/sbin/start|stop-history-server.sh)
 
 ## Core Spark
-### [ ] Write a Spark Core application in Python or Scala
+### [X] Write a Spark Core application in Python or Scala
 ### [ ] Initialize a Spark application
 * http://spark.apache.org/docs/1.6.0/configuration.html
 ### [ ] Run a Spark job on YARN
@@ -27,7 +27,7 @@
 * http://spark.apache.org/docs/1.6.0/submitting-applications.html
 * http://spark.apache.org/docs/1.6.0/spark-standalone.html
 * http://spark.apache.org/docs/1.6.0/running-on-yarn.html
-* 
+
 ### [X] Create an RDD
 ### [X] Create an RDD from a file or directory in HDFS
 Q1. How to load local file in sc.textFile, instead of HDFS
