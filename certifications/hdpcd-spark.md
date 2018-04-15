@@ -37,7 +37,9 @@ SparkContext.textFile internally calls org.apache.hadoop.mapred.FileInputFormat.
 * `def textFile(path: String, minPartitions: Int = defaultMinPartitions): RDD[String]`
 Read a text file from HDFS, a local file system (available on all nodes), or any Hadoop-supported file system URI, and return it as an RDD of Strings(`array of line string`).
 
-### [ ] Persist an RDD in memory or on disk
+### [X] Persist an RDD in memory or on disk
+* RDD.persist()
+* RDD.saveAsTextFile("path/to/file")
 ### [X] Perform Spark transformations on an RDD
 Q1. What is the difference between `map` and `flatMap`?
 * `map` transforms an RDD of length N into another RDD of length N.
