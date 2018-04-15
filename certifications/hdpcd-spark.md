@@ -28,7 +28,7 @@
 * http://spark.apache.org/docs/1.6.0/spark-standalone.html
 * http://spark.apache.org/docs/1.6.0/running-on-yarn.html
 * 
-### [ ] Create an RDD
+### [X] Create an RDD
 ### [X] Create an RDD from a file or directory in HDFS
 Q1. How to load local file in sc.textFile, instead of HDFS
 * Try explicitly specify sc.textFile("file:///path to the file/"). The error occurs when Hadoop environment is set.
