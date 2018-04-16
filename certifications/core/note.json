@@ -1,0 +1,266 @@
+{
+  "paragraphs": [
+    {
+      "title": "Download data",
+      "text": "%sh\n\ncd /tmp\n\nrm -rf /tmp/master.zip\nrm -rf /tmp/data-master\n\nwget https://github.com/fjiang212/data/archive/master.zip\n\nunzip /tmp/master.zip\n\nhadoop fs -rm -r /tmp/hdpcd\nhadoop fs -mkdir -p /tmp/hdpcd\nhadoop fs -put /tmp/data-master/retail_db /tmp/hdpcd",
+      "dateUpdated": "Apr 15, 2018 2:44:33 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sh",
+        "title": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1523759174269_299920403",
+      "id": "20180415-022614_1248413886",
+      "dateCreated": "Apr 15, 2018 2:26:14 AM",
+      "dateStarted": "Apr 15, 2018 2:41:03 AM",
+      "dateFinished": "Apr 15, 2018 2:43:13 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Create an RDD",
+      "text": "val arrayRDD \u003d sc.parallelize(Array(1,2,3,4,5))\n\narrayRDD.collect().foreach(println)\n\nval sum \u003d arrayRDD.reduce(_+_)",
+      "dateUpdated": "Apr 15, 2018 2:52:22 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "title": true,
+        "editorMode": "ace/mode/scala",
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1523759455814_526490412",
+      "id": "20180415-023055_2026318794",
+      "dateCreated": "Apr 15, 2018 2:30:55 AM",
+      "dateStarted": "Apr 15, 2018 2:52:10 AM",
+      "dateFinished": "Apr 15, 2018 2:52:14 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Create an RDD from a file",
+      "text": "val file \u003d sc.textFile(\"file:////usr/hdp/current/spark-client/README.md\")\n\nval wordsRDD \u003d file.flatMap(line \u003d\u003e line.split(\" \")).map(word \u003d\u003e (word, 1))\n\nval wordCount \u003d wordsRDD.reduceByKey((acc, value) \u003d\u003e acc + value)\n\nwordCount.collect.foreach(println)\n",
+      "dateUpdated": "Apr 15, 2018 2:59:02 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1523760508635_-141319832",
+      "id": "20180415-024828_700622531",
+      "dateCreated": "Apr 15, 2018 2:48:28 AM",
+      "dateStarted": "Apr 15, 2018 2:57:29 AM",
+      "dateFinished": "Apr 15, 2018 2:57:34 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Create an RDD from a HDFS directory",
+      "text": "val file \u003d sc.textFile(\"/tmp/hdpcd/retail_db/orders\")\n\nval revenueRDD \u003d file.map(line\u003d\u003eline.split(\",\")(2).toInt)\n\nval totalRevenue \u003d revenueRDD.reduce(_+_)\n",
+      "dateUpdated": "Apr 15, 2018 3:01:21 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "title": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1523760989574_-924161250",
+      "id": "20180415-025629_1710734222",
+      "dateCreated": "Apr 15, 2018 2:56:29 AM",
+      "dateStarted": "Apr 15, 2018 3:01:21 AM",
+      "dateFinished": "Apr 15, 2018 3:01:26 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Persist an RDD in memory or on disk",
+      "text": "val file \u003d sc.textFile(\"file:////usr/hdp/current/spark-client/README.md\")\n\nval wordsRDD \u003d file.flatMap(line \u003d\u003e line.split(\" \")).map(word \u003d\u003e (word, 1))\n\nval wordCountMap \u003d wordsRDD.reduceByKey((acc, value) \u003d\u003e acc + value)\n\nwordCountMap.take(5).foreach(println)\n\nwordsRDD.persist()\n\nval words\u003dwordsRDD.count()\n\nwordCountMap.saveAsTextFile(\"/tmp/hdpcd/wordcount_\" + System.currentTimeMillis())",
+      "dateUpdated": "Apr 15, 2018 3:16:43 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1523761256440_-1653677457",
+      "id": "20180415-030056_2057689049",
+      "dateCreated": "Apr 15, 2018 3:00:56 AM",
+      "dateStarted": "Apr 15, 2018 3:16:43 AM",
+      "dateFinished": "Apr 15, 2018 3:16:54 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n# Reteail database cases\n## Tables\n* **orders**: order_id, order_date, order_customer_id, order_status\n* **order_itmes**: order_item_id, order_item_order_id, order_item_product_id, order_item_quantity, order_item_subtotal, order_item_product_price\n* **products**: product_id, product_category_id, product_name, product_description, product_price, product_image\n* **categorys**: category_id, category_department_id, category_name\n* **departments**: department_id, department_name\n \n## Problems\n**Q1. Calculate the average revenue each day for all completed order**\nTechnical Summary\n* Figure out the data relationship before coding\n* Always Filter the data first\n* Run reduceByKey bofore join: **reduce the data set in the combiner stadge to reduce the network IO for in the reducer stage**\n* Conver data to the correct data type during the map transformation\n* Run count() and take(10) for debuggin during each transformation and action step",
+      "dateUpdated": "Apr 15, 2018 5:15:03 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1523806319444_-333497154",
+      "id": "20180415-153159_415108993",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ch1\u003eReteail database cases\u003c/h1\u003e\n\u003ch2\u003eTables\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eorders\u003c/strong\u003e: order_id, order_date, order_customer_id, order_status\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eorder_itmes\u003c/strong\u003e: order_item_id, order_item_order_id, order_item_product_id, order_item_quantity, order_item_subtotal, order_item_product_price\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eproducts\u003c/strong\u003e: product_id, product_category_id, product_name, product_description, product_price, product_image\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003ecategorys\u003c/strong\u003e: category_id, category_department_id, category_name\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003edepartments\u003c/strong\u003e: department_id, department_name\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eProblems\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eQ1. Calculate the average revenue each day for all completed order\u003c/strong\u003e\n\u003cbr  /\u003eTechnical Summary\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFigure out the data relationship before coding\u003c/li\u003e\n\u003cli\u003eAlways Filter the data first\u003c/li\u003e\n\u003cli\u003eRun reduceByKey bofore join: \u003cstrong\u003ereduce the data set in the combiner stadge to reduce the network IO for in the reducer stage\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eConver data to the correct data type during the map transformation\u003c/li\u003e\n\u003cli\u003eRun count() and take(10) for debuggin during each transformation and action step\u003c/li\u003e\n\u003c/ul\u003e\n"
+      },
+      "dateCreated": "Apr 15, 2018 3:31:59 PM",
+      "dateStarted": "Apr 15, 2018 5:15:00 PM",
+      "dateFinished": "Apr 15, 2018 5:15:00 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Transformation and Action: Calculate the average revenue each day for all completed order",
+      "text": "// Get the completed orders map(order_id, order_date)\nval ordersRDD\u003dsc.textFile(\"/tmp/hdpcd/retail_db/orders\")\nval ordersCompleted\u003dordersRDD.filter(line \u003d\u003e line.split(\",\")(3).equals(\"COMPLETE\"))\n\nval orders\u003dordersCompleted.map(line \u003d\u003e (line.split(\",\")(0).toInt, line.split(\",\")(1)))\n//orders.count()\n\n// Get the order times map(oerder_item_order_id, order_item,subtotal)\nval orderItemsRDD\u003dsc.textFile(\"/tmp/hdpcd/retail_db/order_items\")\nval orderItemsMap\u003dorderItemsRDD.map(line \u003d\u003e (line.split(\",\")(1).toInt, line.split(\",\")(4).toFloat))\n//orderItemsMap.count()\nval orderItems\u003dorderItemsMap.reduceByKey((acc, value) \u003d\u003e acc + value)\n//orderItems.count()\n\n\n// join two map\nval ordersJoin \u003d orders.join(orderItems)\n//ordersJoin.count()\n\nval ordersJoinMap \u003d ordersJoin.map(rec\u003d\u003e(rec._2._1, rec._2._2))\n//ordersJoinMap.count()\n\nval revenuePerDay \u003d ordersJoinMap.aggregateByKey((0.0, 0))(\n    (acc, value) \u003d\u003e (acc._1 + value, acc._2 + 1),\n    (total1, total2) \u003d\u003e (total1._1 + total2._1, total1._2 + total2._2)\n    )\n    \nval avereageRevenuePerDay \u003d revenuePerDay.map(rec \u003d\u003e (rec._1, BigDecimal(rec._2._1/rec._2._2).setScale(2, BigDecimal.RoundingMode.HALF_UP).toFloat))\nval sortedAvereageRevenuePerDay \u003d avereageRevenuePerDay.sortByKey()\n\nsortedAvereageRevenuePerDay.count()\nsortedAvereageRevenuePerDay.take(10).foreach(println)    \nsortedAvereageRevenuePerDay.saveAsTextFile(\"/tmp/hdpcd/sortedAvereageRevenuePerDay\" + System.currentTimeMillis())",
+      "dateUpdated": "Apr 15, 2018 5:19:30 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "title": true,
+        "editorMode": "ace/mode/scala",
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1523761949995_2086264621",
+      "id": "20180415-031229_531857548",
+      "dateCreated": "Apr 15, 2018 3:12:29 AM",
+      "dateStarted": "Apr 15, 2018 5:15:31 PM",
+      "dateFinished": "Apr 15, 2018 5:15:47 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1523806377381_1688798905",
+      "id": "20180415-153257_871100028",
+      "dateCreated": "Apr 15, 2018 3:32:57 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "HDPCD: Spark - Core",
+  "id": "2DAF8DW8V",
+  "angularObjects": {
+    "2DBC96P52": [],
+    "2DCGWJZUP": [],
+    "2D9ZQM8QP": [],
+    "2DAEUZX4W": [],
+    "2DCU95F3M": [],
+    "2DCWACSQX": [],
+    "2DATPY94N": [],
+    "2DC7VYA49": [],
+    "2DBURBXZT": [],
+    "2DAHYE1PX": [],
+    "2DD29ZWTX": [],
+    "2DA5J3BSF": [],
+    "2DA41TTN6": []
+  },
+  "config": {
+    "looknfeel": "default"
+  },
+  "info": {}
+}
