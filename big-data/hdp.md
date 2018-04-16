@@ -8,3 +8,4 @@
 ![alt text](images/hdp-projects.PNG)
 * https://hortonworks.com/apache/hdfs/
 * https://hortonworks.com/apache/spark/
+* https://hortonworks.com/apache/hive/
