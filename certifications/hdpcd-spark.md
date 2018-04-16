@@ -201,3 +201,13 @@ There is no IDE available on the Spark exam. You can use pyspark or spark-shell 
 You do NOT have access to google or the internet. You DO have access to the Spark doc pages, the Python and Scala doc pages, and the Hortonworks documentation as well.
 There is currently no practice exam for the Spark exam. If you need experience writing Spark applications on HDP using Python or Scala, I recommend downloading the Sandbox and working through the Hortonworks Spark tutorials.
 ```
+
+* Experience 4
+```
+Expert Tips for the Preparation of  HDPCD Spark Certification
+
+Best practices to obtain the best performance.
+Practice Spark core and Spark SQL problems as much as possible through spark-shell
+If you are appearing for HDPCD Apache Spark certification exam as a Hadoop professional, you must have an understanding of Spark features and best practices. Furthermore, you should know how they are different from Hadoop MapReduce.
+Practice chapter 1- 9 of “Learning Spark” book for all exercises on RDD
+```
