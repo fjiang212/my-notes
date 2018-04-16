@@ -1,5 +1,5 @@
 # Table of Contents
-1. [HDPCD: SPARK EXAM](#architecture)
+1. [HDPCD: SPARK EXAM](#hdpcd-spark-exam)
 2. [Core Spark](#core-spark)
 3. [Spark SQL](#spark-sql)
 4. [Tasks](#task)
