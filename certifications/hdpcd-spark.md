@@ -133,8 +133,9 @@ res2: Int = 10
 - [X] https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html
 - [ ] https://github.com/CjTouzi/Learning-RSpark/blob/master/Zaharia%20M.%2C%20et%20al.%20Learning%20Spark%20(O'Reilly%2C%202015)(274s).pdf
 
-## Practice Exam
+## Practice Exam/Training
 - [ ] https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/HDPCD-PracticeExamGuide1.pdf
+- [ ] https://www.whizlabs.com/spark-developer-certification/
 
 ## Exercises
 - [ ] Read data from file and run differernt transformation and action
