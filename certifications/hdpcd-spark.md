@@ -3,6 +3,7 @@
     * https://hortonworks.com/services/training/certification/hdp-certified-spark-developer/
     * https://hortonworks.com/services/training/certification/exam-objectives/#hdpcdspark
     * https://www.whizlabs.com/blog/prepare-for-hdpcd-apache-spark-certification/
+    
 * Available link in the exam
     * http://spark.apache.org/docs/1.6.0/api/scala/index.html#org.apache.spark.package
 * Other spark docuemnts
@@ -133,6 +134,7 @@ res2: Int = 10
 ## Tutorial
 - [X] https://hortonworks.com/tutorial/hands-on-tour-of-apache-spark-in-5-minutes/
 - [X] https://hortonworks.com/tutorial/word-count-sparkr-repl-examples/
+- [ ] https://hortonworks.com/tutorial/learning-the-ropes-of-the-hortonworks-sandbox/
 - [X] https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html
 - [ ] https://github.com/CjTouzi/Learning-RSpark/blob/master/Zaharia%20M.%2C%20et%20al.%20Learning%20Spark%20(O'Reilly%2C%202015)(274s).pdf
 
