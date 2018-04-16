@@ -118,7 +118,10 @@ res2: Int = 10
 
 ## Spark SQL
 ### [ ] Create Spark DataFrames from an existing RDD
-* default sqlConext in the spark-shell is HiveContext
+* default sqlContext in the spark-shell is HiveContext
+* How to create DataFrame
+   * Use sqlContext read json file, the return result is DF(sqlContext.read.json).
+   * Use SparkContext to read text file, run map transformation to map to case class.
 ### [ ] Perform operations on a DataFrame
 * The results of SQL queries are DataFrames and support all the normal RDD operations.
 
