@@ -117,8 +117,8 @@ res2: Int = 10
 ### [ ] Configure Spark properties
 
 ## Spark SQL
-
 ### [ ] Create Spark DataFrames from an existing RDD
+* default sqlConext in the spark-shell is HiveContext
 ### [ ] Perform operations on a DataFrame
 ### [ ] Write a Spark SQL application
 ### [ ] Use Hive with ORC from Spark SQL
