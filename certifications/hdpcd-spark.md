@@ -1,3 +1,10 @@
+# Table of Contents
+1. [HDPCD: SPARK EXAM](#architecture)
+2. [Core Spark](#core-spark)
+3. [Spark SQL](#spark-sql)
+4. [Tasks](#task)
+5. [Experience](#experience)
+
 # HDPCD: SPARK EXAM
 * Exam Information
     * https://hortonworks.com/services/training/certification/hdp-certified-spark-developer/
