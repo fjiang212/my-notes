@@ -31,7 +31,7 @@ http://www.programmeronrails.com/category/ds-algorithms/
 * [Linked Lists](http://www.programmeronrails.com/2015/11/14/about-linked-lists/)
     * Performance
         * Singly Link: Whenever we want to append a new node, we need to traverse the whole list to get to the tail node and it costs `O(n)` time. To reduce this, often we have a `‘tail’` reference pointing to the last node in the list. This reduces the append time to `O(1)`. However, if we need to insert a node after a specific node. We still need O(n) time to search that node. Deleting a node is similar to inserting a node after a sepecific node.
-        *  For every node in a double linked list, except from the next node reference, there’s another node reference pointing to the previous node. Both the delete and insertAfter methods have O(1) time performance. Overall, double linked list is more flexible than singly linked list.
+        * Double Linked List: For every node in a double linked list, except from the next node reference, there’s another node reference pointing to the previous node. Both the delete and insertAfter methods have O(1) time performance. Overall, double linked list is more flexible than singly linked list.
 
 ![alt text](images/LinkedList.PNG)
     
