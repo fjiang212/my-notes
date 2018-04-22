@@ -69,7 +69,10 @@ A hash table is a data structure that maps keys to values for highly efficient l
    * Performance: For all pop, push and peek methods, the time performance is O(1).
 
 * [Queue](http://www.programmeronrails.com/2015/11/14/about-queues/)
-
+    * Data Structure: A queue is a container of objects (a linear collection) that are inserted and removed according to the first-in first-out (FIFO) principle. Enqueue on the last node, Dequeue on the first node. 
+    * Implementation (**`Node`**)
+    
+    
 ## Algorithms
 
 
