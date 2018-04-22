@@ -4,7 +4,7 @@ http://www.programmeronrails.com/category/ds-algorithms/
 ## Data Structure
 * [FIxed Size Array](http://www.programmeronrails.com/2015/11/13/fixed-size-array/)
     * Data Structure
-    ```
+    ```java
     int[] arr = new int[3];
     int arr[] = new int[3]; // or (less preferred)
     int[] arr = {v0, v1, v2};
@@ -44,7 +44,7 @@ A hash table is a data structure that maps keys to values for highly efficient l
 * [Stack](http://www.programmeronrails.com/2015/11/14/about-stacks/)
     * Data Strusture: A stack is a container of objects that are inserted and removed according to the last-in first-out (LIFO) principle.
     * Implementation (**`Node`**)
-    ```
+    ```java
     class Stack {
       Node top;
       Object pop() {
@@ -72,7 +72,25 @@ A hash table is a data structure that maps keys to values for highly efficient l
     * Data Structure: A queue is a container of objects (a linear collection) that are inserted and removed according to the first-in first-out (FIFO) principle. Enqueue on the last node, Dequeue on the first node. 
     * Implementation (**`Node`**)
     
-    
+* [Representing Graph and Tree](http://www.programmeronrails.com/2015/11/14/representing-graphs-2/)    
+    * Adjacency Lists: In adjacency lists, nodes are represented by objects. Each node has a list of references to other adjacent nodes.
+    ```java
+    class Node {
+      Object item;
+      ArrayList<Node> adjacentNodes;
+      ...
+   }
+    ```
+    * Matrix representation: Trees and graphs can also be represented by a double dimensional array where rows and columns represent the nodes and will use special values or actual edge cost as the values if they are connected.
+    ```java
+    int[][] g = {
+     {0,1,1,1},
+     {0,0,0,0},
+     {0,0,0,0},
+     {0,1,0,0},
+   }
+    ```
+
 ## Algorithms
 
 
