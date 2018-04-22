@@ -39,6 +39,29 @@ http://www.programmeronrails.com/category/ds-algorithms/
 
 A hash table is a data structure that maps keys to values for highly efficient lookup. Every hash table has its hash function and an array to store the values.
 
+* [Stack](http://www.programmeronrails.com/2015/11/14/about-stacks/)
+    * Data Strusture: A stack is a container of objects that are inserted and removed according to the last-in first-out (LIFO) principle.
+    ```
+    class Stack {
+      Node top;
+      Object pop() {
+         if(top != null) {
+            Object item = top.data;
+            top = top.next;
+            return item;
+         }
+         return null;
+      }
+     void push(Object item) {
+       Node t = new Node(item);
+       t.next = top;
+       top = t;
+     }
+     Object peek() {
+       return top.data;
+     }
+   }
+    ```
 
 ## Algorithms
 
