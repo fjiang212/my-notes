@@ -20,7 +20,7 @@ http://www.programmeronrails.com/category/ds-algorithms/
        * As each doubling copies all the data in original array to a new array, it takes O(n) time. But for most cases, it is still O(1) access for set/get operations, and the worst case for memory space is 2n, which belongs to O(n) space.
     
 * [String and StringBuffer](http://www.programmeronrails.com/2015/11/14/introduce-string-and-string-buffer/)
-    * Comparision
+    * Comparison
         * String: Immutable
         * StringBuffer: Mutable, Synchonized and thread safe
         * StringBuilder: Mutable, non-synchonized, and not thread safe
