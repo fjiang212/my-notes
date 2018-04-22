@@ -19,6 +19,15 @@ http://www.programmeronrails.com/category/ds-algorithms/
         * A dynamically resizing array is an array that resizes itself as needed while still providing O(1) access. The basic idea is when the array is full, the array increases “its” size, often by doubling in size. Java has its own implementation of dynamic array – `ArrayList`.
        * As each doubling copies all the data in original array to a new array, it takes O(n) time. But for most cases, it is still O(1) access for set/get operations, and the worst case for memory space is 2n, which belongs to O(n) space.
     
+* [String and StringBuffer](http://www.programmeronrails.com/2015/11/14/introduce-string-and-string-buffer/)
+    * Comparision
+        * String: Immutable
+        * StringBuffer: Mutable, Synchonized and thread safe
+        * StringBuilder: Mutable, non-synchonized, and not thread safe
+    * Performance
+        * Append to String will create a new String object.
+        * Append to StringBuffer/StringBuilder will not create new object. 
+    
     
     
 ## Algorithms
