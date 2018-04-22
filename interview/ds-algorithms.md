@@ -28,8 +28,12 @@ http://www.programmeronrails.com/category/ds-algorithms/
         * Append to String will create a new String object.
         * Append to StringBuffer/StringBuilder will not create new object. 
     
-    
+* [Linked Lists](http://www.programmeronrails.com/2015/11/14/about-linked-lists/)
+
+
     
 ## Algorithms
+http://www.programmeronrails.com/2015/11/14/about-linked-lists/
+
 
 ## Leetcode
