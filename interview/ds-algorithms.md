@@ -33,7 +33,6 @@ http://www.programmeronrails.com/category/ds-algorithms/
 
     
 ## Algorithms
-http://www.programmeronrails.com/2015/11/14/about-linked-lists/
 
 
 ## Leetcode
