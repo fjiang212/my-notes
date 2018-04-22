@@ -34,7 +34,12 @@ http://www.programmeronrails.com/category/ds-algorithms/
         * Double Linked List: For every node in a double linked list, except from the next node reference, there’s another node reference pointing to the previous node. Both the delete and insertAfter methods have O(1) time performance. Overall, double linked list is more flexible than singly linked list.
 
 ![alt text](images/LinkedList.PNG)
-    
+
+* [Hash Table](http://www.programmeronrails.com/2015/11/14/about-hash-tables/)
+
+A hash table is a data structure that maps keys to values for highly efficient lookup. Every hash table has its hash function and an array to store the values.
+
+
 ## Algorithms
 
 
