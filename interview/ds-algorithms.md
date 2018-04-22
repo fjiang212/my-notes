@@ -15,7 +15,9 @@ http://www.programmeronrails.com/category/ds-algorithms/
         * The major downside of arrays is that the size of an array needs to be pre-defined. So if the size of the data can be changed, often we may need to define an array of of larger space than needed.
 
 * [Dynamically Resizing Array](http://www.programmeronrails.com/2015/11/13/dynamically-resizing-array/)
-    * sdf
+    * Performance
+        * A dynamically resizing array is an array that resizes itself as needed while still providing O(1) access. The basic idea is when the array is full, the array increases “its” size, often by doubling in size. Java has its own implementation of dynamic array – `ArrayList`.
+       * As each doubling copies all the data in original array to a new array, it takes O(n) time. But for most cases, it is still O(1) access for set/get operations, and the worst case for memory space is 2n, which belongs to O(n) space.
     
     
     
