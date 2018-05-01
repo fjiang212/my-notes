@@ -13,7 +13,7 @@
 | **mobaxterm** | Unix SSH client |  | https://mobaxterm.mobatek.net/ |
 | superputty | Unix SSH client |  | https://github.com/jimradford/superputty |
 | Keystore Explore | key tool |  | http://keystore-explorer.org/ |
-
+| Softerra LDAP Browser | LDAP | | https://www.ldapadministrator.com/ | 
 ## Workbench 
 | Layer          |Tools           |Note   |
 | ------------- |:-------------:| ----- | 
