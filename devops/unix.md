@@ -94,3 +94,47 @@ rsyslogd -c5 -N6 | head -10
 https://www.ibm.com/support/knowledgecenter/en/SSPT3X_2.1.2/com.ibm.swg.im.iis.productization.iisinfsv.install.doc/topics/t_configuring_nprocnofiles.html
 *	Change /etc/security/limits.conf
 *	Change /etc/security/limits.d/90-nproc.conf/90-nproc.conf 
+
+# Solaris
+## Commands
+* Solaris management console
+	```
+  Smc &
+	```
+* SMF Commands: SMF has a limited yet powerful set of commands. Each command has several options which cover the tasks required to manage Solaris systems. The following table lists the SMF commands.
+http://www.oracle.com/technetwork/server-storage/solaris/overview/servicemgmthowto-jsp-135655.html
+
+```
+svcs -l rsyslogd
+svcs -a
+Svcadm enable  
+```
+
+## Solaris syslogd limitation	
+* Syslogd can only forward to remote host with default port 514 (check man syslog.conf in solaris 10)
+* Syslogd can only forward to remote host with UDP(check man syslog.conf in solaris 10)
+* Syslogd can not forward non-syslog files
+
+## Install rsyslog in solaris
+* Check service
+```
+svcs -a|grep log
+```
+* Installation
+    * Solaris 10: https://www.opencsw.org/package/rsyslog/
+    * Solaris 11: http://www.c0t0d0s0.org/archives/7631-Less-known-Solaris-11.1-features-rsyslog.html
+* Disable default syslog:    svcadm disable svc:/system/system-log:default
+* Enable rsyslog
+```
+Check if rsyslog is running or not: ps -ef|grep rsyslog, if it is running 
+    $ kill it
+    $ syslog: svcadm disable svc:/network/csw/rsyslogd:default
+Enable  rsyslog: svcadm enable  svc:/network/csw/rsyslogd:default
+Check service again: svcs -a|grep log to make sure rsyslog is online and rsyslog process is running
+```	
+* Config rsyslog
+```	
+mkidr /etc/rsyslog.d
+Edit /etc/opt/csw/rsyslog.conf
+$IncludeConfig /etc/rsyslog.d/
+```
