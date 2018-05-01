@@ -1,3 +1,9 @@
+# Table of Contents
+1. [Unix Basic](#unix-basic)
+2. [Unix Commands](#unix-commands)
+3. [Solaris](#solaris)
+
+
 # Unix Basic
 ## The Difference Between Fedora, Redhat, and CentOS
 * **Fedora** is the main project, and it’s a communitity-based, free distro focused on quick releases of new features and functionality.
