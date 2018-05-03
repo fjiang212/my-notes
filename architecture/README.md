@@ -1,0 +1,3 @@
+# Concepts
+* **Reference Architecture**:  A reference architecture in the field of software architecture or enterprise architecture provides a template solution for an architecture for a particular domain. It also provides a common vocabulary with which to discuss implementations, often with the aim to stress commonality. https://en.wikipedia.org/wiki/Reference_architecture
+* **Target Architecture**: The Target Architecture provides the details of a future state of an architecture being developed for an organization. Depending on the circumstances, it may be appropriate to develop several different future States, representing different time points, that provide a roadmap to show the evolution of the architecture to a target state.
