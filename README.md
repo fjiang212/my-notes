@@ -27,15 +27,16 @@
 | Git for windows | GIT | https://git-scm.com/ | 
 | Maven | Build | https://maven.apache.org/ | 
 | Source Tree| Source| https://www.sourcetreeapp.com/ |
-### Tools
 
+### Tools
 | Tool          |Note   | URL| 
 | ------------- | ----- | ----- |
-| **Postman** | API Development | Need update json online | https://www.getpostman.com/ |
-| DbVisualizer | Database |  | https://www.dbvis.com/ |
-| RDCMan | Window Remote Connection |  | https://www.microsoft.com/en-ca/download/details.aspx?id=44989 |
-| **mobaxterm** | Unix SSH client |  | https://mobaxterm.mobatek.net/ |
-| superputty | Unix SSH client |  | https://github.com/jimradford/superputty |
-| Keystore Explore | key tool |  | http://keystore-explorer.org/ |
-| Softerra LDAP Browser | LDAP | | https://www.ldapadministrator.com/ | 
+| **Postman** | API Development | https://www.getpostman.com/ |
+| DbVisualizer | Database Tool | https://www.dbvis.com/ |
+|studio3t |Mongodb tool |https://studio3t.com/|
+| RDCMan | Window Remote Connection  | https://www.microsoft.com/en-ca/download/details.aspx?id=44989 |
+| **mobaxterm** | Unix SSH client  | https://mobaxterm.mobatek.net/ |
+| superputty | Unix SSH client  | https://github.com/jimradford/superputty |
+| Keystore Explore | key tool  | http://keystore-explorer.org/ |
+| Softerra LDAP Browser | LDAP | https://www.ldapadministrator.com/ | 
 
