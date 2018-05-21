@@ -31,6 +31,7 @@ The goal of the **Eclipse m2e project** is to provide a first-class Apache Maven
 ## Links
 * Maven repository search: https://mvnrepository.com/
 * Maven Guide: https://maven.apache.org/guides/mini/index.html
+* POM(Project Object Model) Reference: https://maven.apache.org/pom.html
 * Maven Basic Tutorial: https://www.youtube.com/watch?v=al7bRZzz4oU&index=1&list=PL92E89440B7BFD0F6
 
 # Gradle
