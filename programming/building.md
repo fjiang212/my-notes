@@ -4,7 +4,7 @@
 3. [SBT](#sbt)
 
 # Maven
-## Running Maven Tools 
+## Phases
 Maven Phases: The following are the most common default lifecycle phases executed.
 * validate: validate the project is correct and all necessary information is available
 * compile: compile the source code of the project
@@ -18,6 +18,15 @@ Maven Phases: The following are the most common default lifecycle phases execute
 There are two other Maven lifecycles of note beyond the default list above. They are
 * clean: cleans up artifacts created by prior builds
 * site: generates site documentation for this project
+
+## Maven Plugins
+### Maven Eclipse plugins
+Note: This plugin is retired. The Maven Eclipse Plugin is used to generate Eclipse IDE files (*.classpath, *.project, *.wtpmodules and the .settings folder) for use with a project.
+
+Disclaimer: Users are advised to use m2e, the Eclipse Maven Integration instead of this plugin, as it can more closely resemble the actual build and runtime classpaths as described in the project pom.xml - among other advantages. 
+
+## Eclipse Maven Plugins
+The goal of the **Eclipse m2e project** is to provide a first-class Apache Maven support in the Eclipse IDE, making it easier to edit Maven's pom.xml, run a build from the IDE and much more. For Java developers, the very tight integration with JDT greatly simplifies the consumption of Java artifacts either being hosted on open source repositories such as Maven Central, or in your in-house Maven repository.
 
 ## Links
 * Maven repository search: https://mvnrepository.com/
