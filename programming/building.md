@@ -19,8 +19,9 @@ There are two other Maven lifecycles of note beyond the default list above. They
 * clean: cleans up artifacts created by prior builds
 * site: generates site documentation for this project
 
-## Maven Repository
+## Links
 * Maven repository search: https://mvnrepository.com/
+* Maven Guide: https://maven.apache.org/guides/mini/index.html
 
 # Gradle
 
