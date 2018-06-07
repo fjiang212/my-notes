@@ -25,11 +25,19 @@ Note: This plugin is retired. The Maven Eclipse Plugin is used to generate Eclip
 
 Disclaimer: Users are advised to use m2e, the Eclipse Maven Integration instead of this plugin, as it can more closely resemble the actual build and runtime classpaths as described in the project pom.xml - among other advantages. 
 
-## Eclipse Maven Plugins
-The goal of the **Eclipse m2e project** is to provide a first-class Apache Maven support in the Eclipse IDE, making it easier to edit Maven's pom.xml, run a build from the IDE and much more. For Java developers, the very tight integration with JDT greatly simplifies the consumption of Java artifacts either being hosted on open source repositories such as Maven Central, or in your in-house Maven repository.
+### Spring Boot Maven Plugin
+The Spring Boot Maven Plugin provides Spring Boot support in Maven, allowing you to package executable jar or war archives and run an application “in-place”.
+
+The Spring Boot Plugin has the following goals.
+* spring-boot:run runs your Spring Boot application.
+* spring-boot:repackage repackages your jar/war to be executable.
+* spring-boot:start and spring-boot:stop to manage the lifecycle of your Spring Boot application (i.e. for integration tests).
+* spring-boot:build-info generates build information that can be used by the Actuator.
+
+https://docs.spring.io/spring-boot/docs/current/maven-plugin/
 
 ## Links
-* Maven repository search: https://mvnrepository.com/
+* Maven repository search:###  https://mvnrepository.com/
 * Maven Guide: https://maven.apache.org/guides/mini/index.html
 * POM(Project Object Model) Reference: https://maven.apache.org/pom.html
 * Maven Basic Tutorial: https://www.youtube.com/watch?v=al7bRZzz4oU&index=1&list=PL92E89440B7BFD0F6
