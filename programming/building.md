@@ -19,6 +19,22 @@ There are two other Maven lifecycles of note beyond the default list above. They
 * clean: cleans up artifacts created by prior builds
 * site: generates site documentation for this project
 
+
+## POM
+### Aggregate and Parent POMs
+https://www.smartics.eu/confluence/display/BLOG/2013/07/22/Using+Aggregate+and+Parent+POMs
+
+* If your parent POM is also the aggregate POM, all projects are released simultaneously.
+* A parent POM (that is not an aggregate POM) is released in its own cycle and owns an individual version number.
+* An aggregate POM (that is not a parent POM) is never released and only acts as a build helper.
+    * Use profiles to bundle projects
+    * Use commandline options to build only part of the projects in the reactor.
+
+ 
+### POM Best Practices
+https://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-best-practice.html
+
+
 ## Maven Plugins
 ### Maven Eclipse plugins
 Note: This plugin is retired. The Maven Eclipse Plugin is used to generate Eclipse IDE files (*.classpath, *.project, *.wtpmodules and the .settings folder) for use with a project.
