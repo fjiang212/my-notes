@@ -1,17 +1,21 @@
 # Plan
+## Devops & Clounds
 - [ ] CI/CD tools 
 - [ ] The whole CI CD Intergration
 - [ ] Build CI CD on cloud
 - - - -
 - [x] Docker on Linux
-- [x] Openshift [Feb 28, 2018]
-- [ ] Build MicroSerivce on Liberty [March 31, 2018]
-- [ ] Clound Native
-- [ ] Build Microservice on Cloud [March 31, 2018]
-- - - -
+- [x] Openshift 
+- [ ] Build Microservice on Cloud [June 31, 2018]
+
+## Big Data
 - [ ] Mogodb
-- [ ] Big Data User case and example
- 
+- [ ] Big Data User case and exampl
+
+## Spring IO
+- [ ] Config Server
+- [ ] Eureka
+- [ ] Auth2
 
 # Accounts
 * Github: https://github.com/fjiang212/ (X8)
@@ -24,9 +28,6 @@
 * PCF(Pivotal Cloud Foundry): https://pivotal.io/platform
 * Google Clound: https://cloud.google.com
 
-
-
-# Docker
 
 
 # Openshift
