@@ -34,6 +34,9 @@ https://www.smartics.eu/confluence/display/BLOG/2013/07/22/Using+Aggregate+and+P
 ### POM Best Practices
 https://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-best-practice.html
 
+### Differences between dependencymanagement and dependencies in maven
+Dependency Management allows to consolidate and centralize the management of dependency versions without adding dependencies which are inherited by all children. This is especially useful when you have a set of projects (i.e. more than one) that inherits a common parent.
+Another extremely important use case of dependencyManagement is the control of versions of artifacts used in transitive dependencies. 
 
 ## Maven Plugins
 ### Maven Eclipse plugins
