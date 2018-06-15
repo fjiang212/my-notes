@@ -23,7 +23,25 @@ storage:
 ```
 
 # Security
+## Enable authentication 
+https://docs.mongodb.com/master/tutorial/enable-authentication/
+* Create admin user
 
+```
+use admin
+db.createUser(
+  {
+    user: "myUserAdmin",
+    pwd: "abc123",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+```
 
+* Re-start the mongod instance with the --auth command line option or, if using a onfiguration file, the security.authorization setting.
+
+```
+
+```
 # Reference
 * [MongoDB – quick and secure installation with authorization](https://www.youtube.com/watch?v=gg6r4-xaTyI)
