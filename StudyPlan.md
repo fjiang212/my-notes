@@ -9,13 +9,20 @@
 - [ ] Build Microservice on Cloud [June 31, 2018]
 
 ## Big Data
-- [ ] Mogodb
-- [ ] Big Data User case and exampl
+- [ ] MongoDB [June 31, 2018]
+- [ ] Big Data User cases and example
+- [ ] Elasticsearch 6.4 [June 31, 2018]
 
 ## Spring IO
-- [ ] Config Server
-- [ ] Eureka
-- [ ] Auth2
+- [ ] Config Server [June 31, 2018]
+- [ ] Eureka [June 31, 2018]
+- [ ] Auth2 [June 31, 2018]
+
+## Clound
+- [ ] AWS Basic
+
+## Programming
+- [ ] Java 8 - Lambda, Optional, Stream
 
 # Accounts
 * Github: https://github.com/fjiang212/ (X8)
