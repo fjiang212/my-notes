@@ -39,6 +39,10 @@
 
 # CloudWatch
 ![CloudWatch Essentials](images/CloudWatch1.PNG)
+![CloudWatch Essentials](images/CloudWatch2.PNG)
 
+# CloudTrail
+![CloudTrail Essentials](images/CloudTrail1.PNG)
+![CloudTrail Essentials](images/CloudTrail2.PNG)
 
 
