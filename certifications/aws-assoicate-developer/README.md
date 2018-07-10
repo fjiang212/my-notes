@@ -85,7 +85,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 
 ## Limit and default value
 | Service  | Item   | Range | Default |
-| :-------- | :-------| :----- | |:----- |
+| :-------- | :-------| :-----  |:----- |
 | IAM | Default expiration for the temporary credential | 15 minutes ~ 36 hours |12 hours |
 | IAM | AssumeRoleAPIs | 15 minutes ~ 12 hours | |
 |  |  |  |  |
