@@ -103,7 +103,7 @@ User-Agent: Amazon Simple Notification Service Agent
 ### Beanstalk
 
 ### CloudFormation
-![Format](images/readme/CloudFormation1.PNG =250x)
+![Format](images/readme/CloudFormation1.PNG)
 
 
 ### Route53
