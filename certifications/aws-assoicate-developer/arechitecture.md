@@ -9,8 +9,9 @@
 ![S3 Permission](images/S32.PNG)
 ![S3 Event](images/S33.PNG)
 ![S3 static website](images/S34.PNG)
-
 ![S3 static website](images/S35.PNG)
+![S3](images/S36.PNG)
+
 * single put: < 5G
 * multi-part upload < 5T (recommend for >100mb)
 * Import/Export: Use your own device (TB level)
@@ -45,4 +46,6 @@
 ![CloudTrail Essentials](images/CloudTrail1.PNG)
 ![CloudTrail Essentials](images/CloudTrail2.PNG)
 
-
+# KMS
+![KMS Essentials](images/KMS1.PNG)
+![KMS Essentials](images/KMS2.PNG)
