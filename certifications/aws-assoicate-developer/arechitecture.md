@@ -1,5 +1,6 @@
 # IAM
 ![IAM Architecture](images/IAM1.PNG)
+![IAM Policy](images/IAM2.PNG)
 
 # EC2
 
