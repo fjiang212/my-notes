@@ -1,10 +1,7 @@
-# Notes
-## AWS Document
-
-https://docs.aws.amazon.com/cli/latest/
-
-### IAM
+# Services
+## IAM
 https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html
+
 ![IAM Policy](images/readme/IAM1.PNG)
 
 * Identity-based policies: Managed policies(AWS managed policies, customer managed policies), inline policies
@@ -44,18 +41,18 @@ Two Additional fields: Sid(statement id) and Princial.
 }
 ```
 
-### EC2
+## EC2
 
-### S3
+## S3
 
 
-### DynamoDB
+## DynamoDB
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.SingleItem.html
 
-### SQS
+## SQS
 
-### SNS
+## SNS
 * Short codes, long codes 
 
 ```
@@ -95,28 +92,95 @@ User-Agent: Amazon Simple Notification Service Agent
   }
 ```
 
-### SWF
+## SWF
 
 
-### Lambda
+## Lambda
 
-### Beanstalk
+## Beanstalk
 
-### CloudFormation
+## CloudFormation
 ![Format](images/readme/CloudFormation1.PNG)
 
+```
+"Parameters" : {
+  "ParameterLogicalID" : {
+    "Type" : "DataType",
+    "ParameterProperty" : "value"
+  }
+}
+```
+```
+"Conditions" : {
+  "Logical ID" : {Intrinsic function}
+}
+```
+```
+"Resources" : {
+    "Logical ID" : {
+        "Type" : "Resource type",
+        "Properties" : {
+            Set of properties
+        }
+    }
+}
+```
+Examples
 
-### Route53
+```
 
-### VPC
+```
 
-### APIs
+Function
+
+```
+{ "Fn::Base64" : valueToEncode }
+
+{ "Fn::GetAtt" : [ "logicalNameOfResource", "attributeName" ] }
+e.g.: "Fn::GetAtt" : [ "myELB" , "DNSName" ]
+    
+{ "Fn::FindInMap" : [ "MapName", "TopLevelKey", "SecondLevelKey"] }
+e.g.: "Fn::FindInMap" : [ "RegionMap", { "Ref" : "AWS::Region" }, "32"]
+
+{ "Fn::Join" : [ "delimiter", [ comma-delimited list of values ] ] }
+e.g.: "Fn::Join" : [ ":", [ "a", "b", "c" ] ]
+
+{ "Ref" : "logicalName" }
+e.g.: "InstanceId" : { "Ref" : "MyEC2Instance" }
+
+Condition Functions
+Fn::And
+Fn::Equals
+Fn::If
+Fn::Not
+Fn::Or
+
+"Fn::If": [condition_name, value_if_true, value_if_false]
+"SecurityGroups" : [{
+  "Fn::If" : [
+    "CreateNewSecurityGroup",
+    {"Ref" : "NewSecurityGroup"},
+    {"Ref" : "ExistingSecurityGroup"}
+  ]
+}]
+```
+
+## Route53
+
+## VPC
+
+# AWS Document
+
+* https://docs.aws.amazon.com/cli/latest/
+* https://aws.amazon.com/whitepapers/
+
+## APIs
 * https://docs.aws.amazon.com/IAM/latest/APIReference/Welcome.html
 * https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html
 * https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html
 
 
-### FAQs
+## FAQs
 * https://aws.amazon.com/ec2/faqs/
 * https://aws.amazon.com/s3/faqs/
 
@@ -177,11 +241,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 ## DynamoDB
 
 
-# References
 
-* https://aws.amazon.com/cli/
-* https://aws.amazon.com/whitepapers/
-* [AWS Certification Training Videos](https://www.youtube.com/watch?v=IT1X42D1KeA&list=PL9ooVrP1hQOFWxRJcGdCot7AgJu29SVV3)
 
 # Read later
 * https://docs.aws.amazon.com/AmazonS3/latest/dev/request-rate-perf-considerations.html
@@ -189,8 +249,5 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 
 
 # Todo
-* SNS message body
-* Cloudformation example
 * API summary
 * cli summary
-* sns long/short code, mobile subscription
