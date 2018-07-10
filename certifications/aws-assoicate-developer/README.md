@@ -65,7 +65,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | SQS  | Standard queue TPS per API Action| unlimited |
 | SQS  | FIFO queue TPS per API Action| 300 |
 | SQS  | Standard queue inflight message| 120,000  |
-| SQS  | FIFO queue Tinflight message|| 20,000 |
+| SQS  | FIFO queue Tinflight message| 20,000 |
 | SNS | SMS message | 140 bytes |  
 | SWF | Domain | 100 |  
 | SWF | Activity tasks in one decision | 100 |  
