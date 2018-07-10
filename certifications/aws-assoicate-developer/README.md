@@ -2,13 +2,13 @@
 ## IAM
 https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html
 
-![IAM Policy](images/readme/IAM1.PNG)
+![IAM Policy](images/readme/IAM1.png)
 
 * Identity-based policies: Managed policies(AWS managed policies, customer managed policies), inline policies
-    * Effect – whether the policy allows or denies access
-    * Action – the list of actions that are allowed or denied by the policy
-    * Resource – the list of resources on which the actions can occur
-    * Condition (Optional) – the circumstances under which the policy grants permission
+    * Effect â€“ whether the policy allows or denies access
+    * Action â€“ the list of actions that are allowed or denied by the policy
+    * Resource â€“ the list of resources on which the actions can occur
+    * Condition (Optional) â€“ the circumstances under which the policy grants permission
     
 ```
 {
