@@ -44,7 +44,19 @@ Two Additional fields: Sid(statement id) and Princial.
 ## EC2
 
 ## S3
+* Performance:  Using a sequential prefix, such as time stamp or an alphabetical sequence, increases the likelihood that Amazon S3 will target a specific partition for a large number of your keys, overwhelming the I/O capacity of the partition.
 
+```
+examplebucket/2013-26-05-15-00-00/cust1234234/photo1.jpg
+examplebucket/2013-26-05-15-00-00/cust3857422/photo2.jpg
+```
+
+Change to 
+
+```
+examplebucket/232a-2013-26-05-15-00-00/cust1234234/photo1.jpg
+examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
+```
 
 ## DynamoDB
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html
@@ -244,7 +256,6 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 
 
 # Read later
-* https://docs.aws.amazon.com/AmazonS3/latest/dev/request-rate-perf-considerations.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html
 
 
