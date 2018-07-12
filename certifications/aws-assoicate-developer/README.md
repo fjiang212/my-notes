@@ -108,7 +108,8 @@ User-Agent: Amazon Simple Notification Service Agent
 
 
 ## Lambda
-
+* All calls made to AWS Lambda must complete execution within 300 seconds. The default timeout is 3 seconds, but you can set the timeout to any value between 1 and 300 seconds.
+* In the AWS lambda resource mode, you choose the amount of memory you want for your function, and all allocated proportional CPU power and other resource. You can set your memory in 64MB increments from 128MB to 3G.
 ## Beanstalk
 
 ## CloudFormation
@@ -222,7 +223,9 @@ https://iam.amazonaws.com/?Action=AddClientIDToOpenIDConnectProvider
 
 ## FAQs
 * https://aws.amazon.com/ec2/faqs/
+* https://aws.amazon.com/lambda/faqs/
 * https://aws.amazon.com/s3/faqs/
+* https://aws.amazon.com/dynamodb/faqs/
 
 # Number Related
 https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
@@ -288,5 +291,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 
 
 # Todo
-* API summary
 * cli summary
+* read faq
+* ssh key for IAM
+* SNS mobile subscrition steps
