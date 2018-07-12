@@ -190,6 +190,12 @@ Fn::Or
 * https://docs.aws.amazon.com/IAM/latest/APIReference/Welcome.html
 * https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html
 * https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html
+* https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/Welcome.html
+* https://docs.aws.amazon.com/amazon-mq/latest/api-reference/welcome.html
+* https://docs.aws.amazon.com/sns/latest/api/Welcome.html
+* https://docs.aws.amazon.com/amazonswf/latest/apireference/Welcome.html
+
+
 
 
 ## FAQs
