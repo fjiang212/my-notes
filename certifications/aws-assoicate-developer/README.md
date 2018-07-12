@@ -195,8 +195,30 @@ Fn::Or
 * https://docs.aws.amazon.com/sns/latest/api/Welcome.html
 * https://docs.aws.amazon.com/amazonswf/latest/apireference/Welcome.html
 
+```
+Add... 
+Attache...
+Create...
+Update...
+Remove...
+Delete...
+Get...
+Set...
+List...s
+Describe...
+```
 
+* API can be used as action in the HTTP GET
 
+```
+https://iam.amazonaws.com/?Action=AddClientIDToOpenIDConnectProvider
+&ClientID=my-application-ID
+&OpenIDConnectProviderArn=arn:aws:iam::123456789012:oidc-provider/server.example.com
+&Version=2010-05-08
+&AUTHPARAMS
+```
+
+* AWS SDK support java, .Net, C++, Python, Ruby, Go, Javascript, PHP and Node.js
 
 ## FAQs
 * https://aws.amazon.com/ec2/faqs/
