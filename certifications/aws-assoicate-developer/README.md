@@ -161,6 +161,16 @@ User-Agent: Amazon Simple Notification Service Agent
   "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-f3ecfb7224c7233fe7bb5f59f96de52f.pem"
   }
 ```
+* Amazon SNS Mobile Push Notifications
+https://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html
+https://docs.aws.amazon.com/sns/latest/dg/mobile-push-pseudo.html
+   
+    * Step 1: Request Credentials from Mobile Platforms
+    * Step 2: Request Token from Mobile Platforms
+    * Step 3: Create Platform Application Object
+    * Step 4: Create Platform Endpoint Object
+    * Step 5: Publish Message to Mobile Endpoint
+
 
 ## SWF
 
@@ -276,8 +286,20 @@ https://iam.amazonaws.com/?Action=AddClientIDToOpenIDConnectProvider
 &Version=2010-05-08
 &AUTHPARAMS
 ```
+* Support Languages
 
-* AWS SDK support java, .Net, C++, Python, Ruby, Go, Javascript, PHP and Node.js
+|AWS SDK   | Lambda | 
+| :--------------- | :------- |
+| Java | Java 8 compatible |
+| .Net | C# (.NET Core) |
+| Python | Python |
+| Node.js | Node.js |
+| JavaScript | JavaScript |
+| Go | Go |
+| C++ |  |
+| Ruby |  |
+| PHP |  |
+
 
 ## FAQs
 * https://aws.amazon.com/ec2/faqs/
@@ -341,17 +363,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 ## IAM
 * SAML: [Intro to SAML: What, How and Why](https://www.youtube.com/watch?v=0fmNoqz6Urw)
 
-## DynamoDB
-
-
-
-
 # Read later
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html
 
 
-# Todo
-* cli summary
-* read faq
-* ssh key for IAM
-* SNS mobile subscrition steps
