@@ -62,6 +62,64 @@ examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.SingleItem.html
 
+* Query table
+You can use Query with any table that has a composite primary key (partition key and sort key). You must specify an equality condition for the partition key, and you can optionally provide another condition for the sort key.
+
+```
+// Return all of the songs by an artist, with a particular word in the title...
+// ...but only if the price is less than 1.00
+
+{
+    TableName: "Music",
+    KeyConditionExpression: "Artist = :a and contains(SongTitle, :t)",
+    FilterExpression: "price < :p",
+    ExpressionAttributeValues: {
+        ":a": "No One You Know",
+        ":t": "Today",
+        ":p": 1.00
+    }
+}
+```
+
+* Scan Table
+
+```
+// Return all of the values for Artist and Title
+{
+    TableName:  "Music",
+    ProjectionExpression: "Artist, Title"
+}
+```
+The Scan action also provides a FilterExpression parameter, to discard items that you do not want to appear in the results. A FilterExpression is applied after the entire table is scanned, but before the results are returned to you. (This is not recommended with large tables: You are still charged for the entire Scan, even if only a few matching items are returned.)
+
+* Query Index
+Local secondary indexes can only be queried via Query API
+
+```
+// All of the cheap country songs
+
+{
+    TableName: "Music",
+    IndexName: "GenreAndPriceIndex",
+    KeyConditionExpression: "Genre = :genre and Price < :price",
+    ExpressionAttributeValues: {
+        ":genre": "Country",
+        ":price": 0.50
+    },
+    ProjectionExpression: "Artist, SongTitle, Price"
+};
+```
+
+* Scan Index
+
+```
+// Return all of the data in the index
+
+{
+    TableName:  "Music",
+    IndexName: "GenreAndPriceIndex"
+}
+```
 ## SQS
 
 ## SNS
