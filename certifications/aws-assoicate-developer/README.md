@@ -332,7 +332,9 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | DynamoDB  | Tags per Table | 50 |
 | DynamoDB  | table partition | max 3000 read CU or 1000 WU |
 | DynamoDB | Item collection  |10GB |
-| DynamoDB | BatchGetItem | max 100 items, < 16MB| 
+| DynamoDB | BatchGetItem | **max 100 items, < 16MB**| 
+| DynamoDB | Query per call|**<1MB**|
+| DynamoDB | Projected Secondary Index Attributes Per Table| 20|
 | Beanstalk  | Applications | 75 |
 | Beanstalk  | Applications Version | 1000 |
 | Beanstalk  | Environments | 200 |
