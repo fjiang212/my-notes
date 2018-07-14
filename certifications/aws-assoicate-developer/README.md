@@ -63,6 +63,7 @@ examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.SingleItem.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html
 
+* If you create more than one table with second indices you must do is sequencies. Otherwise you will see LimitExceedException.
 * Query table
 
 You can use Query with any table that has a composite primary key (partition key and sort key). You must specify an equality condition for the partition key, and you can optionally provide another condition for the sort key.
