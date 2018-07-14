@@ -44,6 +44,7 @@ Two Additional fields: Sid(statement id) and Princial.
 ## EC2
 
 ## S3
+* Delete the bucket without removing the content of the bucket will get 409
 * Performance:  Using a sequential prefix, such as time stamp or an alphabetical sequence, increases the likelihood that Amazon S3 will target a specific partition for a large number of your keys, overwhelming the I/O capacity of the partition.
 
 ```
