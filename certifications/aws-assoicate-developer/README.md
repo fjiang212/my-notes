@@ -249,7 +249,10 @@ Fn::Or
 ## Route53
 
 ## VPC
-
+* Hybrid Environment
+    * VPN: Customer Gateway <--> VPN Connection <--> Virtual Private Gateway : communicate with all resouce(like EC2) internally withoug the need for public IP address and internet gateway.
+    * AWS direct connction
+    * AWS Storage gateway(Gateway-Cached Volumes, Gateway-Store Volumes)
 # AWS Document
 
 * https://docs.aws.amazon.com/cli/latest/
