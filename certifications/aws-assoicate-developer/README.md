@@ -61,6 +61,7 @@ examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 ## DynamoDB
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.SingleItem.html
+* https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html
 
 * Query table
 
