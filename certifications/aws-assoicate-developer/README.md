@@ -211,9 +211,7 @@ Elastic Beanstalk can be used to deploy the core services such as: EC2, Auto sca
 ```
 Examples
 
-```
-
-```
+https://s3-us-west-2.amazonaws.com/cloudformation-templates-us-west-2/Windows_Single_Server_SharePoint_Foundation.template
 
 Function
 
