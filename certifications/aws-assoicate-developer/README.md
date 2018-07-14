@@ -343,6 +343,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | CloudFormation  | template | unlimited |
 | CloudFormation  | stacks  | 200 |
 | CloudFormation  | parameters and oupts in template | 60 |
+| SQS  | Queue | **Unlimited** |
 | SQS  | Message Size | 256KB |
 | SQS  | Standard queue TPS per API Action| unlimited |
 | SQS  | FIFO queue TPS per API Action| 300 |
@@ -350,7 +351,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | SQS  | FIFO queue Tinflight message| 20,000 |
 | SNS | SMS message | 140 bytes | 
 | SNS | Subscription per topic | 10million |  
-| SNS | topic per account | 100,000 |   
+| SNS | topic per account | **100,000** |   
 | SWF | Domain | **100** |  
 | SWF | Activity tasks in one decision | **100** |  
 | SWF | Maximum workflow and actiivty tasks | **10,000** |  
