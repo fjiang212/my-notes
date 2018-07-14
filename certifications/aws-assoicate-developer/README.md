@@ -337,9 +337,9 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | SNS | SMS message | 140 bytes | 
 | SNS | Subscription per topic | 10million |  
 | SNS | topic per account | 100,000 |   
-| SWF | Domain | 100 |  
-| SWF | Activity tasks in one decision | 100 |  
-| SWF | Maximum workflow and actiivty tasks | 10,000 |  
+| SWF | Domain | **100** |  
+| SWF | Activity tasks in one decision | **100** |  
+| SWF | Maximum workflow and actiivty tasks | **10,000** |  
 | VPC | Internet Gateway | one per VPC|  
 | VPC | NACL | one per subnet |  
 | VPC | Route Table | one per subnet |  
