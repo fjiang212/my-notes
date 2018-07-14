@@ -63,6 +63,7 @@ examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.SingleItem.html
 
 * Query table
+
 You can use Query with any table that has a composite primary key (partition key and sort key). You must specify an equality condition for the partition key, and you can optionally provide another condition for the sort key.
 
 ```
@@ -93,6 +94,7 @@ You can use Query with any table that has a composite primary key (partition key
 The Scan action also provides a FilterExpression parameter, to discard items that you do not want to appear in the results. A FilterExpression is applied after the entire table is scanned, but before the results are returned to you. (This is not recommended with large tables: You are still charged for the entire Scan, even if only a few matching items are returned.)
 
 * Query Index
+
 Local secondary indexes can only be queried via Query API
 
 ```
@@ -179,6 +181,7 @@ https://docs.aws.amazon.com/sns/latest/dg/mobile-push-pseudo.html
 * All calls made to AWS Lambda must complete execution within 300 seconds. The default timeout is 3 seconds, but you can set the timeout to any value between 1 and 300 seconds.
 * In the AWS lambda resource mode, you choose the amount of memory you want for your function, and all allocated proportional CPU power and other resource. You can set your memory in 64MB increments from 128MB to 3G.
 ## Beanstalk
+Elastic Beanstalk can be used to deploy the core services such as: EC2, Auto scaling, ELB,RDS, SQS and CloudFront
 
 ## CloudFormation
 ![Format](images/readme/CloudFormation1.PNG)
