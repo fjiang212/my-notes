@@ -181,6 +181,7 @@ https://docs.aws.amazon.com/sns/latest/dg/mobile-push-pseudo.html
 * Human can not perform decision task
 * Part of SWF components: Domains, Workflows, Activities, Task Lists, Workers and Workflow Execution
 * Workers and decider can be deployed to EC2, lambda or on-premise machine.
+* You can acess SWF using: AWS SDK, AWK Workflow for Java, AWS Console and AWS Workflow service api.
 
 ## Lambda
 * All calls made to AWS Lambda must complete execution within 300 seconds. The default timeout is 3 seconds, but you can set the timeout to any value between 1 and 300 seconds.
