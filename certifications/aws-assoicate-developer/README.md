@@ -355,7 +355,6 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | SWF | Activity tasks in one decision | **100** |  
 | SWF | Maximum number of open Activity tasks | **1000** |  
 | SWF | Maximum workflow and actiivty tasks | **10,000** |  
-| ELB | Default setting of darining in ELB | 300 seconds|  
 | VPC | Internet Gateway | one per VPC|  
 | VPC | NACL | one per subnet |  
 | VPC | Route Table | one per subnet |  
@@ -368,6 +367,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | IAM | AssumeRoleAPIs | 15 minutes ~ 12 hours | |
 | DynamoDB | min length of partition key | 1byte ~ 2048byte |  |
 | DynamoDB | min length of sort key | 1byte ~ 1024byte |  |
+| ELB | Default setting of darining in ELB | 1s-3600s|300 seconds|  
 | SQS | Visibility Timeout | 0 ~ 12 hours| 30s |
 | SQS | Long Poll Timeout | 0 ~ 20s |  |
 | SQS | retention period | 1minute ~ 14 days | 4 days |
