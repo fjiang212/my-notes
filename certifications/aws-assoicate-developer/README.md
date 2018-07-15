@@ -45,6 +45,7 @@ Two Additional fields: Sid(statement id) and Princial.
 
 ## S3
 * Delete the bucket without removing the content of the bucket will get 409
+* S3-IA provide the same performance as S3
 * Performance:  Using a sequential prefix, such as time stamp or an alphabetical sequence, increases the likelihood that Amazon S3 will target a specific partition for a large number of your keys, overwhelming the I/O capacity of the partition.
 
 ```
@@ -352,7 +353,9 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | SNS | topic per account | **100,000** |   
 | SWF | Domain | **100** |  
 | SWF | Activity tasks in one decision | **100** |  
+| SWF | Maximum number of open Activity tasks | **1000** |  
 | SWF | Maximum workflow and actiivty tasks | **10,000** |  
+| ELB | Default setting of darining in ELB | 300 seconds|  
 | VPC | Internet Gateway | one per VPC|  
 | VPC | NACL | one per subnet |  
 | VPC | Route Table | one per subnet |  
