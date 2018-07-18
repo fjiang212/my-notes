@@ -58,6 +58,13 @@ examplebucket/232a-2013-26-05-15-00-00/cust1234234/photo1.jpg
 examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 ```
 
+
+* single put: < 5G
+* multi-part upload < 5T (recommend for >100mb)
+* Import/Export: Use your own device (TB level)
+* snowball: Use Amazon device (PB level)
+* Storage gateway: Where data mainly store(on-premise or s3)
+
 ## DynamoDB
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.SingleItem.html
