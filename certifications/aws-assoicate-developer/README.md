@@ -44,6 +44,8 @@ Two Additional fields: Sid(statement id) and Princial.
 ## EC2
 
 ## S3
+* Delete the bucket without removing the content of the bucket will get 409
+* S3-IA provide the same performance as S3
 * Performance:  Using a sequential prefix, such as time stamp or an alphabetical sequence, increases the likelihood that Amazon S3 will target a specific partition for a large number of your keys, overwhelming the I/O capacity of the partition.
 
 ```
@@ -68,7 +70,69 @@ examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 ## DynamoDB
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.SingleItem.html
+* https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html
 
+* If you create more than one table with second indices you must do is sequencies. Otherwise you will see LimitExceedException.
+* Query table
+
+You can use Query with any table that has a composite primary key (partition key and sort key). You must specify an equality condition for the partition key, and you can optionally provide another condition for the sort key.
+
+```
+// Return all of the songs by an artist, with a particular word in the title...
+// ...but only if the price is less than 1.00
+
+{
+    TableName: "Music",
+    KeyConditionExpression: "Artist = :a and contains(SongTitle, :t)",
+    FilterExpression: "price < :p",
+    ExpressionAttributeValues: {
+        ":a": "No One You Know",
+        ":t": "Today",
+        ":p": 1.00
+    }
+}
+```
+
+* Scan Table
+
+```
+// Return all of the values for Artist and Title
+{
+    TableName:  "Music",
+    ProjectionExpression: "Artist, Title"
+}
+```
+The Scan action also provides a FilterExpression parameter, to discard items that you do not want to appear in the results. A FilterExpression is applied after the entire table is scanned, but before the results are returned to you. (This is not recommended with large tables: You are still charged for the entire Scan, even if only a few matching items are returned.)
+
+* Query Index
+
+Local secondary indexes can only be queried via Query API
+
+```
+// All of the cheap country songs
+
+{
+    TableName: "Music",
+    IndexName: "GenreAndPriceIndex",
+    KeyConditionExpression: "Genre = :genre and Price < :price",
+    ExpressionAttributeValues: {
+        ":genre": "Country",
+        ":price": 0.50
+    },
+    ProjectionExpression: "Artist, SongTitle, Price"
+};
+```
+
+* Scan Index
+
+```
+// Return all of the data in the index
+
+{
+    TableName:  "Music",
+    IndexName: "GenreAndPriceIndex"
+}
+```
 ## SQS
 
 ## SNS
@@ -110,14 +174,28 @@ User-Agent: Amazon Simple Notification Service Agent
   "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-f3ecfb7224c7233fe7bb5f59f96de52f.pem"
   }
 ```
+* Amazon SNS Mobile Push Notifications
+https://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html
+https://docs.aws.amazon.com/sns/latest/dg/mobile-push-pseudo.html
+   
+    * Step 1: Request Credentials from Mobile Platforms
+    * Step 2: Request Token from Mobile Platforms
+    * Step 3: Create Platform Application Object
+    * Step 4: Create Platform Endpoint Object
+    * Step 5: Publish Message to Mobile Endpoint
+
 
 ## SWF
-
+* Human can not perform decision task
+* Part of SWF components: Domains, Workflows, Activities, Task Lists, Workers and Workflow Execution
+* Workers and decider can be deployed to EC2, lambda or on-premise machine.
+* You can acess SWF using: AWS SDK, AWK Workflow for Java, AWS Console and AWS Workflow service api.
 
 ## Lambda
 * All calls made to AWS Lambda must complete execution within 300 seconds. The default timeout is 3 seconds, but you can set the timeout to any value between 1 and 300 seconds.
 * In the AWS lambda resource mode, you choose the amount of memory you want for your function, and all allocated proportional CPU power and other resource. You can set your memory in 64MB increments from 128MB to 3G.
 ## Beanstalk
+Elastic Beanstalk can be used to deploy the core services such as: EC2, Auto scaling, ELB,RDS, SQS and CloudFront
 
 ## CloudFormation
 ![Format](images/readme/CloudFormation1.PNG)
@@ -147,9 +225,7 @@ User-Agent: Amazon Simple Notification Service Agent
 ```
 Examples
 
-```
-
-```
+https://s3-us-west-2.amazonaws.com/cloudformation-templates-us-west-2/Windows_Single_Server_SharePoint_Foundation.template
 
 Function
 
@@ -188,7 +264,10 @@ Fn::Or
 ## Route53
 
 ## VPC
-
+* Hybrid Environment
+    * VPN: Customer Gateway <--> VPN Connection <--> Virtual Private Gateway : communicate with all resouce(like EC2) internally withoug the need for public IP address and internet gateway.
+    * AWS direct connction
+    * AWS Storage gateway(Gateway-Cached Volumes, Gateway-Store Volumes)
 # AWS Document
 
 * https://docs.aws.amazon.com/cli/latest/
@@ -225,8 +304,20 @@ https://iam.amazonaws.com/?Action=AddClientIDToOpenIDConnectProvider
 &Version=2010-05-08
 &AUTHPARAMS
 ```
+* Support Languages
 
-* AWS SDK support java, .Net, C++, Python, Ruby, Go, Javascript, PHP and Node.js
+|AWS SDK   | Lambda | 
+| :--------------- | :------- |
+| Java | Java 8 compatible |
+| .Net | C# (.NET Core) |
+| Python | Python |
+| Node.js | Node.js |
+| JavaScript | JavaScript |
+| Go | Go |
+| C++ |  |
+| Ruby |  |
+| PHP |  |
+
 
 ## FAQs
 * https://aws.amazon.com/ec2/faqs/
@@ -249,13 +340,16 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | DynamoDB  | Tags per Table | 50 |
 | DynamoDB  | table partition | max 3000 read CU or 1000 WU |
 | DynamoDB | Item collection  |10GB |
-| DynamoDB | BatchGetItem | max 100 items, < 16MB| 
+| DynamoDB | BatchGetItem | **max 100 items, < 16MB**| 
+| DynamoDB | Query per call|**<1MB**|
+| DynamoDB | Projected Secondary Index Attributes Per Table| 20|
 | Beanstalk  | Applications | 75 |
 | Beanstalk  | Applications Version | 1000 |
 | Beanstalk  | Environments | 200 |
 | CloudFormation  | template | unlimited |
 | CloudFormation  | stacks  | 200 |
 | CloudFormation  | parameters and oupts in template | 60 |
+| SQS  | Queue | **Unlimited** |
 | SQS  | Message Size | 256KB |
 | SQS  | Standard queue TPS per API Action| unlimited |
 | SQS  | FIFO queue TPS per API Action| 300 |
@@ -263,10 +357,11 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | SQS  | FIFO queue Tinflight message| 20,000 |
 | SNS | SMS message | 140 bytes | 
 | SNS | Subscription per topic | 10million |  
-| SNS | topic per account | 100,000 |   
-| SWF | Domain | 100 |  
-| SWF | Activity tasks in one decision | 100 |  
-| SWF | Maximum workflow and actiivty tasks | 10,000 |  
+| SNS | topic per account | **100,000** |   
+| SWF | Domain | **100** |  
+| SWF | Activity tasks in one decision | **100** |  
+| SWF | Maximum number of open Activity tasks | **1000** |  
+| SWF | Maximum workflow and actiivty tasks | **10,000** |  
 | VPC | Internet Gateway | one per VPC|  
 | VPC | NACL | one per subnet |  
 | VPC | Route Table | one per subnet |  
@@ -279,6 +374,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | IAM | AssumeRoleAPIs | 15 minutes ~ 12 hours | |
 | DynamoDB | min length of partition key | 1byte ~ 2048byte |  |
 | DynamoDB | min length of sort key | 1byte ~ 1024byte |  |
+| ELB | Default setting of darining in ELB | 1s-3600s|300 seconds|  
 | SQS | Visibility Timeout | 0 ~ 12 hours| 30s |
 | SQS | Long Poll Timeout | 0 ~ 20s |  |
 | SQS | retention period | 1minute ~ 14 days | 4 days |
@@ -290,17 +386,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 ## IAM
 * SAML: [Intro to SAML: What, How and Why](https://www.youtube.com/watch?v=0fmNoqz6Urw)
 
-## DynamoDB
-
-
-
-
 # Read later
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html
 
 
-# Todo
-* cli summary
-* read faq
-* ssh key for IAM
-* SNS mobile subscrition steps
