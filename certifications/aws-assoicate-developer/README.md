@@ -47,6 +47,8 @@ Two Additional fields: Sid(statement id) and Princial.
 * Delete the bucket without removing the content of the bucket will get 409
 * S3-IA provide the same performance as S3
 * Performance:  Using a sequential prefix, such as time stamp or an alphabetical sequence, increases the likelihood that Amazon S3 will target a specific partition for a large number of your keys, overwhelming the I/O capacity of the partition.
+* Amazon S3 is secure by default; when you create a bucket or object in Amazon S3, only you have access. To allow you to give controlled access to others, Amazon S3 provides both coarse-grained access controls (Amazon S3 Access Control Lists [ACLs]), and fine-grained access controls (Amazon S3 bucket policies, AWS Identity and Access Management [IAM] policies, and query-string authentication).
+* When using the high-level APIs and the high-level Amazon S3 commands in the AWS CLI (aws s3 cp, aws s3 mv, and aws s3 sync), multipart upload is automatically performed for large objects.
 
 ```
 examplebucket/2013-26-05-15-00-00/cust1234234/photo1.jpg
