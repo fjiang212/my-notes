@@ -2,6 +2,7 @@
 *  Q1. What type of AWS Elastic Beanstalk environment tier provisions resources to support a
 web application that handles background processing tasks?
 > Worker environment tier
+
 > An environment tier whose web application runs background jobs is known as a
 worker tier. An environment tier whose web application processes web requests is
 known as a web server tier. Database and batch are not valid environment tiers.
