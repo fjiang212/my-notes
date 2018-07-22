@@ -1,3 +1,5 @@
+**Passed on July 15, 2018**
+
 # Services
 ## IAM
 https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html
