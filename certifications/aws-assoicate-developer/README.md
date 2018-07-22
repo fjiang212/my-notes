@@ -44,6 +44,12 @@ Two Additional fields: Sid(statement id) and Princial.
 ```
 
 ## EC2
+![IAM Policy](images/readme/EC21.PNG)
+
+* You can only export previously imported Amazon EC2 instances. Instances launched within AWS from AMIs cannot be exported.
+* It’s important to know that while snapshots are stored using Amazon S3 technology, they are stored in AWS-controlled storage and not in your account’s Amazon S3 buckets. This means you cannot manipulate them like other Amazon S3 objects.
+
+
 
 ## S3
 * Delete the bucket without removing the content of the bucket will get 409
