@@ -101,4 +101,13 @@ B. Use an instance store.
 D. Use a magnetic volume.
 ```
 
+## VPC
+Q1. Which of the following will occur when an Amazon Elastic Block Store (Amazon EBS)- backed Amazon EC2 instance in an Amazon VPC with an associated EIP is stopped and started? (Choose 2 answers)
 
+```
+A. The EIP will be dissociated from the instance.
+>>>>B. All data on instance-store devices will be lost.
+C. All data on Amazon EBS devices will be lost.
+D. The ENI is detached.
+>>>>E. The underlying host for the instance is changed.
+```

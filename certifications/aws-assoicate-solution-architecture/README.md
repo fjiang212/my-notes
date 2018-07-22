@@ -16,12 +16,13 @@ Resources aren’t replicated across regions unless organizations choose to do so.
 | ELB allow to distribute traffic across..  | Multiple AZ within a region |
 | What Amazon Relational Database Service (Amazon RDS) feature provides the high availability for your database?  | Multi-AZ deployment |
 |How is data stored in Amazon Simple Storage Service (Amazon S3) for high durability?|Data is automatically replicated to different Availability Zones within a region.|
+|VPC Peering|You cannot create a peering connection between Amazon VPCs in different regions.|
 
 # Reading
 * [Done]Chapter 1: Introduction to AWS
 * [Done]Chapter 2: Amazon Simple Storage Service (Amazon S3) and Amazon Glacier Storage
 * [Done]Chapter 3: Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Elastic Block Store (Amazon EBS)
-* Chapter 4: Amazon Virtual Private Cloud (Amazon VPC)
+* [Done]Chapter 4: Amazon Virtual Private Cloud (Amazon VPC)
 * Chapter 5: Elastic Load Balancing, Amazon CloudWatch, and Auto Scaling
 * Chapter 6: AWS Identity and Access Management (IAM)
 * Chapter 7: Databases and AWS

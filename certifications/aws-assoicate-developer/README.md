@@ -278,6 +278,12 @@ Fn::Or
     * VPN: Customer Gateway <--> VPN Connection <--> Virtual Private Gateway : communicate with all resouce(like EC2) internally withoug the need for public IP address and internet gateway.
     * AWS direct connction
     * AWS Storage gateway(Gateway-Cached Volumes, Gateway-Store Volumes)
+* Route Priority: We use the most specific route in your route table that matches the traffic to determine how to route the traffic (longest prefix match).
+* Amazon EC2 instances within an Amazon VPC are only aware of their private IP addresses. When traffic is sent from the instance to the Internet, the IGW translates the reply address to the instance’s public IP address (or EIP address, covered later) and maintains the one-to-one map of the instance private IP address and public IP address. When an instance receives traffic from the Internet, the IGW translates the destination address (public IP address) to the instance’s private IP address and forwards the traffic to the Amazon VPC.
+* EIPs remain associated with your AWS account until you explicitly release them. There are charges for EIPs allocated to your account, even when they are not associated with a resource
+* An Elastic Network Interface (ENI) is a virtual network interface that you can attach to an instance in an Amazon VPC. ENIs are only available within an Amazon VPC, and they are associated with a subnet upon creation. They can have one public IP address and multiple private IP addresses.
+* An Amazon VPC endpoint enables you to create a private connection between your Amazon VPC and another AWS service without requiring access over the Internet or through a NAT instance, VPN connection, or AWS Direct Connect.
+
 # AWS Document
 
 * https://docs.aws.amazon.com/cli/latest/
@@ -375,7 +381,10 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | VPC | Internet Gateway | one per VPC|  
 | VPC | NACL | one per subnet |  
 | VPC | Route Table | one per subnet |  
-| VPC | Available Zone | one per subnet |  
+| VPC | Available Zone | one per subnet |
+| VPC | VPC Per region |5 |
+| VPC | Subnets per VPC | 200 |
+
 
 ## Limit and default value
 | Service  | Item   | Range | Default |
