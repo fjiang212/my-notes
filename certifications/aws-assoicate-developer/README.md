@@ -48,7 +48,7 @@ Two Additional fields: Sid(statement id) and Princial.
 
 * You can only export previously imported Amazon EC2 instances. Instances launched within AWS from AMIs cannot be exported.
 * It’s important to know that while snapshots are stored using Amazon S3 technology, they are stored in AWS-controlled storage and not in your account’s Amazon S3 buckets. This means you cannot manipulate them like other Amazon S3 objects.
-
+* Auto scaling: Scale out quickly; scale in slowly.
 
 
 ## S3
@@ -393,7 +393,8 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | IAM | AssumeRoleAPIs | 15 minutes ~ 12 hours | |
 | DynamoDB | min length of partition key | 1byte ~ 2048byte |  |
 | DynamoDB | min length of sort key | 1byte ~ 1024byte |  |
-| ELB | Default setting of darining in ELB | 1s-3600s|300 seconds|  
+| ELB | Default setting of darining in ELB | 1s-3600s|300 seconds|
+| ELB | Default setting of idle timeout | |60 seconds|    
 | SQS | Visibility Timeout | 0 ~ 12 hours| 30s |
 | SQS | Long Poll Timeout | 0 ~ 20s |  |
 | SQS | retention period | 1minute ~ 14 days | 4 days |

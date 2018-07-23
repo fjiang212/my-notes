@@ -111,3 +111,52 @@ C. All data on Amazon EBS devices will be lost.
 D. The ENI is detached.
 >>>>E. The underlying host for the instance is changed.
 ```
+
+## ELB and Auto Scaling
+Q1. Which of the following are required elements of an Auto Scaling group? (Choose 2answers)
+
+```
+>>>>A. Minimum size
+B. Health checks
+C. Desired capacity
+>>>>D. Launch configuration
+An Auto Scaling group must have a minimum size and a launch configuration
+defined in order to be created. Health checks and a desired capacity are optional.
+```
+
+Q2. Which of the following are the minimum required elements to create an Auto Scaling launch configuration?
+
+```
+>>>>A. Launch configuration name, Amazon Machine Image (AMI), and instance type
+B. Launch configuration name, AMI, instance type, and key pair
+C. Launch configuration name, AMI, instance type, key pair, and security group
+D. Launch configuration name, AMI, instance type, key pair, security group, and block device mapping
+
+Only the launch configuration name, AMI, and instance type are needed to create an
+Auto Scaling launch configuration. Identifying a key pair, security group, and a block
+device mapping are optional elements for an Auto Scaling launch configuration
+```
+
+Q3. In the basic monitoring package for Amazon Elastic Compute Cloud (Amazon EC2), what Amazon CloudWatch metrics are available?
+
+```
+A. Web server visible metrics such as number of failed transaction requests
+(Wrong)B. Operating system visible metrics such as memory utilization
+C. Database visible metrics such as number of connections
+>>>>D. Hypervisor visible metrics such as CPU utilization
+```
+
+Q4. When an Amazon Elastic Compute Cloud (Amazon EC2) instance registered with an Elastic Load Balancing load balancer using connection draining is deregistered or unhealthy, which of the following will happen? (Choose 2 answers)
+
+```
+A. Immediately close all existing connections to that instance.
+>>>>B. Keep the connections open to that instance, and attempt to complete in-flight requests.
+>>>>C. Redirect the requests to a user-defined error page like “Oops this is embarrassing” or “Under Construction.”
+D. Forcibly close all connections to that instance after a timeout period.
+E. Leave the connections open as long as the load balancer is running.
+
+When connection draining is enabled, the load balancer will stop sending requests
+to a deregistered or unhealthy instance and attempt to complete in-flight requests until a
+connection draining timeout period is reached, which is 300 seconds by default
+```
+
