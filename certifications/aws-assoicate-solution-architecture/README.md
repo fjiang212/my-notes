@@ -24,7 +24,7 @@ Resources aren’t replicated across regions unless organizations choose to do so.
 * [Done]Chapter 3: Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Elastic Block Store (Amazon EBS)
 * [Done]Chapter 4: Amazon Virtual Private Cloud (Amazon VPC)
 * [Done]Chapter 5: Elastic Load Balancing, Amazon CloudWatch, and Auto Scaling
-* Chapter 6: AWS Identity and Access Management (IAM)
+* [Done]Chapter 6: AWS Identity and Access Management (IAM)
 * Chapter 7: Databases and AWS
 * Chapter 8: SQS, SWF, and SNS
 * Chapter 9: Domain Name System (DNS) and Amazon Route 53

@@ -42,6 +42,11 @@ Two Additional fields: Sid(statement id) and Princial.
   }]
 }
 ```
+* The only exception to this rule is if an AssumeRole call includes a role and a policy, the policy cannot expand the privileges of the role (for example, the policy cannot override any permission that is denied by default in the role).
+* Authentication technologies: First, IAM is not an identity store/authorization system for your applications.Second, IAM is not operating system identity management
+
+![IAM Policy](images/readme/IAM2.png)
+   
 
 ## EC2
 ![IAM Policy](images/readme/EC21.PNG)
