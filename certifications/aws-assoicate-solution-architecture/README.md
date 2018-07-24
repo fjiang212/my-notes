@@ -17,6 +17,7 @@ Resources aren’t replicated across regions unless organizations choose to do so.
 | What Amazon Relational Database Service (Amazon RDS) feature provides the high availability for your database?  | Multi-AZ deployment |
 |How is data stored in Amazon Simple Storage Service (Amazon S3) for high durability?|Data is automatically replicated to different Availability Zones within a region.|
 |VPC Peering|You cannot create a peering connection between Amazon VPCs in different regions.|
+|Subnet|A subnet is located in one specific availability zone, and does not span AZs|
 
 # Reading
 * [Done]Chapter 1: Introduction to AWS
