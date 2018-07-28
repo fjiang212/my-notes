@@ -49,12 +49,14 @@ Two Additional fields: Sid(statement id) and Princial.
    
 
 ## EC2
-![IAM Policy](images/readme/EC21.PNG)
+![EC2](images/readme/EC21.PNG)
 
 * You can only export previously imported Amazon EC2 instances. Instances launched within AWS from AMIs cannot be exported.
 * It’s important to know that while snapshots are stored using Amazon S3 technology, they are stored in AWS-controlled storage and not in your account’s Amazon S3 buckets. This means you cannot manipulate them like other Amazon S3 objects.
 * Auto scaling: Scale out quickly; scale in slowly.
 * An EC2 instance can ONLY have one role attached at a time.
+* ELB: Launch configuration, auto scaling group
+* ALB: Target group
 
 ## S3
 * Delete the bucket without removing the content of the bucket will get 409
@@ -426,4 +428,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 # Read later
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html
 
-
+# Question
+* Can ELB configure ot instance in the private subnet
+* ssh agent add key, no need upload key to jump box
+* The difference between key-value and document store database(mongodb/dynamodb)

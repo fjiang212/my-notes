@@ -112,6 +112,26 @@ D. The ENI is detached.
 >>>>E. The underlying host for the instance is changed.
 ```
 
+Q2. You cannot peer two VPCs that located in different AWS regions.
+
+```
+Correct answer
+False
+
+Explanation
+VPC can now be connected across regions.
+```
+
+Q3. You are trying to establish a VPC peering connection but are having difficulties locating the other VPC. What is most likely the cause?
+
+```
+Correct answer
+The other VPC has the same CIDR Block Range
+
+Explanation
+For a VPC peering to work, the VPC cannot have overlapping CIDR block ranges
+```
+
 ## ELB and Auto Scaling
 Q1. Which of the following are required elements of an Auto Scaling group? (Choose 2answers)
 
@@ -158,5 +178,36 @@ E. Leave the connections open as long as the load balancer is running.
 When connection draining is enabled, the load balancer will stop sending requests
 to a deregistered or unhealthy instance and attempt to complete in-flight requests until a
 connection draining timeout period is reached, which is 300 seconds by default
+```
+
+Q5. If your application is continually crashing due to high demand, you should make sure the Elastic Load Balancer has the proper scaling polices for adding new instances when needed.
+
+```
+
+Correct answer
+False
+
+Explanation
+It is Auto Scaling that contains scaling policies (which dictate the CloudWatch thresholds for adding/removing instances).
+```
+
+Q6. What best describes the purpose of an Elastic Load Balancer?
+
+```
+Correct answer
+To evenly distribute traffic among multiple EC2 instances in separate Availability Zones.
+
+Explanation
+An ELB is used BEST when it is distributing traffic to EC2 instances located in separate Availability Zones. This provides for higher availability and is more fault tolerant than distributing traffic to EC2 instances in the same AZ
+```
+
+## Database
+Q1. 11. You are building the database tier for an enterprise application that gets occasional activity throughout the day. Which storage type should you select as your default option?
+
+```
+A. Magnetic storage
+>>>>B. General Purpose Solid State Drive (SSD)
+C. Provisioned IOPS (SSD)
+D. Storage Area Network (SAN)-attached
 ```
 
