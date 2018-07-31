@@ -290,7 +290,7 @@ customers to increase the number of records sent per API call, which effectively
 
 Explanation
 KPL aggregation directly refers to the storage of multiple records in a Kinesis Data Streams record. This, in turn, allows increase producer throughput. The Kinesis Data Streams records per second limit binds customers with records smaller than 1 KB. Record aggregation allows customers to combine multiple records into a single Kinesis Data Streams record.
-```
+
 
 Q4. You are setting up a VPC peering connection with another VPC. This is the first time that you have done this, and you are not that familiar with the limitations and rules. When reading up on this, you discover that there seems to be a lot of limitations and rules when it comes to VPC peering. Which of the following is NOT one of those limitations or rules?
 
@@ -342,6 +342,7 @@ Q10.After building an application that makes use of an Elastic Load Balancer ove
 Correct answer
 The ELB security group does not have port 80 open, The EC2 instances security group does not have port 80 open
 ```
+
 Explanation
 Remember that health checks do not have to be performed on port 80. This is the default, yes, but it can be changed. So in this case we could have a health check configured on a different port which is why it would be marked as healthy even though the ELB security group and/or the EC2 instance security group on port 80 could be closed. Even if this scenario does not sound very likely, it is possible. AWS likes to try and trick test takers by throwing in scenarios like these, which is why we included this tricky question.
 
