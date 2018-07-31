@@ -264,13 +264,14 @@ Q1.  You recently purchased four reserved EC2 instances in the US-East-1 region’
 ```
 Correct answer
 Yes, you can migrate the reserved instances to Availability Zone 2
+```
 
 Explanation
 After recent AWS updates you can now migrate reserved instances without having to sell and repurchase. Another resource link: https://aws.amazon.com/ec2/purchasing-options/reserved-instances/buyer
 
 Further Reading
 https://aws.amazon.com/ec2/pricing/reserved-instances/
-```
+
 
 Q2. Your company has moved a legacy application from an on-premises data center to the cloud. The legacy application requires a static IP address hard-coded into the backend, which prevents you from deploying the application with high availability and fault tolerance using the ELB. Which steps would you take to apply high availability and fault tolerance to this application?
 
@@ -283,7 +284,9 @@ Q3.  The KPL is an easy-to-use, highly-configurable library that helps you write
 
 ```
 Correct answer
-It refers to the storage of multiple records in a stream's record and allows customers to increase the number of records sent per API call, which effectively increases producer throughput
+It refers to the storage of multiple records in a stream's record and allows 
+customers to increase the number of records sent per API call, which effectively increases producer throughput
+```
 
 Explanation
 KPL aggregation directly refers to the storage of multiple records in a Kinesis Data Streams record. This, in turn, allows increase producer throughput. The Kinesis Data Streams records per second limit binds customers with records smaller than 1 KB. Record aggregation allows customers to combine multiple records into a single Kinesis Data Streams record.
