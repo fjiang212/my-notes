@@ -279,6 +279,19 @@ Fn::Or
 ```
 
 ## Route53
+* Hosted Zones
+
+```
+A hosted zone is a collection of resource record sets hosted by Amazon Route 53. Like a
+traditional DNS zone file, a hosted zone represents resource record sets that are managed
+together under a single domain name. Each hosted zone has its own metadata and
+configuration information.
+There are two types of hosted zones: private and public. A private hosted zone is a container
+that holds information about how you want to route traffic for a domain and its subdomains
+within one or more Amazon Virtual Private Clouds (Amazon VPCs). A public hosted zone is a
+container that holds information about how you want to route traffic on the Internet for a
+domain (for example, example.com) and its subdomains (for example, apex.example.com and acme.example.com).
+```
 
 ## VPC
 ### Internet Gateway
