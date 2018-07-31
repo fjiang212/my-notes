@@ -442,6 +442,5 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html
 
 # Question
-* Can ELB configure ot instance in the private subnet
 * ssh agent add key, no need upload key to jump box
 * The difference between key-value and document store database(mongodb/dynamodb)

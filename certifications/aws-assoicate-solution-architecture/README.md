@@ -34,3 +34,10 @@ Resources aren’t replicated across regions unless organizations choose to do so.
 * Chapter 12: Security on AWS
 * Chapter 13: AWS Risk and Compliance
 * Chapter 14: Architecture Best Practices
+
+# Topics
+* How do I connect a public-facing load balancer to EC2 instances that have private IP addresses?
+
+It is possible, but you must create public subnets in the same Availability Zones as the private subnets that are used by your private instances. Then associate these public subnets to the internet-facing load balancer.
+
+https://aws.amazon.com/premiumsupport/knowledge-center/public-load-balancer-private-ec2/
