@@ -277,6 +277,11 @@ Fn::Or
   ]
 }]
 ```
+## Kinesis
+Amazon Kinesis is a streaming data platform consisting of three services addressing different real-time streaming data challenges:
+* Amazon Kinesis Firehose: A service enabling you to load massive volumes of streaming data into AWS
+* Amazon Kinesis Streams: A service enabling you to build custom applications for more complex analysis of streaming data in real time
+* Amazon Kinesis Analytics: A service enabling you to easily analyze streaming data real time with standard SQL
 
 ## Route53
 * Hosted Zones
@@ -444,3 +449,5 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 # Question
 * ssh agent add key, no need upload key to jump box
 * The difference between key-value and document store database(mongodb/dynamodb)
+* API gateway
+* KMS Summary, data key
