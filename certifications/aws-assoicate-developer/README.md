@@ -7,10 +7,10 @@ https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html
 ![IAM Policy](images/readme/IAM1.png)
 
 * Identity-based policies: Managed policies(AWS managed policies, customer managed policies), inline policies
-    * Effect – whether the policy allows or denies access
-    * Action – the list of actions that are allowed or denied by the policy
-    * Resource – the list of resources on which the actions can occur
-    * Condition (Optional) – the circumstances under which the policy grants permission
+    * Effect: whether the policy allows or denies access
+    * Action: the list of actions that are allowed or denied by the policy
+    * Resource: the list of resources on which the actions can occur
+    * Condition (Optional): the circumstances under which the policy grants permission
     
 ```
 {
@@ -442,6 +442,51 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 # Related knowledge
 ## IAM
 * SAML: [Intro to SAML: What, How and Why](https://www.youtube.com/watch?v=0fmNoqz6Urw)
+
+## Typical HTTP Status code
+### 4xx Client errors
+
+* 400 Bad Request
+
+The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, size too large, invalid request message framing, or deceptive request routing).
+
+* 401 Unauthorized (RFC 7235)
+
+Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. See Basic access authentication and Digest access authentication.[34] 401 semantically means "unauthenticated",[35] i.e. the user does not have the necessary credentials.
+Note: Some sites issue HTTP 401 when an IP address is banned from the website (usually the website domain) and that specific address is refused permission to access a website.
+
+* 403 Forbidden
+
+The request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource, or may need an account of some sort.
+
+* 404 Not Found
+
+The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
+
+* 405 Method Not Allowed
+
+A request method is not supported for the requested resource; for example, a GET request on a form that requires data to be presented via POST, or a PUT request on a read-only resource.
+
+* 406 Not Acceptable
+
+The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
+
+* 408 Request Timeout
+
+The server timed out waiting for the request. According to HTTP specifications: "The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time."
+
+* 409 Conflict
+
+Indicates that the request could not be processed because of conflict in the current state of the resource, such as an edit conflict between multiple simultaneous updates.
+
+* 412 Precondition Failed (RFC 7232)
+
+The server does not meet one of the preconditions that the requester put on the request.
+
+* 415 Unsupported Media Type
+
+The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.
+
 
 # Read later
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html
