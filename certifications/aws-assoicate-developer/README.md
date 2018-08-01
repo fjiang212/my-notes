@@ -58,6 +58,10 @@ Two Additional fields: Sid(statement id) and Princial.
 * ELB: Launch configuration, auto scaling group
 * ALB: Target group
 
+## RDB
+* MySQL, MariaDB, PostgreSQL and Oracle utilize synchronous physical replication to keep data on the standyby up-to-date with the primary. (NO SQL Server)
+* Read replicas are available in Amazon RDS for MySQL, MariaDB, and PostgreSQL as well as Amazon Aurora. (NO SQL Server and Oracle) 
+
 ## S3
 * Delete the bucket without removing the content of the bucket will get 409
 * S3-IA provide the same performance as S3

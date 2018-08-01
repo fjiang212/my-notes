@@ -30,7 +30,7 @@ Resources aren’t replicated across regions unless organizations choose to do so.
 * [Done]Chapter 8: SQS, SWF, and SNS
 * Chapter 9: Domain Name System (DNS) and Amazon Route 53
 * Chapter 10: Amazon ElastiCache
-* Chapter 11: Additional Key Services
+* [Done] Chapter 11: Additional Key Services
 * Chapter 12: Security on AWS
 * Chapter 13: AWS Risk and Compliance
 * Chapter 14: Architecture Best Practices
