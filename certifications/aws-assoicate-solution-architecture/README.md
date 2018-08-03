@@ -14,6 +14,7 @@ Resources aren’t replicated across regions unless organizations choose to do so.
 | :--- | :-------------------------- | 
 | EBS | EBS volume is automatically replicated within its Availability Zone|
 | EBS | EBS volume can only attach to the EC2 instance in the same AZ|
+| EFS | EFS is redundantly stored across multiple Availability Zones within a Region.|
 | ELB allow to distribute traffic across..  | Multiple AZ within a region |
 | What Amazon Relational Database Service (Amazon RDS) feature provides the high availability for your database?  | Multi-AZ deployment |
 |How is data stored in Amazon Simple Storage Service (Amazon S3) for high durability?|Data is automatically replicated to different Availability Zones within a region.|

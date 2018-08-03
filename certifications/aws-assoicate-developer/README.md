@@ -58,9 +58,12 @@ Two Additional fields: Sid(statement id) and Princial.
 * ELB: Launch configuration, auto scaling group
 * ALB: Target group
 
+## EFS
+* There are three levels of access control to consider when planning your EFS file system security: IAM permissions for API calls; security groups for EC2 instances and mount targets; and Network File System-level users, groups, and permissions.
+
 ## RDB
-* MySQL, MariaDB, PostgreSQL and Oracle utilize synchronous physical replication to keep data on the standyby up-to-date with the primary. (NO SQL Server)
-* Read replicas are available in Amazon RDS for MySQL, MariaDB, and PostgreSQL as well as Amazon Aurora. (NO SQL Server and Oracle) 
+* MySQL, MariaDB, PostgreSQL and Oracle utilize **synchronous** physical replication to keep data on the standby up-to-date with the primary. (NO SQL Server)
+* Read replicas are available in Amazon RDS for MySQL, MariaDB, and PostgreSQL as well as Amazon Aurora. (NO SQL Server and Oracle). Use those engines' native **asynchronous** repolication to update read replica.
 
 ## S3
 * Delete the bucket without removing the content of the bucket will get 409
@@ -390,6 +393,8 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | :--- | :-------------------------- | :------------------ |
 | EC2  | Instance | 20 (contact amazon) |
 | EC2  | Elastic IP Address | 5 |
+| EBS  | General IOPS SSD | 3IOPS/Gib, burst to 3000 under 1Tib |
+| EC2  | Provision | 50IOPS/Gib |
 | S3  | Single put| 5G |
 | S3  | Object size | 5T |
 | S3  | Buckets | 100 per account |
@@ -400,6 +405,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | DynamoDB | BatchGetItem | **max 100 items, < 16MB**| 
 | DynamoDB | Query per call|**<1MB**|
 | DynamoDB | Projected Secondary Index Attributes Per Table| 20|
+| RedShift | Block size| 1MB|
 | Beanstalk  | Applications | 75 |
 | Beanstalk  | Applications Version | 1000 |
 | Beanstalk  | Environments | 200 |
