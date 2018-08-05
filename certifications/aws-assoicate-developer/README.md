@@ -53,6 +53,7 @@ Two Additional fields: Sid(statement id) and Princial.
 
 * You can only export previously imported Amazon EC2 instances. Instances launched within AWS from AMIs cannot be exported.
 * It’s important to know that while snapshots are stored using Amazon S3 technology, they are stored in AWS-controlled storage and not in your account’s Amazon S3 buckets. This means you cannot manipulate them like other Amazon S3 objects.
+* Encryption attribute is not listed in the Create Volume windows when we select a Snapshot for creating the volume. Volume created will have the same encryption property of the snapshot. We can apply encryption parameters while copying the snapshot.
 * Auto scaling: Scale out quickly; scale in slowly.
 * An EC2 instance can ONLY have one role attached at a time.
 * ELB: Launch configuration, auto scaling group
@@ -64,6 +65,7 @@ Two Additional fields: Sid(statement id) and Princial.
 ## RDB
 * MySQL, MariaDB, PostgreSQL and Oracle utilize **synchronous** physical replication to keep data on the standby up-to-date with the primary. (NO SQL Server)
 * Read replicas are available in Amazon RDS for MySQL, MariaDB, and PostgreSQL as well as Amazon Aurora. (NO SQL Server and Oracle). Use those engines' native **asynchronous** repolication to update read replica.
+* DB Parameter Groups are used to assign specfic settings which can be applied to a set of RDS instance in AWS.
 
 ## S3
 * Delete the bucket without removing the content of the bucket will get 409
@@ -395,6 +397,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | EC2  | Elastic IP Address | 5 |
 | EBS  | General IOPS SSD | 3IOPS/Gib, burst to 3000 under 1Tib |
 | EC2  | Provision | 50IOPS/Gib |
+| CloudWatch  | Monitoring | 1 minute/15 days, 5 minute 63 days, 1 hour 455 days |
 | S3  | Single put| 5G |
 | S3  | Object size | 5T |
 | S3  | Buckets | 100 per account |
