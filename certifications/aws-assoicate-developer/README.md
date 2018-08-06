@@ -58,19 +58,32 @@ Two Additional fields: Sid(statement id) and Princial.
 * You can only export previously imported Amazon EC2 instances. Instances launched within AWS from AMIs cannot be exported.
 * It’s important to know that while snapshots are stored using Amazon S3 technology, they are stored in AWS-controlled storage and not in your account’s Amazon S3 buckets. This means you cannot manipulate them like other Amazon S3 objects.
 * Encryption attribute is not listed in the Create Volume windows when we select a Snapshot for creating the volume. Volume created will have the same encryption property of the snapshot. We can apply encryption parameters while copying the snapshot.
-* Auto scaling: Scale out quickly; scale in slowly.
 * An EC2 instance can ONLY have one role attached at a time.
+
+#### ELB/ALB/Auto scaling
+* Auto scaling: Scale out quickly; scale in slowly.
+* Attach existed EC2 to auto scaling group: in running state and not member of another auto scaling group.
+* When the instance enter the InService state, the cooldown period starts. When whe cooldown period expires, any suspended scaling actions resume. 
+* Default termination policy is designed to help ensure that your network architecture spans AZ evenly.
 * ELB: Launch configuration, auto scaling group
-* ALB: Target group
+* ALB: Target group. Does not support TCP
+
 
 ### Lambda
 * All calls made to AWS Lambda must complete execution within 300 seconds. The default timeout is 3 seconds, but you can set the timeout to any value between 1 and 300 seconds.
 * In the AWS lambda resource mode, you choose the amount of memory you want for your function, and all allocated proportional CPU power and other resource. You can set your memory in 64MB increments from 128MB to 3G.
 
 ### ECS
+* Docker provides several diagnostic tools that help you toubleshoot problem with your containers and tasks.
+* Dynamic port mapping: 
+
 
 ## Storage
 ### EBS
+* If the original snapshot is deleted, all data is still available in all the other snapshots.
+* snapshot will restored as encrypted volume. 
+* Encrypted EBS Boot Volumes: This feature builds on a recent release that allowed you to copy an EBS snapshot while also applying encryption.
+https://aws.amazon.com/blogs/aws/new-encrypted-ebs-boot-volumes/
 
 ### EFS
 * There are three levels of access control to consider when planning your EFS file system security: IAM permissions for API calls; security groups for EC2 instances and mount targets; and Network File System-level users, groups, and permissions.
@@ -93,7 +106,7 @@ Change to
 examplebucket/232a-2013-26-05-15-00-00/cust1234234/photo1.jpg
 examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 ```
-
+* S3 can process 3,500 PUT/POST/DELELET and 5,500 GET per second per prefix
 
 * single put: < 5G
 * multi-part upload < 5T (recommend for >100mb)
@@ -312,7 +325,7 @@ Amazon Kinesis is a streaming data platform consisting of three services address
 * Amazon Kinesis Firehose: A service enabling you to load massive volumes of streaming data into AWS
 * Amazon Kinesis Streams: A service enabling you to build custom applications for more complex analysis of streaming data in real time
 * Amazon Kinesis Analytics: A service enabling you to easily analyze streaming data real time with standard SQL
-
+* Kinesis is used for processing not storage
 
 
 ## VPC
