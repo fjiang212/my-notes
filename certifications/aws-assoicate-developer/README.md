@@ -46,7 +46,9 @@ Two Additional fields: Sid(statement id) and Princial.
 * Authentication technologies: First, IAM is not an identity store/authorization system for your applications.Second, IAM is not operating system identity management
 
 ![IAM Policy](images/readme/IAM2.png)
-   
+
+### STS
+* Configure Cross Account access: You currently have multiple AWS accounts in your infrastructure. You have separate account for DEV and PROD. DEV user need temporary access to the resources in the PROD account.    
 
 ## Compute
 ### EC2
