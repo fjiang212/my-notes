@@ -72,10 +72,14 @@ Two Additional fields: Sid(statement id) and Princial.
 ### Lambda
 * All calls made to AWS Lambda must complete execution within 300 seconds. The default timeout is 3 seconds, but you can set the timeout to any value between 1 and 300 seconds.
 * In the AWS lambda resource mode, you choose the amount of memory you want for your function, and all allocated proportional CPU power and other resource. You can set your memory in 64MB increments from 128MB to 3G.
+* Event triggered for lambda: S3, Dynamodb table update, event from application or devices
 
 ### ECS
 * Docker provides several diagnostic tools that help you toubleshoot problem with your containers and tasks.
 * Dynamic port mapping: 
+
+### API Gateway
+![API Gateway](images/readme/API1.PNG)
 
 
 ## Storage
@@ -359,9 +363,9 @@ domain (for example, example.com) and its subdomains (for example, apex.example.
 
 ### Other connection
 * Hybrid Environment
-    * VPN: Customer Gateway <--> VPN Connection <--> Virtual Private Gateway : communicate with all resouce(like EC2) internally withoug the need for public IP address and internet gateway.
-    * AWS direct connction
-    * AWS Storage gateway(Gateway-Cached Volumes, Gateway-Store Volumes)
+    * VPN: Customer Gateway <--> VPN Connection <--> Virtual Private Gateway : communicate with all resource(like EC2) internally without the need for public IP address and internet gateway.
+    * AWS direct connection: You can create multiple private virtual interfaces to multiple VPC's at the same time. Public virtual interface allow you use direct connection to connect to public AWS endpoints(ex: DynammoDB, S3..)
+    * AWS Storage gateway(Gateway-Cached Volumes, Gateway-Store Volumes): Access data in S3, EBS, Glacier
 * EIPs remain associated with your AWS account until you explicitly release them. There are charges for EIPs allocated to your account, even when they are not associated with a resource
 * An Elastic Network Interface (ENI) is a virtual network interface that you can attach to an instance in an Amazon VPC. ENIs are only available within an Amazon VPC, and they are associated with a subnet upon creation. They can have one public IP address and multiple private IP addresses.
 * An Amazon VPC endpoint enables you to create a private connection between your Amazon VPC and another AWS service without requiring access over the Internet or through a NAT instance, VPN connection, or AWS Direct Connect.
