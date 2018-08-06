@@ -59,6 +59,7 @@ Two Additional fields: Sid(statement id) and Princial.
 * It’s important to know that while snapshots are stored using Amazon S3 technology, they are stored in AWS-controlled storage and not in your account’s Amazon S3 buckets. This means you cannot manipulate them like other Amazon S3 objects.
 * Encryption attribute is not listed in the Create Volume windows when we select a Snapshot for creating the volume. Volume created will have the same encryption property of the snapshot. We can apply encryption parameters while copying the snapshot.
 * An EC2 instance can ONLY have one role attached at a time.
+* AWS doesn't want you waste the static public IPs.  You will be charged for EIP if it attached to a stop instance or it is created but not allocated to any instance. 
 
 #### ELB/ALB/Auto scaling
 * Auto scaling: Scale out quickly; scale in slowly.
@@ -94,6 +95,7 @@ https://aws.amazon.com/blogs/aws/new-encrypted-ebs-boot-volumes/
 
 ### S3
 * Delete the bucket without removing the content of the bucket will get 409
+* There is no cost when transfering data from EC2 to S3 if they are in the same region
 * S3-IA provide the same performance as S3
 * Performance:  Using a sequential prefix, such as time stamp or an alphabetical sequence, increases the likelihood that Amazon S3 will target a specific partition for a large number of your keys, overwhelming the I/O capacity of the partition.
 * Amazon S3 is secure by default; when you create a bucket or object in Amazon S3, only you have access. To allow you to give controlled access to others, Amazon S3 provides both coarse-grained access controls (Amazon S3 Access Control Lists [ACLs]), and fine-grained access controls (Amazon S3 bucket policies, AWS Identity and Access Management [IAM] policies, and query-string authentication).
@@ -118,6 +120,12 @@ examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 * snowball: Use Amazon device (PB level)
 * Storage gateway: Where data mainly store(on-premise or s3)
 
+### Glacier
+* Glacier archive is immutable and can be as large as 40TB
+
+### ElasticCache
+* Memcached is shared and low latency, but its durability is poor.
+
 
 
 ## Database 
@@ -126,7 +134,7 @@ examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 * MySQL, MariaDB, PostgreSQL and Oracle utilize **synchronous** physical replication to keep data on the standby up-to-date with the primary. (NO SQL Server)
 * Read replicas are available in Amazon RDS for MySQL, MariaDB, and PostgreSQL as well as Amazon Aurora. (NO SQL Server and Oracle). Use those engines' native **asynchronous** repolication to update read replica.
 * DB Parameter Groups are used to assign specfic settings which can be applied to a set of RDS instance in AWS.
-
+* RDB is not fully managed database. it is partially managed. You still need set server capacity, SG etc.
 
 ### DynamoDB
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html
