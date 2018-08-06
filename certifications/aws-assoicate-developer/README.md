@@ -48,7 +48,9 @@ Two Additional fields: Sid(statement id) and Princial.
 ![IAM Policy](images/readme/IAM2.png)
    
 
-## EC2
+## Compute
+### EC2
+
 ![EC2](images/readme/EC21.PNG)
 
 * You can only export previously imported Amazon EC2 instances. Instances launched within AWS from AMIs cannot be exported.
@@ -59,15 +61,19 @@ Two Additional fields: Sid(statement id) and Princial.
 * ELB: Launch configuration, auto scaling group
 * ALB: Target group
 
-## EFS
+### Lambda
+* All calls made to AWS Lambda must complete execution within 300 seconds. The default timeout is 3 seconds, but you can set the timeout to any value between 1 and 300 seconds.
+* In the AWS lambda resource mode, you choose the amount of memory you want for your function, and all allocated proportional CPU power and other resource. You can set your memory in 64MB increments from 128MB to 3G.
+
+### ECS
+
+## Storage
+### EBS
+
+### EFS
 * There are three levels of access control to consider when planning your EFS file system security: IAM permissions for API calls; security groups for EC2 instances and mount targets; and Network File System-level users, groups, and permissions.
 
-## RDB
-* MySQL, MariaDB, PostgreSQL and Oracle utilize **synchronous** physical replication to keep data on the standby up-to-date with the primary. (NO SQL Server)
-* Read replicas are available in Amazon RDS for MySQL, MariaDB, and PostgreSQL as well as Amazon Aurora. (NO SQL Server and Oracle). Use those engines' native **asynchronous** repolication to update read replica.
-* DB Parameter Groups are used to assign specfic settings which can be applied to a set of RDS instance in AWS.
-
-## S3
+### S3
 * Delete the bucket without removing the content of the bucket will get 409
 * S3-IA provide the same performance as S3
 * Performance:  Using a sequential prefix, such as time stamp or an alphabetical sequence, increases the likelihood that Amazon S3 will target a specific partition for a large number of your keys, overwhelming the I/O capacity of the partition.
@@ -93,7 +99,17 @@ examplebucket/7b54-2013-26-05-15-00-00/cust3857422/photo2.jpg
 * snowball: Use Amazon device (PB level)
 * Storage gateway: Where data mainly store(on-premise or s3)
 
-## DynamoDB
+
+
+## Database 
+
+### RDB
+* MySQL, MariaDB, PostgreSQL and Oracle utilize **synchronous** physical replication to keep data on the standby up-to-date with the primary. (NO SQL Server)
+* Read replicas are available in Amazon RDS for MySQL, MariaDB, and PostgreSQL as well as Amazon Aurora. (NO SQL Server and Oracle). Use those engines' native **asynchronous** repolication to update read replica.
+* DB Parameter Groups are used to assign specfic settings which can be applied to a set of RDS instance in AWS.
+
+
+### DynamoDB
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.SingleItem.html
 * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html
@@ -159,9 +175,12 @@ Local secondary indexes can only be queried via Query API
     IndexName: "GenreAndPriceIndex"
 }
 ```
-## SQS
+## App Services
 
-## SNS
+
+### SQS
+
+### SNS
 * Short codes, long codes 
 
 ```
@@ -211,19 +230,17 @@ https://docs.aws.amazon.com/sns/latest/dg/mobile-push-pseudo.html
     * Step 5: Publish Message to Mobile Endpoint
 
 
-## SWF
+### SWF
 * Human can not perform decision task
 * Part of SWF components: Domains, Workflows, Activities, Task Lists, Workers and Workflow Execution
 * Workers and decider can be deployed to EC2, lambda or on-premise machine.
 * You can acess SWF using: AWS SDK, AWK Workflow for Java, AWS Console and AWS Workflow service api.
 
-## Lambda
-* All calls made to AWS Lambda must complete execution within 300 seconds. The default timeout is 3 seconds, but you can set the timeout to any value between 1 and 300 seconds.
-* In the AWS lambda resource mode, you choose the amount of memory you want for your function, and all allocated proportional CPU power and other resource. You can set your memory in 64MB increments from 128MB to 3G.
-## Beanstalk
+## Deployment
+### Beanstalk
 Elastic Beanstalk can be used to deploy the core services such as: EC2, Auto scaling, ELB,RDS, SQS and CloudFront
 
-## CloudFormation
+### CloudFormation
 ![Format](images/readme/CloudFormation1.PNG)
 
 ```
@@ -286,26 +303,15 @@ Fn::Or
   ]
 }]
 ```
-## Kinesis
+
+## Analysis
+### Kinesis
 Amazon Kinesis is a streaming data platform consisting of three services addressing different real-time streaming data challenges:
 * Amazon Kinesis Firehose: A service enabling you to load massive volumes of streaming data into AWS
 * Amazon Kinesis Streams: A service enabling you to build custom applications for more complex analysis of streaming data in real time
 * Amazon Kinesis Analytics: A service enabling you to easily analyze streaming data real time with standard SQL
 
-## Route53
-* Hosted Zones
 
-```
-A hosted zone is a collection of resource record sets hosted by Amazon Route 53. Like a
-traditional DNS zone file, a hosted zone represents resource record sets that are managed
-together under a single domain name. Each hosted zone has its own metadata and
-configuration information.
-There are two types of hosted zones: private and public. A private hosted zone is a container
-that holds information about how you want to route traffic for a domain and its subdomains
-within one or more Amazon Virtual Private Clouds (Amazon VPCs). A public hosted zone is a
-container that holds information about how you want to route traffic on the Internet for a
-domain (for example, example.com) and its subdomains (for example, apex.example.com and acme.example.com).
-```
 
 ## VPC
 ### Internet Gateway
@@ -320,6 +326,21 @@ domain (for example, example.com) and its subdomains (for example, apex.example.
 
 ### NACL
 * The last rule in the every NACL is "catch all" deny rule.
+
+### Route53
+* Hosted Zones
+
+```
+A hosted zone is a collection of resource record sets hosted by Amazon Route 53. Like a
+traditional DNS zone file, a hosted zone represents resource record sets that are managed
+together under a single domain name. Each hosted zone has its own metadata and
+configuration information.
+There are two types of hosted zones: private and public. A private hosted zone is a container
+that holds information about how you want to route traffic for a domain and its subdomains
+within one or more Amazon Virtual Private Clouds (Amazon VPCs). A public hosted zone is a
+container that holds information about how you want to route traffic on the Internet for a
+domain (for example, example.com) and its subdomains (for example, apex.example.com and acme.example.com).
+```
 
 ### Other connection
 * Hybrid Environment
