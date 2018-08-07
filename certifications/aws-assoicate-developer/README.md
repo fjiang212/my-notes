@@ -60,6 +60,7 @@ Two Additional fields: Sid(statement id) and Princial.
 * Encryption attribute is not listed in the Create Volume windows when we select a Snapshot for creating the volume. Volume created will have the same encryption property of the snapshot. We can apply encryption parameters while copying the snapshot.
 * An EC2 instance can ONLY have one role attached at a time.
 * AWS doesn't want you waste the static public IPs.  You will be charged for EIP if it attached to a stop instance or it is created but not allocated to any instance. 
+* Placement group can not span multiple AZ
 
 #### ELB/ALB/Auto scaling
 * Auto scaling: Scale out quickly; scale in slowly.
@@ -498,7 +499,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | SQS | retention period | 1minute ~ 14 days | 4 days |
 | SNS | subscription request valid |  | 3 days |
 | SWF | maximum workflow |  | 1 year |
-
+| Kinesis | stream retention policy | 1-7 days | 1 day |
 
 # Related knowledge
 ## IAM
