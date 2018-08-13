@@ -1,5 +1,3 @@
-**Passed on July 15, 2018**
-
 # Services
 ## IAM
 https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html
@@ -501,8 +499,22 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 | SWF | maximum workflow |  | 1 year |
 | Kinesis | stream retention policy | 1-7 days | 1 day |
 
+# Scope Summary
+Resources aren’t replicated across regions unless organizations choose to do so.
+
+| Service  |Scope   | 
+| :--- | :-------------------------- | 
+| EBS | EBS volume is automatically replicated within its Availability Zone|
+| EBS | EBS volume can only attach to the EC2 instance in the same AZ|
+| EFS | EFS is redundantly stored across multiple Availability Zones within a Region.|
+| ELB allow to distribute traffic across..  | Multiple AZ within a region |
+| What Amazon Relational Database Service (Amazon RDS) feature provides the high availability for your database?  | Multi-AZ deployment |
+|How is data stored in Amazon Simple Storage Service (Amazon S3) for high durability?|Data is automatically replicated to different Availability Zones within a region.|
+|Subnet|A subnet is located in one specific availability zone, and does not span AZs|
+
 # Related knowledge
 ## IAM
+
 * SAML: [Intro to SAML: What, How and Why](https://www.youtube.com/watch?v=0fmNoqz6Urw)
 
 ## Typical HTTP Status code
