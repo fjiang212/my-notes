@@ -562,11 +562,7 @@ The server does not meet one of the preconditions that the requester put on the 
 The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.
 
 
-# Read later
-* https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html
+# Links
+* https://www.lucidchart.com/documents/view/b5dee0bc-af6b-4374-ae34-92f79c8f314c/1
+* https://www.lucidchart.com/documents/view/bd4fb4e7-336e-4c8b-972d-048616da9f96/0
 
-# Question
-* ssh agent add key, no need upload key to jump box
-* The difference between key-value and document store database(mongodb/dynamodb)
-* API gateway
-* KMS Summary, data key
