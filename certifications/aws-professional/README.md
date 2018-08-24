@@ -1,5 +1,11 @@
 # Core knowledges
+https://linuxacademy.com/cp/guides/download/refsheets/guides/refsheets/aws-csa-pro_1470165599.pdf
+
 ## AWS And General IT Knowledge
+
+## Enterprise Account Management
+
+# Required Services
 
 
 # Related knowledges
@@ -26,3 +32,4 @@ www         IN  CNAME   server1
 
 
 * The difference between a host name and a subdomain is that a host defines a computer or resource, while a subdomain extends the parent domain. It is a method of subdividing the domain itself.
+
