@@ -6,6 +6,7 @@ https://www.cnblogs.com/zhangxinyan/p/3499547.html
 | :--- | :-------------------------- |
 | boilerplate| 样板 |
 | compliance| 合规性 |
+| Cryptography | 加密 |
 | declaratively | 声明式 |
 | explicit| 显式  |
 | imperatively | 命令式 |

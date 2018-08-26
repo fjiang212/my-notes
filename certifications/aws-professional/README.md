@@ -6,6 +6,9 @@ https://linuxacademy.com/cp/guides/download/refsheets/guides/refsheets/aws-csa-p
 ## Enterprise Account Management
 
 # Required Services
+## Amazon EC2 And Design Patterns
+* passRole
+
 
 
 # Related knowledges
