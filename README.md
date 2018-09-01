@@ -33,6 +33,7 @@
 | ------------- | ----- | ----- |
 | **Postman** | API Development | https://www.getpostman.com/ |
 | DbVisualizer | Database Tool | https://www.dbvis.com/ |
+| Oracle SQL Developer | Database Tool | https://www.oracle.com/database/technologies/appdev/sql-developer.html |
 |studio3t |Mongodb tool |https://studio3t.com/|
 | RDCMan | Window Remote Connection  | https://www.microsoft.com/en-ca/download/details.aspx?id=44989 |
 | **mobaxterm** | Unix SSH client  | https://mobaxterm.mobatek.net/ |
@@ -45,3 +46,9 @@
 | ------------- | ----- |
 | Mongodb | https://www.mongodb.com/ |
 
+
+### Web Development
+| Component          | URL| 
+| ------------- | ----- |
+| Node | https://nodejs.org/en/download/ |
+| Angular CLI | https://www.npmjs.com/package/@angular/cli |
