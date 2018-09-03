@@ -40,6 +40,7 @@
 | superputty | Unix SSH client  | https://github.com/jimradford/superputty |
 | Keystore Explore | key tool  | http://keystore-explorer.org/ |
 | Softerra LDAP Browser | LDAP | https://www.ldapadministrator.com/ | 
+| dwaw.io| Draw | https://about.draw.io/integrations/#integrations_offline|
 
 ### Databases
 | Database          | URL| 

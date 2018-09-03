@@ -9,7 +9,10 @@ https://linuxacademy.com/cp/guides/download/refsheets/guides/refsheets/aws-csa-p
 ## Amazon EC2 And Design Patterns
 * passRole
 
-
+# Key concepts
+## Network
+* **BGP**: 
+* **IPsec**: Internet Protocol Security (IPsec) is a secure network protocol suite that authenticates and encrypts the packets of data sent over an IPv4 network. 
 
 # Related knowledges
 ## DNS
