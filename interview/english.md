@@ -11,6 +11,7 @@ https://www.cnblogs.com/zhangxinyan/p/3499547.html
 | explicit| 显式  |
 | imperatively | 命令式 |
 | implicit | 隐喻的，隐式 |
+| leverage | 杠杆作用， 利用， 发挥 |
 | mitigate | 减轻 |
 | Predicate | 断言 |
 

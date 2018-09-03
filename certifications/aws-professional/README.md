@@ -36,3 +36,9 @@ www         IN  CNAME   server1
 
 * The difference between a host name and a subdomain is that a host defines a computer or resource, while a subdomain extends the parent domain. It is a method of subdividing the domain itself.
 
+
+
+
+# Links
+
+* http://en.clouddesignpattern.org/index.php/Main_Page
