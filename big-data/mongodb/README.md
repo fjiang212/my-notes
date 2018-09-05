@@ -46,6 +46,15 @@ security:
 setParameter:
    enableLocalhostAuthBypass: false
 ```
+# Performance
+## Performance problem
+* Incorrect indexes(too few or too many)
+
+## Profiling
+### Enable profiling
+https://docs.mongodb.com/manual/tutorial/manage-the-database-profiler/
+
+
 # Reference
 * [MongoDB – quick and secure installation with authorization](https://www.youtube.com/watch?v=gg6r4-xaTyI)
 * [MongoDB config options](https://docs.mongodb.com/master/reference/configuration-options)

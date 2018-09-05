@@ -34,7 +34,7 @@
 | **Postman** | API Development | https://www.getpostman.com/ |
 | DbVisualizer | Database Tool | https://www.dbvis.com/ |
 | Oracle SQL Developer | Database Tool | https://www.oracle.com/database/technologies/appdev/sql-developer.html |
-|studio3t |Mongodb tool |https://studio3t.com/|
+| Studio 3T/Robo 3T |Mongodb tool |https://robomongo.org/|
 | RDCMan | Window Remote Connection  | https://www.microsoft.com/en-ca/download/details.aspx?id=44989 |
 | **mobaxterm** | Unix SSH client  | https://mobaxterm.mobatek.net/ |
 | superputty | Unix SSH client  | https://github.com/jimradford/superputty |
