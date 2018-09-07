@@ -25,7 +25,7 @@ storage:
 # Security
 ## Enable authentication 
 https://docs.mongodb.com/master/tutorial/enable-authentication/
-* Create admin user (use mongo
+* Create admin user (use mongo shell)
 
 ```
 use admin
@@ -33,12 +33,12 @@ db.createUser(
   {
     user: "admin",
     pwd: "password",
-    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+    roles: [ { role: "root", db: "admin" } ]
   }
 )
 ```
 
-* Re-start the mongod instance with the --auth command line option or, if using a onfiguration file, the security.authorization setting.
+* Re-start the mongod instance with the --auth command line option or, if using a configuration file, the security.authorization setting.
 
 ```
 security:
@@ -46,6 +46,39 @@ security:
 setParameter:
    enableLocalhostAuthBypass: false
 ```
+
+* Login with admin 
+
+```
+C:\Program Files\MongoDB\Server\4.0\bin>mongo localhost/clientapp -u admin -p password --authenticationDatabase admin
+```
+
+* Create new database and user
+```
+> use client
+switched to db client
+> db.createUser(
+...   {
+...     user: "client",
+...     pwd: "password",
+...     roles: [ { role: "dbOwner", db: "client" } ]
+...   }
+... )
+```
+
+## Roles
+https://docs.mongodb.com/manual/reference/built-in-roles/#database-user-roles
+
+
+# Data Management
+## Import data
+* From commandline
+
+```
+C:\Program Files\MongoDB\Server\4.0\bin>mongoimport /username:client /password:password /authenticationDatabase:client --db client --collection zips --file C:\tmp\zips.json
+```
+
+* From shell or UI tool to insert documents 
 
 # Commands
 ## 

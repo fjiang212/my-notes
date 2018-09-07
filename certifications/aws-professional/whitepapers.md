@@ -24,4 +24,16 @@
 * Multi-Site Solution Deployed on AWS and On-Site
 * AWS Production to an AWS DR Solution Using Multiple AWS Regions
 
+# Encrypting Data at Rest in AWS
+## The Key to Encryption: Who Controls the Keys?
+Encryption on any system requires three components: (i) data to encrypt; (ii) a method to encrypt the data using a cryptographic algorithm; and (iii) encryption keys to be used in conjunction with the data and the algorithm.
+
+![Encryption models](images/encryption-models.PNG)
+
+## Service
+* S3
+* EBS
+* AWS Storage Gateway
+* RDS
+
 
