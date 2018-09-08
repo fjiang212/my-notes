@@ -13,7 +13,9 @@ https://www.cnblogs.com/zhangxinyan/p/3499547.html
 | implicit | 隐喻的，隐式 |
 | leverage | 杠杆作用， 利用， 发挥 |
 | mitigate | 减轻 |
+| noun | 名词 |
 | Predicate | 断言 |
+| verb | 动词 |
 
 # Punctuation
 ![Punctuation](images/punctuation_poster.png)
