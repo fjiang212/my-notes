@@ -36,16 +36,10 @@ https://www.smartics.eu/confluence/display/BLOG/2013/07/22/Using+Aggregate+and+P
     * Use commandline options to build only part of the projects in the reactor.
 
  
-## POM Best Practices
-https://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-best-practice.html
+## 
 
 
 # Plugins
-## Maven Eclipse plugins
-Note: This plugin is retired. The Maven Eclipse Plugin is used to generate Eclipse IDE files (*.classpath, *.project, *.wtpmodules and the .settings folder) for use with a project.
-
-Disclaimer: Users are advised to use m2e, the Eclipse Maven Integration instead of this plugin, as it can more closely resemble the actual build and runtime classpaths as described in the project pom.xml - among other advantages. 
-
 ## Spring Boot Maven Plugin
 The Spring Boot Maven Plugin provides Spring Boot support in Maven, allowing you to package executable jar or war archives and run an application in-place.
 
@@ -57,8 +51,9 @@ The Spring Boot Plugin has the following goals.
 
 https://docs.spring.io/spring-boot/docs/current/maven-plugin/
 
-# Links
-* Maven repository search:###  https://mvnrepository.com/
-* Maven Guide: https://maven.apache.org/guides/mini/index.html
-* POM(Project Object Model) Reference: https://maven.apache.org/pom.html
-* Maven Basic Tutorial: https://www.youtube.com/watch?v=al7bRZzz4oU&index=1&list=PL92E89440B7BFD0F6
+# References
+* **[POM(Project Object Model) Reference](https://maven.apache.org/pom.html)**
+* [Maven repository search](https://mvnrepository.com/)
+* [Maven Guide](https://maven.apache.org/guides/mini/index.html)
+* [Maven Basic Tutorial](https://www.youtube.com/watch?v=al7bRZzz4oU&index=1&list=PL92E89440B7BFD0F6)
+* [POM Best Practices](https://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-best-practice.html)

@@ -1,4 +1,5 @@
 # Concepts
+* Execute jar/Fat jar: 
 
 # Reference
 * Spring Boot Docs - https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
