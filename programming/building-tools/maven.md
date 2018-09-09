@@ -13,6 +13,9 @@ There are two other Maven lifecycles of note beyond the default list above. They
 * clean: cleans up artifacts created by prior builds
 * site: generates site documentation for this project
 
+![Maven Lifecycles](images/maven-lifecycles.png)
+
+
 
 # POM
 ## Components
@@ -36,8 +39,6 @@ https://www.smartics.eu/confluence/display/BLOG/2013/07/22/Using+Aggregate+and+P
     * Use commandline options to build only part of the projects in the reactor.
 
  
-## 
-
 
 # Plugins
 ## Spring Boot Maven Plugin
