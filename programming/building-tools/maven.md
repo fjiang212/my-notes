@@ -15,7 +15,18 @@ There are two other Maven lifecycles of note beyond the default list above. They
 
 
 # POM
-## Aggregate and Parent POMs
+## Components
+
+
+* Q1. Differences between dependency management and dependencies in maven
+
+> Dependency Management allows to consolidate and centralize the management of dependency versions without adding dependencies which are inherited by all children. This is especially useful when you have a set of projects (i.e. more than one) that inherits a common parent. Another extremely important use case of dependencyManagement is the control of versions of artifacts used in transitive dependencies. 
+
+
+## Type of POM
+### Starter POM
+
+###  Aggregate and Parent POMs
 https://www.smartics.eu/confluence/display/BLOG/2013/07/22/Using+Aggregate+and+Parent+POMs
 
 * If your parent POM is also the aggregate POM, all projects are released simultaneously.
@@ -28,11 +39,8 @@ https://www.smartics.eu/confluence/display/BLOG/2013/07/22/Using+Aggregate+and+P
 ## POM Best Practices
 https://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-best-practice.html
 
-## Differences between dependencymanagement and dependencies in maven
-Dependency Management allows to consolidate and centralize the management of dependency versions without adding dependencies which are inherited by all children. This is especially useful when you have a set of projects (i.e. more than one) that inherits a common parent.
-Another extremely important use case of dependencyManagement is the control of versions of artifacts used in transitive dependencies. 
 
-# Maven Plugins
+# Plugins
 ## Maven Eclipse plugins
 Note: This plugin is retired. The Maven Eclipse Plugin is used to generate Eclipse IDE files (*.classpath, *.project, *.wtpmodules and the .settings folder) for use with a project.
 
