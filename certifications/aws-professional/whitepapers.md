@@ -36,4 +36,6 @@ Encryption on any system requires three components: (i) data to encrypt; (ii) a 
 * AWS Storage Gateway
 * RDS
 
+# AWS Security Best Practices
+
 
