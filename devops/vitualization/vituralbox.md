@@ -1,8 +1,6 @@
 # Architecture 
 ![alt text](images/virtualbox_architecture.PNG)
 
-# Key concepts
-
 # Components
 ## Virtual Machine network
 https://www.virtualbox.org/manual/ch06.html
@@ -26,8 +24,12 @@ For AMD x64: AMD SVM (Secure Virtual Machine) is enabled
 Hyper-V (or any other form of bare-metal hypervisor) is not installed
 
 # Virtual machines
+| | VM | Version | Date | Parent VM | 
+| :---: | :---: | :---: | :---: |
+| CentOS7_Base | 1.0.0 | Sep 23, 2018 | CentOS-7-x86_64-Minimal-1804 |
+| CentOS7_DevOps | 1.0.0 | Sep 23, 2018 | CentOS7_Base.1.0.0 |
 
-## Base Virtual machine (CentOS_Base)
+## Base Virtual machine (CentOS7_Base)
 * Install Oracle Virtual Box (Repair with "Run as Administration" if 64bit os not found)
 * [Install CentOS 7(User: vagrant/vagrant)](http://www.jeramysingleton.com/install-centos-7-minimal-in-virtualbox)
 * [Set up Network NAT port forward](https://www.howtogeek.com/122641/how-to-forward-ports-to-a-virtual-machine-and-use-it-as-a-server/)
@@ -49,6 +51,7 @@ yum install wget -y
 yum install lsof -y
 yum install nmap -y
 yum install git -y
+yum install ansible -y
 ```
 * Stop and disable firewall on CentOS 7
 
@@ -61,6 +64,8 @@ systemctl stop firewalld
 ```
 hwclock --systohc
 ```
+## DevOps Virtual machine (DevOps)
+
 
 # Q & A
 * How to Change the hot key?
