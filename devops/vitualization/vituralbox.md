@@ -65,7 +65,23 @@ systemctl stop firewalld
 hwclock --systohc
 ```
 ## DevOps Virtual machine (DevOps)
+* Login as root or sudo su
+* [Install ansible-container](https://docs.ansible.com/ansible-container/installation.html)
 
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+
+# setuptools may alreay installed
+pip install setuptools
+
+# Downgrade pip for ansible container https://github.com/ansible/ansible-container/issues/919
+pip install --force-reinstall pip==9.0.3
+
+# install ansible container
+pip install ansible-container[docker,k8s]
+
+```
 
 # Q & A
 * How to Change the hot key?
