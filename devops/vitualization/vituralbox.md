@@ -1,4 +1,4 @@
-# Architecture and 
+# Architecture 
 ![alt text](images/virtualbox_architecture.PNG)
 
 # Key concepts
@@ -30,15 +30,41 @@ Hyper-V (or any other form of bare-metal hypervisor) is not installed
 ## Base Virtual machine (CentOS_Base)
 * Install Oracle Virtual Box (Repair with "Run as Administration" if 64bit os not found)
 * [Install CentOS 7(User: vagrant/vagrant)](http://www.jeramysingleton.com/install-centos-7-minimal-in-virtualbox)
-* Install additional software
+* [Set up Network NAT port forward](https://www.howtogeek.com/122641/how-to-forward-ports-to-a-virtual-machine-and-use-it-as-a-server/)
+* Login as root or sudo su
+* Set up yum proxy if needed (/etc/yum.conf)
 
 ```
+proxy=http://x.x.x.x:xxxx
+proxy_username=xxxx
+proxy_password=xxxxx
+```
+* Install additional softwares
 
 ```
+yum install dos2unix -y
+yum install net-tools -y
+yum install tree -y 
+yum install wget -y 
+yum install lsof -y
+yum install nmap -y
+yum install git -y
+```
+* Stop and disable firewall on CentOS 7
 
+```
+systemctl disable firewalld
+systemctl stop firewalld
+```
+* [Sync guess host time](http://bytefreaks.net/gnulinux/how-to-startstop-or-enabledisable-firewalld-on-centos-7)
+
+```
+hwclock --systohc
+```
 
 # Q & A
 * How to Change the hot key?
+
 input -> keyboard -> keyboard settings
 
 # References
