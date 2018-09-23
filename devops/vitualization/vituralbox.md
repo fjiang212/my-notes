@@ -24,10 +24,10 @@ For AMD x64: AMD SVM (Secure Virtual Machine) is enabled
 Hyper-V (or any other form of bare-metal hypervisor) is not installed
 
 # Virtual machines
-| | VM | Version | Date | Parent VM | 
-| :---: | :---: | :---: | :---: |
-| CentOS7_Base | 1.0.0 | Sep 23, 2018 | CentOS-7-x86_64-Minimal-1804 |
-| CentOS7_DevOps | 1.0.0 | Sep 23, 2018 | CentOS7_Base.1.0.0 |
+| VM | Version | Date | Parent VM | 
+| --- | ------ | ----- | ----- | 
+| CentOS7-Base | 1.0.0 | Sep 23, 2018 | CentOS-7-x86-64-Minimal-1804 |
+| CentOS7-DevOps | 1.0.0 | Sep 23, 2018 | CentOS7-Base.1.0.0 |
 
 ## Base Virtual machine (CentOS7_Base)
 * Install Oracle Virtual Box (Repair with "Run as Administration" if 64bit os not found)
