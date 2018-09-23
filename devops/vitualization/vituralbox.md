@@ -69,25 +69,59 @@ hwclock --systohc
 * [Install ansible-container](https://docs.ansible.com/ansible-container/installation.html)
 
 ```
+yum -y update
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
+pip install --upgrade setuptools
 
-# setuptools may alreay installed
-pip install setuptools
+# Downgrade pip to 9.0.3
+# https://github.com/ansible/ansible-container/issues/528
+pip install --upgrade --force-reinstall pip==9.0.3
 
-# Downgrade pip for ansible container https://github.com/ansible/ansible-container/issues/919
-pip install --force-reinstall pip==9.0.3
+pip install ansible-container[docker,k8s] --disable-pip-version-check
 
-# install ansible container
-pip install ansible-container[docker,k8s]
+# install docker client < 3.0
+# https://github.com/ansible/ansible-container/pull/870
+pip install -U docker==2.7.0 --disable-pip-version-check
 
+# recover the latest version for pip
+pip install --upgrade pip
+```
+
+* [Install Docker-CE](https://docs.docker.com/install/linux/docker-ce/centos/#install-docker-ce-1)
+
+```
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+  
+sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo  
+    
+sudo yum install docker-ce
+
+sudo systemctl start docker    
 ```
 
 # Q & A
 * How to Change the hot key?
 
+```
 input -> keyboard -> keyboard settings
+```
+* How to Change the hot key?
 
+```
+Add path C:\Program Files\Oracle\VirtualBox
+Remove CentOS7-Base.1.0.0-disk001.vmdk from SATA Controller
+
+VBoxManage clonehd "CentOS7-Base.1.0.0-disk001.vmdk" "cloned.vdi" --format vdi
+VBoxManage modifyhd "cloned.vdi" --resize 20480
+VBoxManage clonehd "cloned.vdi" "resize.vmdk" --format vmdk
+
+Add resize.vmdk to SATA Controller
+```
 # References
 * https://www.tecmint.com/fdisk-commands-to-manage-linux-disk-partitions
 * http://software-engineer.gatsbylee.com/how-to-format-and-partition-disk-on-centos-7
