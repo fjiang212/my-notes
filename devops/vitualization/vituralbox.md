@@ -29,7 +29,7 @@ Hyper-V (or any other form of bare-metal hypervisor) is not installed
 | CentOS7-Base | 1.0.0 | Sep 23, 2018 | CentOS-7-x86-64-Minimal-1804 |
 | CentOS7-DevOps | 1.0.0 | Sep 23, 2018 | CentOS7-Base.1.0.0 |
 
-## Base Virtual machine (CentOS7_Base)
+## Base Virtual machine (CentOS7-Base)
 * Install Oracle Virtual Box (Repair with "Run as Administration" if 64bit os not found)
 * [Install CentOS 7(User: vagrant/vagrant)](http://www.jeramysingleton.com/install-centos-7-minimal-in-virtualbox)
 * [Set up Network NAT port forward](https://www.howtogeek.com/122641/how-to-forward-ports-to-a-virtual-machine-and-use-it-as-a-server/)
