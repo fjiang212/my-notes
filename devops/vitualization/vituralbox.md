@@ -1,11 +1,10 @@
-# Create virtual Machine
-* http://www.jeramysingleton.com/install-centos-7-minimal-in-virtualbox
-* http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso
-* https://www.tecmint.com/fdisk-commands-to-manage-linux-disk-partitions
-* http://software-engineer.gatsbylee.com/how-to-format-and-partition-disk-on-centos-7
+# Architecture and 
+![alt text](images/virtualbox_architecture.PNG)
 
+# Key concepts
 
-# Virtual Machine network
+# Components
+## Virtual Machine network
 https://www.virtualbox.org/manual/ch06.html
  
 | | VM <--> Host | VM1 <--> VM2 | VM --> Internet | VM <-- Internet |
@@ -25,3 +24,23 @@ Hardware virtualization is enabled in the BIOS. (Your CPU must support it.)
 For Intel x64: VT-x (Intel Virtualization Technology) and VT-d are both enabled
 For AMD x64: AMD SVM (Secure Virtual Machine) is enabled
 Hyper-V (or any other form of bare-metal hypervisor) is not installed
+
+# Virtual machines
+
+## Base Virtual machine (CentOS_Base)
+* Install Oracle Virtual Box (Repair with "Run as Administration" if 64bit os not found)
+* [Install CentOS 7(User: vagrant/vagrant)](http://www.jeramysingleton.com/install-centos-7-minimal-in-virtualbox)
+* Install additional software
+
+```
+
+```
+
+
+# Q & A
+* How to Change the hot key?
+input -> keyboard -> keyboard settings
+
+# References
+* https://www.tecmint.com/fdisk-commands-to-manage-linux-disk-partitions
+* http://software-engineer.gatsbylee.com/how-to-format-and-partition-disk-on-centos-7

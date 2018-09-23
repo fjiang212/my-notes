@@ -1,8 +1,8 @@
-# Skill
+# Skills
 * Use `what, when, where` as answer
 * Show the problem first and then come up solution. -> Show keyword(one or two): `This is what we call`
 
-# Examples
+# Templates
 ## Start Presentation
 ```
 Thanks for joining us for...
@@ -31,3 +31,7 @@ That's basic overview of .....
 * `Let's dive a little bit to`
 * `Centainly we recommend...`
 * `This is really the direction you should ...`
+
+# Examples
+* 
+

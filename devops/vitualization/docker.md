@@ -6,7 +6,7 @@
 ## Overview 
 https://docs.docker.com/engine/docker-overview/
 
-![alt text](images/architecture.svg)
+![alt text](images/docker_architecture.svg)
 
 ## Storage 
 https://docs.docker.com/storage/
