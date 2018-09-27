@@ -64,7 +64,7 @@ systemctl stop firewalld
 ```
 hwclock --systohc
 ```
-## DevOps Virtual machine (DevOps)
+## DevOps Virtual machine (CentOS7-DevOps)
 * Login as root or sudo su
 * [Install ansible-container](https://docs.ansible.com/ansible-container/installation.html)
 
@@ -104,13 +104,44 @@ sudo yum install docker-ce
 sudo systemctl start docker    
 ```
 
+## AWS Developer Virtual machine(CentOS7-AWS)
+
+* Install localstack
+
+```
+yum -y update
+yum -y install java-1.8.0-openjdk-devel
+yum -y group install "Development Tools"
+yum -y install python-devel
+curl -sL https://rpm.nodesource.com/setup_6.x | sudo -E bash -
+yum -y install nodejs
+
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+pip install localstack --ignore-installed PyYAML
+
+localstack 0.8.7 has requirement pyYAML==3.12, but you'll have pyyaml 3.13 which is incompatible.
+
+```
+
+* Start local stack
+
+```
+# Start all serivces
+localstack start
+
+# start selective services
+SERVICES=sqs,sns,s3,kinesis localstack start
+
+```
+
 # Q & A
 * How to Change the hot key?
 
 ```
 input -> keyboard -> keyboard settings
 ```
-* How to Change the hot key?
+* How to resize storage?
 
 ```
 Add path C:\Program Files\Oracle\VirtualBox
