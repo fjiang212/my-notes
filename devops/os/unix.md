@@ -101,6 +101,12 @@ https://www.ibm.com/support/knowledgecenter/en/SSPT3X_2.1.2/com.ibm.swg.im.iis.p
 *	Change /etc/security/limits.conf
 *	Change /etc/security/limits.d/90-nproc.conf/90-nproc.conf 
 
+## How to create multiple directories or files
+
+```
+mkdir -p {network, compute, storage}
+touch {network, compute, storage}/{main.tf, variables.tf, output.tf}
+```
 # Solaris
 ## Commands
 * Solaris management console

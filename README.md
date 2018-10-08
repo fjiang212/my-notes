@@ -20,6 +20,9 @@
 | PyCharm |  Python application | https://www.jetbrains.com/pycharm/ |
 | sublime | Text Editor | https://www.sublimetext.com/ |
 
+* STS Plugins
+   * Markdown Text Editor
+   * Github Falvored Markdown Viewer
 
 ### Programming
 | Tool          |Note   | URL| 
