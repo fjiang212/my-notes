@@ -19,7 +19,7 @@ False
 Explanation
 Snowball is a physical appliance.
 
-## Storage
+
 
 ## Aanlysis
 * Q1. Kinesis Analytics expected latency is in the minutes.
@@ -106,5 +106,48 @@ http://docs.aws.amazon.com/athena/latest/ug/service-limits.html
 Further Reading
 https://aws.amazon.com/athena/faqs/
 
+# A clound Guru
+## Collection 
+
+* Q1. For an unknown reason, data delivery from Kinesis Firehose to your Redshift cluster has failed. Kinesis Firehose retries the data delivery every 5 minutes for a maximum period for of 60 minutes; however, none of the retries deliver the data to Redshift. Kinesis Firehose skips the files and move onto the next batch of files in S3. How can you ensure that the undelivered data is eventually loaded into Redshift?
+
+Skipped files are delivered to your S3 bucket as a manifest file in an errors folder. Run the COPY command manually to load the skipped files after you have determined why they failed to load.
+
+* Q2. Your team has successfully migrated the corporate data warehouse to Redshift. So far, all the data coming into the ETL pipeline for the data warehouse has been from other corporate systems also running on AWS. However, after signing some new business deals with a 3rd party, they will be securely sending files directly to S3. The data in these files needs to be ingested into S3. Members of your team are debating the most efficient and best automated way to introduce this change into the ETL pipeline. Which of the following options would you suggest? (Choose 2)
+
+Use Lambda (AWS Redshift Database Loader).
+
+Use Data Pipeline.
+
+* Q3. Which service does Kinesis Firehose not load streaming data into?
+
+DynamoDB
+
+
+Kinesis Firehose can capture, transform, and load streaming data into Amazon Kinesis Analytics, Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service.
+
+
+## Storage
+* Q1. Which of the following attribute data types can be table or item keys? (Choose 3)
+
+String, Number, and Binary data types (scalars) can be table or item keys. 
+
+## Analysis
+
+* Q1. You have a table in your Redshift cluster, and the data in this table changes infrequently. The table has fewer than 15 million rows and does not JOIN any other tables. Which distribution style would you select for this table?
+
+Answer: ALL
+
+* Q2. 
+True or False: When you use the UNLOAD command in Redshift to write data to S3, it automatically creates files using Amazon S3 server-side encryption with AWS-managed encryption keys (SSE-S3).
+
+Answer: True
+
+## Security
+* Q1. Which of the following mechanisms work together to encrypt data at rest on instance store volumes and EBS volumes? (Choose 2)
+
+Open-source HDFS Encryption
+
+LUKS
 
 
