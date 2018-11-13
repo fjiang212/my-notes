@@ -8,22 +8,21 @@
 
 # Visualization
 
-
 # Data Security
 
 # References
-* https://aws.amazon.com/certification/certified-big-data-specialty/
-* http://d0.awsstatic.com/training-and-certification/docs-bigdata-spec/AWS_Certified_Big_Data_Specialty_Blueprint.pdf
-* https://www.youtube.com/watch?v=OT8PVf_D7kw
+- [x] https://aws.amazon.com/certification/certified-big-data-specialty/
+- [x] http://d0.awsstatic.com/training-and-certification/docs-bigdata-spec/AWS_Certified_Big_Data_Specialty_Blueprint.pdf
+- [ ] https://www.youtube.com/watch?v=OT8PVf_D7kw
 
 
 # Experiences
-* https://www.linkedin.com/pulse/my-experience-aws-certified-big-data-specialty-exam-beta-khor-%E8%AE%B8%E6%80%80%E7%A5%A5
-* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LN7wib7tIB1tKu0JCEO/Feedback%20after%20Exam%20-%2074%25%20-%20Sep-22-2018
+- [x] https://www.linkedin.com/pulse/my-experience-aws-certified-big-data-specialty-exam-beta-khor-%E8%AE%B8%E6%80%80%E7%A5%A5
+- [x] https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LN7wib7tIB1tKu0JCEO/Feedback%20after%20Exam%20-%2074%25%20-%20Sep-22-2018
 
 # Preparation
 ## Courses
-- [ ] https://acloud.guru/learn/aws-certified-big-data-specialty
+- [x] https://acloud.guru/learn/aws-certified-big-data-specialty
 - [x] https://linuxacademy.com/cp/modules/view/id/108
 
 ## White pages
