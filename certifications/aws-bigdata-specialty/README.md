@@ -13,7 +13,6 @@
 # References
 - [x] https://aws.amazon.com/certification/certified-big-data-specialty/
 - [x] http://d0.awsstatic.com/training-and-certification/docs-bigdata-spec/AWS_Certified_Big_Data_Specialty_Blueprint.pdf
-- [ ] https://www.youtube.com/watch?v=OT8PVf_D7kw
 
 
 # Experiences
@@ -26,7 +25,7 @@
 - [x] https://linuxacademy.com/cp/modules/view/id/108
 
 ## White pages
-- [ ] [Big data Analytics Option on AWS](https://d1.awsstatic.com/whitepapers/Big_Data_Analytics_Options_on_AWS.pdf)
+- [x] [Big data Analytics Option on AWS](https://d1.awsstatic.com/whitepapers/Big_Data_Analytics_Options_on_AWS.pdf)
 - [ ] [Data Warehousing on AWS](https://d1.awsstatic.com/whitepapers/enterprise-data-warehousing-on-aws.pdf)
 - [ ] [Best Practices for Amazon EMR](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf)
 - [ ] [Lambda Architecture for Batch and Stream Processing](https://d1.awsstatic.com/whitepapers/lambda-architecure-on-for-batch-aws.pdf)
