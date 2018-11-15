@@ -4,9 +4,9 @@
 - [x] https://linuxacademy.com/cp/modules/view/id/108
 
 ## White pages
-### [x] [Big data Analytics Option on AWS](https://d1.awsstatic.com/whitepapers/Big_Data_Analytics_Options_on_AWS.pdf)
+- [x] [Big data Analytics Option on AWS](https://d1.awsstatic.com/whitepapers/Big_Data_Analytics_Options_on_AWS.pdf)
 
-### [x] [Data Warehousing on AWS](https://d1.awsstatic.com/whitepapers/enterprise-data-warehousing-on-aws.pdf)
+- [x] [Data Warehousing on AWS](https://d1.awsstatic.com/whitepapers/enterprise-data-warehousing-on-aws.pdf)
 ![analysis pipeline](images/readme/analysis_pipeline.PNG)
 
 - [ ] [Best Practices for Amazon EMR](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf)
