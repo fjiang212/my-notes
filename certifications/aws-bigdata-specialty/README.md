@@ -28,7 +28,7 @@
 ## Experience
 ### Failed
 * https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LQmMXgCbOavIZqbKCok/i_failed_the_exam_in_my_first
-
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LO5FEjJZ_wCDZ8iNinh/not_successful_in_my_attempt_t
 
 ### Passed
 * https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LQZg67t44iAzdVwdPO9/passed_exam_on_5th_nov_2018_an
@@ -37,8 +37,19 @@
 * https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LQEsjEzM2dQcVa6ktl9/passed_big_data_specialty_exam
 * https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LOg89mHbqEeNG4SxwnP/cleared_big_data_specialty_yes
 * https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LPMRvOQa3HUQuMG0WzZ/passed_today_with_80%25
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LMoqRZinwbF7tqDkr1u/passed_big_data_today_(sept_19
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LL64v6lSYN3ECStAegl/passed_big_data_exam_yesteday
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LLv6_rUL50A0jWYdNYv/passed_big_data_specialty_with
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LLM1LDv-YmTuXsmVSLF/appeared_for_the_exam_and_clea
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LKEARKkfGGg-j6k8gEE/passed_big_data:_exam_feedback
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LIlor7AMkQpGJKlfQc4/i_passed_the_big_data_exam_wit
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LIlor7AMkQpGJKlfQc4/i_passed_the_big_data_exam_wit
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LHYw7MOixhk5QeMCOVa/passed_exam,_barely...
 
-## Samples
+## Additional Reading
+- [ ] Data Lakes 101, hive compatible meta stores, Glue/Athena
+- [ ] https://aws.amazon.com/blogs/big-data/aws-big-data-analytics-sessions-at-reinvent-2017/
+- [ ] https://aws.amazon.com/blogs/big-data/aws-data-analytics-sessions-at-reinvent-2018/
 
 
 # References
