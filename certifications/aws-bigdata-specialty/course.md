@@ -49,14 +49,14 @@ aws s3 cp $HOME/redshiftdata s3://bigdatalabsk/redshiftdata --recursive
 
 # Chapter 2: Collection
 ## Kinesis Streams Core Concepts
-- [ ] https://github.com/awslabs/amazon-kinesis-producer
-- [ ] https://github.com/awslabs/amazon-kinesis-agent
-- [ ] https://github.com/awslabs/amazon-kinesis-client
-- [ ] https://aws.amazon.com/blogs/big-data/implementing-efficient-and-reliable-producers-with-the-amazon-kinesis-producer-library/
-- [ ] https://github.com/awslabs/amazon-kinesis-connectors
-- [ ] https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/
-- [ ] https://d0.awsstatic.com/whitepapers/core-tenets-of-iot1.pdf
-- [ ] https://github.com/aws/aws-iot-device-sdk-python
+- [x] https://github.com/awslabs/amazon-kinesis-producer
+- [x] https://github.com/awslabs/amazon-kinesis-agent
+- [x] https://github.com/awslabs/amazon-kinesis-client
+- [x] https://aws.amazon.com/blogs/big-data/implementing-efficient-and-reliable-producers-with-the-amazon-kinesis-producer-library/
+- [x] https://github.com/awslabs/amazon-kinesis-connectors
+- [x] https://aws.amazon.com/blogs/compute/amazon-kinesis-firehose-data-transformation-with-aws-lambda/
+- [x] https://d0.awsstatic.com/whitepapers/core-tenets-of-iot1.pdf
+- [x] https://github.com/aws/aws-iot-device-sdk-python
 
 
 # Chapter 3: Storage

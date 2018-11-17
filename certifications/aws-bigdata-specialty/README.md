@@ -12,7 +12,7 @@
 
 - [ ] [Lambda Architecture for Batch and Stream Processing](https://d1.awsstatic.com/whitepapers/lambda-architecure-on-for-batch-aws.pdf)
 
-- [ ] [Core Tenets of IoT](https://d1.awsstatic.com/whitepapers/core-tenets-of-iot1.pdf)
+- [x] [Core Tenets of IoT](https://d1.awsstatic.com/whitepapers/core-tenets-of-iot1.pdf)
 
 # Developer guides 
 - [ ] AWS Redshift
