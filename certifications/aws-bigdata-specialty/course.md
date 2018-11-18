@@ -60,9 +60,9 @@ aws s3 cp $HOME/redshiftdata s3://bigdatalabsk/redshiftdata --recursive
 
 
 # Chapter 3: Storage
-- [ ] https://aws.amazon.com/blogs/big-data/scaling-writes-on-amazon-dynamodb-tables-with-global-secondary-indexes/
-- [ ] http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html
-- [ ] http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html
+- [x] https://aws.amazon.com/blogs/big-data/scaling-writes-on-amazon-dynamodb-tables-with-global-secondary-indexes/
+- [x] http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html
+- [x] http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.CrossRegionRepl.html
 
 # Chapter 4: Processing
 ## EMR Introduction
