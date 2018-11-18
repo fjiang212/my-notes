@@ -43,8 +43,11 @@
 * https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LLM1LDv-YmTuXsmVSLF/appeared_for_the_exam_and_clea
 * https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LKEARKkfGGg-j6k8gEE/passed_big_data:_exam_feedback
 * https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LIlor7AMkQpGJKlfQc4/i_passed_the_big_data_exam_wit
-* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LIlor7AMkQpGJKlfQc4/i_passed_the_big_data_exam_wit
 * https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LHYw7MOixhk5QeMCOVa/passed_exam,_barely...
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LBLABkdaFrQ0tYEmWkQ/passed_the_aws_certified_big_d
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LBLtmqEdLZWA_0DAUGK/passed_with_70%25_-_my_thoughts
+* https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LCC9DyiV07TaW1Yj6cu/big_data_specialty_certificati
+
 
 ## Additional Reading
 - [ ] Data Lakes 101, hive compatible meta stores, Glue/Athena

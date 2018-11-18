@@ -56,4 +56,15 @@
 ![Quicksight](images/architecture/quicksight.png)
 
 # Security
+## KMS
+* KMS (AWS service integration, FIPS 140-2)
+![KMS](images/architecture/kms.png)
 
+## CloudHSM
+* CloudHS (Less AWS service integration, Use Java Cryptography Extension(JCE), CNG.  FIPS 140-3)
+![CloudHSM](images/architecture/cloudhsm.png)
+
+## Services
+* EMR encryption (LUCK: Linux Unified Key Setup, use KMS CMK to generate encrpytion data key then use this key to protect LUCK master key)
+
+![EMR encryption](images/architecture/emr_encryption.png)

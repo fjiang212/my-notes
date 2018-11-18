@@ -135,3 +135,4 @@ aws s3 cp $HOME/redshiftdata s3://bigdatalabsk/redshiftdata --recursive
 # Chapter 7: Security
 - [ ] https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html
 - [ ] http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html
+- [x] https://docs.aws.amazon.com/kms/latest/developerguide/service-integration.html
