@@ -1,3 +1,8 @@
+# Overview
+* Architecture
+![architecture](images/architecture/architecture.png)
+
+
 # Collection
 ## Kinesis
 * Kinesis Architecture
@@ -46,7 +51,9 @@
 
 
 # Visualization
+* Quicksight
 
+![Quicksight](images/architecture/quicksight.png)
 
 # Security
 
