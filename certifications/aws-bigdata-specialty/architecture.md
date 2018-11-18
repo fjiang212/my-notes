@@ -36,6 +36,14 @@
 
 
 # Analysis
+## Redshift
+* Redshift
+
+![Redshift](images/architecture/redshift.png)
+
+* Redshift Spectrum
+![Redshift Spectrum](images/architecture/redshift-spectrum.png)
+
 
 # Visualization
 
