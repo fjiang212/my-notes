@@ -2,7 +2,6 @@
 ## Tools 
 - [ ] https://www.aginity.com/main/workbench-for-amazon-redshift/
 - [ ] https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-using-workbench.html
-- [ ] Cost: https://help.acloud.guru/hc/en-us/articles/115004457893
 - [ ] https://github.com/sko71/aws-bigdata-specialty
 - [ ] https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
 
@@ -66,11 +65,11 @@ aws s3 cp $HOME/redshiftdata s3://bigdatalabsk/redshiftdata --recursive
 
 # Chapter 4: Processing
 ## EMR Introduction
-- [ ] https://github.com/sko71/aws-bigdata-specialty
+- [x] https://github.com/sko71/aws-bigdata-specialty
 
 ## EMR Operations
-- [ ] https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf
-- [ ] http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html
+- [x] https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf
+- [x] http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html
 
 ## Using Hue with EMR
 - [ ] http://docs.aws.amazon.com/emr/latest/ReleaseGuide/hue-ldap.html

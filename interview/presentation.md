@@ -34,4 +34,6 @@ That's basic overview of .....
 
 # Examples
 * 
+Big data is all about collecting, storing, processing, and visualizing massive amounts of data so that companies can distill knowledge from it, derive valuable business insights from that knowledge, and make better business decisions, all as quickly as possible
+
 
