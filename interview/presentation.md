@@ -32,6 +32,13 @@ That's basic overview of .....
 * `Centainly we recommend...`
 * `This is really the direction you should ...`
 
+# Patterns
+## Incremental
+Showing architecture incrementally. Ask question after the previous architecture(What if ....)
+ 
+https://www.youtube.com/watch?v=BCgQ0Ep0zSk&list=PLEF5xKHm-3ZOgLIbiHg9bTq5XIfhJh6Tr&index=2&t=0s
+
+
 # Examples
 * 
 Big data is all about collecting, storing, processing, and visualizing massive amounts of data so that companies can distill knowledge from it, derive valuable business insights from that knowledge, and make better business decisions, all as quickly as possible
