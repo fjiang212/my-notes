@@ -2,6 +2,8 @@
 * Architecture
 ![architecture](images/architecture/architecture.png)
 
+* Database
+![Database](images/architecture/database.png)
 
 # Collection
 ## Kinesis
