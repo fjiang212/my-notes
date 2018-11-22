@@ -39,7 +39,8 @@
 * Compression
 ![Compression](images/architecture/compression.png)
 
-
+* File Format
+![ File Format](images/architecture/format.png)
 # Analysis
 ## Redshift
 * Redshift

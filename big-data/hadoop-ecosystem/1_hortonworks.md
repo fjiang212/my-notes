@@ -6,6 +6,7 @@
 | ------------- |----- | ----- | 
 |http://localhost:4200  | Shell Web Client | Root/s..1 | 
 |http://localhost:8080  | Ambari | admin/S..1  maria_dev/maria_dev | 
+|http://localhost:9995  | Zeppelin | | 
 # HDP 
 https://hortonworks.com/tutorial/hadoop-tutorial-getting-started-with-hdp/section/1/
 
