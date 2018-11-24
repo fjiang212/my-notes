@@ -11,15 +11,15 @@
 https://hortonworks.com/tutorial/hadoop-tutorial-getting-started-with-hdp/section/1/
 
 ## [HDP Ecosystems](https://hortonworks.com/ecosystems/)
-![alt text](images/hdp-projects.png)
+![alt text](images/hdp_projects.png)
 
 ## [HDFS](https://hortonworks.com/apache/hdfs/)
 HDFS - Hadoop Distributed File System (HDFS) is a Java-based file system that provides scalable and reliable data storage that is designed to span large clusters of commodity servers.
-![alt text](images/hdfs-architecture.png)
+![alt text](images/hdfs_architecture.png)
 
 ## [Apache YARN (YET ANOTHER RESOURCE NEGOTIATOR)](https://hortonworks.com/blog/apache-hadoop-yarn-background-and-an-overview/)
 Apache Hadoop YARN - Part of the core Hadoop project, YARN is a next-generation framework for  Hadoop data processing extending MapReduce capabilities by supporting non-MapReduce workloads associated with other programming models.
-![alt text](images/yarn-architecture.png)
+![alt text](images/yarn_architecture.png)
 
 ## [HCatalog](https://www.bmc.com/blogs/what-is-apache-hcatalog-hcatalog-explained/)
 Apache HCatalog - A table and metadata management service that provides a centralized way for data processing systems to understand the structure and location of the data stored within Apache Hadoop.
@@ -35,11 +35,21 @@ The tables in Hive are similar to tables in a relational database, and data unit
 Within a particular database, data in the tables is serialized and **each table has a corresponding Hadoop Distributed File System (HDFS) directory**. Each table can be sub-divided into partitions that determine how data is distributed within sub-directories of the table directory. Data within partitions can be further broken down into buckets.
 ## HBase
 Apache HBase - A column-oriented NoSQL data storage system that provides random real-time read/write access to big data for user applications.
+![alt text](images/hbase_architecture.png)
 
-## Presto
+## [Presto](https://www.starburstdata.com/learn-presto/reference-architectures/)
+Presto (or PrestoDB) is an open source, distributed SQL query engine, designed from the ground up for fast analytic queries against data of any size. It supports both non-relational sources, such as the Hadoop Distributed File System (HDFS), Amazon S3, Cassandra, MongoDB, and HBase, and relational data sources such as MySQL, PostgreSQL, Amazon Redshift, Microsoft SQL Server, and Teradata.
+
+* Architecture
+![alt text](images/presto_architecture.png)
+
+* Presto on AWS 
+![alt text](images/presto_on_aws.png)
+
 
 ## [Spark](https://hortonworks.com/apache/spark/)
 Apache Spark - Spark is ideal for in-memory data processing. It allows data scientists to implement fast, iterative algorithms for advanced analytics such as clustering and classification of datasets.
 
+![alt text](images/spark_architecture.png)
 
 
