@@ -28,7 +28,7 @@
 
 High-Performance Columnar Storage for Hadoop
 
-![alt text](images/hive-orc-layout.png)
+![alt text](images/hive_orc_layout.png)
 
 
 # Q & A
