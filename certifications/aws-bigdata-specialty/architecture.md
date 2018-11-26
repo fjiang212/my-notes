@@ -80,7 +80,9 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 * Redshift Spectrum
 ![Redshift Spectrum](images/architecture/redshift_spectrum.png)
 
+## Machine Learning
 
+Input data is the data that you use to create a datasource. You must save your input data in the comma-separated values (.csv) format.
 # Visualization
 * Quicksight
 

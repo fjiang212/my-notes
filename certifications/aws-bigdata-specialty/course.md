@@ -72,10 +72,10 @@ aws s3 cp $HOME/redshiftdata s3://bigdatalabsk/redshiftdata --recursive
 - [x] http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html
 
 ## Using Hue with EMR
-- [ ] http://docs.aws.amazon.com/emr/latest/ReleaseGuide/hue-ldap.html
+- [x] http://docs.aws.amazon.com/emr/latest/ReleaseGuide/hue-ldap.html
 
 ## HBase on EMR
-- [ ] https://d1.awsstatic.com/whitepapers/AWS_Comparing_the_Use_of_DynamoDB_and_HBase_for_NoSQL.pdf
+- [x] https://d1.awsstatic.com/whitepapers/AWS_Comparing_the_Use_of_DynamoDB_and_HBase_for_NoSQL.pdf
 - [ ] https://aws.amazon.com/blogs/big-data/combine-nosql-and-massively-parallel-analytics-using-apache-hbase-and-apache-hive-on-amazon-emr/
 - [ ] http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-access-hive.html
 

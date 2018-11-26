@@ -10,7 +10,7 @@
 
 - [x] [Best Practices for Amazon EMR](https://d0.awsstatic.com/whitepapers/aws-amazon-emr-best-practices.pdf)
 
-- [ ] [Lambda Architecture for Batch and Stream Processing](https://d1.awsstatic.com/whitepapers/lambda-architecure-on-for-batch-aws.pdf)
+- [x] [Lambda Architecture for Batch and Stream Processing](https://d1.awsstatic.com/whitepapers/lambda-architecure-on-for-batch-aws.pdf)
 
 - [x] [Core Tenets of IoT](https://d1.awsstatic.com/whitepapers/core-tenets-of-iot1.pdf)
 
@@ -50,7 +50,7 @@
 
 
 ## Additional Reading
-- [ ] Data Lakes 101, hive compatible meta stores, Glue/Athena
+- [x] Data Lakes 101, hive compatible meta stores, Glue/Athena
 - [ ] https://aws.amazon.com/blogs/big-data/aws-big-data-analytics-sessions-at-reinvent-2017/
 - [ ] https://aws.amazon.com/blogs/big-data/aws-data-analytics-sessions-at-reinvent-2018/
 
