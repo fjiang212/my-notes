@@ -80,6 +80,12 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 * Redshift Spectrum
 ![Redshift Spectrum](images/architecture/redshift_spectrum.png)
 
+* https://docs.aws.amazon.com/redshift/latest/dg/r_UNLOAD.html
+Unloads the result of a query to one or more text files on Amazon S3, using Amazon S3 server-side encryption (SSE-S3). You can also specify server-side encryption with an AWS Key Management Service key (SSE-KMS) or client-side encryption with a customer-managed key (CSE-CMK).
+
+* https://docs.aws.amazon.com/redshift/latest/dg/r_COPY.html
+Loads data into a table from data files or from an Amazon DynamoDB table. The files can be located in an Amazon Simple Storage Service (Amazon S3) bucket, an Amazon EMR cluster, or a remote host that is accessed using a Secure Shell (SSH) connection.
+
 ## Machine Learning
 
 Input data is the data that you use to create a datasource. You must save your input data in the comma-separated values (.csv) format.

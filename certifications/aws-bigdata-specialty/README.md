@@ -60,3 +60,7 @@
 - [x] http://d0.awsstatic.com/training-and-certification/docs-bigdata-spec/AWS_Certified_Big_Data_Specialty_Blueprint.pdf
 - [x] https://www.linkedin.com/pulse/my-experience-aws-certified-big-data-specialty-exam-beta-khor-%E8%AE%B8%E6%80%80%E7%A5%A5
 - [x] https://acloud.guru/forums/aws-certified-big-data-specialty/discussion/-LN7wib7tIB1tKu0JCEO/Feedback%20after%20Exam%20-%2074%25%20-%20Sep-22-2018
+
+# Experiences
+* 认真审题，理解到底问什么
+* 采用排除法， 特别是在答案不能完全满足题目要求的情况下
