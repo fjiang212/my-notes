@@ -153,10 +153,10 @@ LUKS
 # AWS Sample Quiz
 * Q1. A company needs to deploy a data lake solution for their data scientists in which all company data is accessible and stored in a central S3 bucket. The company segregates the data by business unit, using specific prefixes. Scientists can only access the data from their own business unit. The company needs a single sign-on identity and management solution based on Microsoft Active Directory (AD) to manage access to the data in Amazon S3.
 Which method meets these requirements?
-A) Use AWS IAM Federation functions and specify the associated role based on the users' groups in AD.
-B) Create bucket policies that only allow access to the authorized prefixes based on the users' group name in Active Directory.
-C) Deploy the AD Synchronization service to create AWS IAM users and groups based on AD information.
-D) Use Amazon S3 API integration with AD to impersonate the users on access in a transparent manner.
+    * A) Use AWS IAM Federation functions and specify the associated role based on the users' groups in AD.
+    * B) Create bucket policies that only allow access to the authorized prefixes based on the users' group name in Active Directory.
+    * C) Deploy the AD Synchronization service to create AWS IAM users and groups based on AD information.
+    * D) Use Amazon S3 API integration with AD to impersonate the users on access in a transparent manner.
 
 A - Identity Federation allows organizations to associate temporary credentials to users authenticated through an external identity provider such as Microsoft Active Directory (AD). These temporary credentials are linked to AWS IAM roles that grant access to the S3 bucket. Option B does not work because bucket policies are linked to IAM principles and cannot recognize AD attributes. Option C does not work because AD Synchronization will not sync directly with AWS IAM, and custom synchronization would not result in Amazon S3 being able to see group information. D isn't possible because there is no feature to integrate Amazon S3 directly with external identity providers.
 
@@ -166,47 +166,52 @@ Complex SQL queries and transactions
 Consistent reads
 Fixed schema
 Which data store should the organization choose?
-A) Amazon S3
-B) Amazon Kinesis
-C) Amazon DynamoDB
-D) Amazon RDS
+
+    * A) Amazon S3
+    * B) Amazon Kinesis
+    * C) Amazon DynamoDB
+    * D) Amazon RDS
 
 D - Amazon RDS handles all these requirements, and although Amazon RDS is not typically thought of as optimized for key-value based access, a schema with a good primary key selection can provide this functionality. Amazon S3 provides no fixed schema and does not have consistent read after PUT support. Amazon Kinesis supports streaming data that is consistent as of a given sequence number but doesn't provide key/value access. Finally, although Amazon DynamoDB provides key/value access and consistent reads, it does not support SQL-based queries.
 
 * Q3. A web application emits multiple types of events to Amazon Kinesis Streams for operational reporting. Critical events must be captured immediately before processing can continue, but informational events do not need to delay processing.
 What is the most appropriate solution to record these different types of events?
-A) Log all events using the Kinesis Producer Library.
-B) Log critical events using the Kinesis Producer Library, and log informational events using the PutRecords API method.
-C) Log critical events using the PutRecords API method, and log informational events using the Kinesis Producer Library.
-D) Log all events using the PutRecords API method.
+
+    * A) Log all events using the Kinesis Producer Library.
+    * B) Log critical events using the Kinesis Producer Library, and log informational events using the PutRecords API method.
+    * C) Log critical events using the PutRecords API method, and log informational events using the Kinesis Producer Library.
+    * D) Log all events using the PutRecords API method.
 
 C – The core of this question is how to send event messages to Kinesis synchronously vs. asynchronously. The critical events must be sent synchronously, and the informational events can be sent asynchronously. The Kinesis Producer Library (KPL) implements an asynchronous send function, so it can be used for the informational messages. PutRecords is a synchronous send function, so it must be used for the critical events.
 
 * Q4. An administrator decides to use the Amazon Machine Learning service to classify social media posts that mention your company into two categories: posts that require a response and posts that do not. The training dataset of 10,000 posts contains the details of each post, including the timestamp, author, and full text of the post. You are missing the target labels that are required for training. Which two options will create valid target label data?
-A) Ask the social media handling team to review each post and provide the label.
-B) Use the sentiment analysis NLP library to determine whether a post requires a response.
-C) Use the Amazon Mechanical Turk web service to publish Human Intelligence Tasks that ask Turk workers to label the posts.
-D) Using the a priori probability distribution of the two classes, use Monte-Carlo simulation to generate the labels.
+
+    * A) Ask the social media handling team to review each post and provide the label.
+    * B) Use the sentiment analysis NLP library to determine whether a post requires a response.
+    * C) Use the Amazon Mechanical Turk web service to publish Human Intelligence Tasks that ask Turk workers to label the posts.
+    * D) Using the a priori probability distribution of the two classes, use Monte-Carlo simulation to generate the labels.
 
 A, C - You need accurate data to train the service and get accurate results from future data. The options described in B and D would end up training an ML model using the output from a different machine learning model and therefore would significantly increase the possible error rate. It is extremely important to have a very low error rate (if any!) in your training set, and therefore human-validated or assured labels are essential.
 
 
 * Q5. A data engineer needs to collect data from multiple Amazon Redshift clusters within a business and consolidate the data into a single central data warehouse. Data must be encrypted at all times while at rest or in flight.
 What is the most scalable way to build this data collection process?
-A) Run an ETL process that connects to the source clusters using SSL to issue a SELECT query for new data, and then write to the target data warehouse using an INSERT command over another SSL secured connection.
-B) Use AWS KMS data key to run an UNLOAD ENCRYPTED command that stores the data in an unencrypted S3 bucket; run a COPY command to move the data into the target cluster.
-C) Run an UNLOAD command that stores the data in an S3 bucket encrypted with an AWS KMS data key; run a COPY command to move the data into the target cluster.
-D) Connect to the source cluster over an SSL client connection, and write data records to Amazon Kinesis Firehose to load into your target data warehouse.
+
+    * A) Run an ETL process that connects to the source clusters using SSL to issue a SELECT query for new data, and then write to the target data warehouse using an INSERT command over another SSL secured connection.
+    * B) Use AWS KMS data key to run an UNLOAD ENCRYPTED command that stores the data in an unencrypted S3 bucket; run a COPY command to move the data into the target cluster.
+    * C) Run an UNLOAD command that stores the data in an S3 bucket encrypted with an AWS KMS data key; run a COPY command to move the data into the target cluster.
+    * D) Connect to the source cluster over an SSL client connection, and write data records to Amazon Kinesis Firehose to load into your target data warehouse.
 
 B - The most scalable solutions are the UNLOAD/COPY solutions because they will work in parallel, which eliminates A and D as answers. Option C is incorrect because the data would not be encrypted in flight, and you cannot encrypt an entire bucket with a KMS key. Option B meets the encryption requirements, the UNLOAD ENCRYPTED command automatically stores the data encrypted using-client side encryption and uses HTTPS to encrypt the data during the transfer to S3.
 
 
 * Q6. A company logs data from its application in large files and runs regular analytics of these logs to support internal reporting for three months after the logs are generated. After three months, the logs are infrequently accessed for up to a year. The company also has a regulatory control requirement to store application logs for seven years.
 Which course of action should the company take to achieve these requirements in the most cost-efficient way?
-A) Store the files in S3 Glacier with a Deny Delete vault lock policy for archives less than seven years old and a vault access policy that restricts read access to the analytics IAM group and write access to the log writer service role.
-B) Store the files in S3 Standard with a lifecycle policy to transition the storage class to Standard - IA after three months. After a year, transition the files to Glacier and add a Deny Delete vault lock policy for archives less than seven years old.
-C) Store the files in S3 Standard with lifecycle policies to transition the storage class to Standard – IA after three months and delete them after a year. Simultaneously store the files in Amazon Glacier with a Deny Delete vault lock policy for archives less than seven years old.
-D) Store the files in S3 Standard with a lifecycle policy to remove them after a year. Simultaneously store the files in Amazon S3 Glacier with a Deny Delete vault lock policy for archives less than seven years old.
+
+    * A) Store the files in S3 Glacier with a Deny Delete vault lock policy for archives less than seven years old and a vault access policy that restricts read access to the analytics IAM group and write access to the log writer service role.
+    * B) Store the files in S3 Standard with a lifecycle policy to transition the storage class to Standard - IA after three months. After a year, transition the files to Glacier and add a Deny Delete vault lock policy for archives less than seven years old.
+    * C) Store the files in S3 Standard with lifecycle policies to transition the storage class to Standard – IA after three months and delete them after a year. Simultaneously store the files in Amazon Glacier with a Deny Delete vault lock policy for archives less than seven years old.
+    * D) Store the files in S3 Standard with a lifecycle policy to remove them after a year. Simultaneously store the files in Amazon S3 Glacier with a Deny Delete vault lock policy for archives less than seven years old.
 
 C – There are two aspects to this question: setting up a lifecycle policy to ensure that objects are stored in the most cost-effective storage, and ensuring that the regulatory control is met. The lifecycle policy will store the objects on S3 Standard during the three months of active use, and then move the objects to S3 Standard – IA when access will be infrequent. That narrows the possible answer set to B and C. The Deny Delete vault lock policy will ensure that the regulatory policy is met, but that policy must be applied over the entire lifecycle of the object, not just after it is moved to Glacier after the first year. Option C has the Deny Delete vault lock applied over the entire lifecycle of the object and is the right answer.f
 
