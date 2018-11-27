@@ -26,8 +26,13 @@
 ![iot_components](images/architecture/iot_components.png)
 
 # Storage
-## DyanmoDB
+## Data Pipeline
 
+AWS Data Pipeline is a web service that makes it easy to schedule regular data movement and data processing activities in the AWS cloud. AWS Data Pipeline integrates with on-premise and cloud-based storage systems to allow developers to use their data when they need it, where they want it, and in the required format. AWS Data Pipeline allows you to quickly define a dependent chain of data sources, destinations, and predefined or custom data processing activities called a pipeline. Based on a schedule you define, your pipeline regularly performs processing activities such as distributed data copy, SQL transforms, MapReduce applications, or custom scripts against destinations such as Amazon S3, Amazon RDS, or Amazon DynamoDB. By executing the scheduling, retry, and failure logic for these workflows as a highly scalable and fully managed service, Data Pipeline ensures that your pipelines are robust and highly available.
+
+
+## DyanmoDB
+* DynamoDB auto scaling uses the AWS Application Auto Scaling service to dynamically adjust provisioned throughput capacity on your behalf, in response to actual traffic patterns. This enables a table or a global secondary index to increase its provisioned read and write capacity to handle sudden increases in traffic, without throttling. When the workload decreases, Application Auto Scaling decreases the throughput so that you don't pay for unused provisioned capacity.
 
 # Processing
 
@@ -86,6 +91,15 @@ Unloads the result of a query to one or more text files on Amazon S3, using Amaz
 * https://docs.aws.amazon.com/redshift/latest/dg/r_COPY.html
 Loads data into a table from data files or from an Amazon DynamoDB table. The files can be located in an Amazon Simple Storage Service (Amazon S3) bucket, an Amazon EMR cluster, or a remote host that is accessed using a Secure Shell (SSH) connection.
 
+* How do I transfer ownership of an Amazon Redshift cluster to a different AWS account?
+
+To manually migrate an Amazon Redshift cluster to another AWS account, follow these steps:
+
+    * Create a manual snapshot of the cluster you want to migrate.
+    * Share the cluster snapshot with another AWS account to view and restore the snapshot.
+    * Before you copy a snapshot to another region, first enable cross-region snapshots.
+    * In the destination AWS account, restore the shared cluster snapshot.
+    
 ## Machine Learning
 
 Input data is the data that you use to create a datasource. You must save your input data in the comma-separated values (.csv) format.
