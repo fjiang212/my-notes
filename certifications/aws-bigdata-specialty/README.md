@@ -53,7 +53,9 @@
 - [x] Data Lakes 101, hive compatible meta stores, Glue/Athena
 - [ ] https://aws.amazon.com/blogs/big-data/aws-big-data-analytics-sessions-at-reinvent-2017/
 - [ ] https://aws.amazon.com/blogs/big-data/aws-data-analytics-sessions-at-reinvent-2018/
-
+- [ ] https://aws.amazon.com/blogs/big-data/top-8-best-practices-for-high-performance-etl-processing-using-amazon-redshift/
+- [ ] https://aws.amazon.com/blogs/big-data/etl-processing-using-aws-data-pipeline-and-amazon-elastic-mapreduce/
+- [ ] https://tech.trivago.com/2018/07/13/aws-kinesis-with-lambdas-lessons-learned/
 
 # References
 - [x] https://aws.amazon.com/certification/certified-big-data-specialty/

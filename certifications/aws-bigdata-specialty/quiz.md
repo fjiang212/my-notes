@@ -215,4 +215,40 @@ Which course of action should the company take to achieve these requirements in 
 
 C – There are two aspects to this question: setting up a lifecycle policy to ensure that objects are stored in the most cost-effective storage, and ensuring that the regulatory control is met. The lifecycle policy will store the objects on S3 Standard during the three months of active use, and then move the objects to S3 Standard – IA when access will be infrequent. That narrows the possible answer set to B and C. **The Deny Delete vault lock policy will ensure that the regulatory policy is met, but that policy must be applied over the entire lifecycle of the object, not just after it is moved to Glacier after the first year. Option C has the Deny Delete vault lock applied over the entire lifecycle of the object and is the right answer**.
 
+# Whizlab
+## Collection
+
+## Storage
+
+## Processing
+
+## Analysis
+
+## Visualization
+
+## Security
+### Encrpytion
+* S3:
+    * Verify s3 copy object use ETag: https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonResponseHeaders.html
+    * Amazon S3 Encryption Options 
+    | Options  | Athena   | Redshift Unload| 
+	| :--- | :-------------------------- | :------------------ |
+	| SSE-S3  | X | X |
+	| SSE-KMS  | X  |  X  |
+	| SSE-C  |  |  |
+	| CSE-KMS  | X | |
+	| CSE-CMK  |  |  X |	
+* DynamoDB: When creating a new table, you can choose one of the following customer master keys (CMK) to encrypt your table:
+    * AWS owned CMK - Default encryption type. The key is owned by DynamoDB (no additional charge).
+    * AWS managed CMK - The key is stored in your account and is managed by AWS KMS (AWS KMS charges apply).
+
+When you access an encrypted table, DynamoDB decrypts the table data transparently. 
+* Redshift
+    * When you launch an Amazon Redshift cluster, you can choose to encrypt it with a master key from the AWS Key Management Service (AWS KMS). AWS KMS keys are specific to a region. If you want to enable cross-region snapshot copy for an AWS KMS-encrypted cluster, you must configure a snapshot copy grant for a master key in the destination region so that Amazon Redshift can perform encryption operations in the destination region. 
+    * You can enable encryption when you launch your cluster, or you can modify an unencrypted cluster to use AWS Key Management Service (AWS KMS) encryption. To do so, you can use either an AWS-managed key or a customer-managed key (CMK). When you modify your cluster to enable KMS encryption, Amazon Redshift automatically migrates your data to a new encrypted cluster. Snapshots created from the encrypted cluster are also encrypted. 
+* Kinesis Data Firehose: If you have sensitive data, you can enable server-side data encryption when you use Amazon Kinesis Data Firehose. How you do this depends on the source of your data.
+    * **Server-Side Encryption with Kinesis Data Streams as the Data Source**: When you configure a Kinesis data stream as the data source of a Kinesis Data Firehose delivery stream, Kinesis Data Firehose no longer stores the data at rest. Instead, the data is stored in the data stream. When you send data from your data producers to your data stream, Kinesis Data Streams encrypts your data using an AWS Key Management Service (AWS KMS) key before storing the data at rest. When your Kinesis Data Firehose delivery stream reads the data from your data stream, Kinesis Data Streams first decrypts the data and then sends it to Kinesis Data Firehose.
+    * **Server-Side Encryption with Direct PUT or Other Data Sources**: If you send data to your delivery stream using PutRecord or PutRecordBatch, or if you send the data using AWS IoT, Amazon CloudWatch Logs, or CloudWatch Events, you can turn on server-side encryption by using the StartDeliveryStreamEncryption operation.To stop server-side-encryption, use the StopDeliveryStreamEncryption operation.
+
+
 
