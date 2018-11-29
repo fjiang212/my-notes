@@ -250,6 +250,6 @@ When you access an encrypted table, DynamoDB decrypts the table data transparent
 * Kinesis Data Firehose: If you have sensitive data, you can enable server-side data encryption when you use Amazon Kinesis Data Firehose. How you do this depends on the source of your data.
     * **Server-Side Encryption with Kinesis Data Streams as the Data Source**: When you configure a Kinesis data stream as the data source of a Kinesis Data Firehose delivery stream, Kinesis Data Firehose no longer stores the data at rest. Instead, the data is stored in the data stream. When you send data from your data producers to your data stream, Kinesis Data Streams encrypts your data using an AWS Key Management Service (AWS KMS) key before storing the data at rest. When your Kinesis Data Firehose delivery stream reads the data from your data stream, Kinesis Data Streams first decrypts the data and then sends it to Kinesis Data Firehose.
     * **Server-Side Encryption with Direct PUT or Other Data Sources**: If you send data to your delivery stream using PutRecord or PutRecordBatch, or if you send the data using AWS IoT, Amazon CloudWatch Logs, or CloudWatch Events, you can turn on server-side encryption by using the StartDeliveryStreamEncryption operation.To stop server-side-encryption, use the StopDeliveryStreamEncryption operation.
-
+* VPN involved encryption and will be more secure for transferring the encryption keys
 
 
