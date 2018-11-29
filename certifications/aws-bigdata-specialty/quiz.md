@@ -231,13 +231,14 @@ C – There are two aspects to this question: setting up a lifecycle policy to ens
 * S3:
     * Verify s3 copy object use ETag: https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonResponseHeaders.html
     * Amazon S3 Encryption Options 
-    | Options  | Athena   | Redshift Unload| 
-	| :--- | :-------------------------- | :------------------ |
-	| SSE-S3  | X | X |
-	| SSE-KMS  | X  |  X  |
-	| SSE-C  |  |  |
-	| CSE-KMS  | X | |
-	| CSE-CMK  |  |  X |	
+
+| Options  | Athena   | Redshift Unload| 
+| :--- | :-------------------------- | :------------------ |
+| SSE-S3  | X | X |
+| SSE-KMS  | X  |  X  |
+| SSE-C  |  |  |
+| CSE-KMS  | X | |
+| CSE-CMK  |  |  X |	
 * DynamoDB: When creating a new table, you can choose one of the following customer master keys (CMK) to encrypt your table:
     * AWS owned CMK - Default encryption type. The key is owned by DynamoDB (no additional charge).
     * AWS managed CMK - The key is stored in your account and is managed by AWS KMS (AWS KMS charges apply).
