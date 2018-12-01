@@ -91,7 +91,7 @@ Correct answer
 Serializer/Deserializer, which are libraries that tell Hive how to interpret data formats
 
 Explanation
-SerDe stands for Serializer/Deserializer, which are libraries that tell Hive how to interpret data formats. Hive DLL statements require you to specify a SerDe, so that the system knows how to interpret the data that you’re pointing to. Amazon Athena uses SerDes to interpret the data read from Amazon S3.
+SerDe stands for Serializer/Deserializer, which are libraries that tell Hive how to interpret data formats. Hive DLL statements require you to specify a SerDe, so that the system knows how to interpret the data that youâ€™re pointing to. Amazon Athena uses SerDes to interpret the data read from Amazon S3.
 
 * Q8. You can only have one concurrent query at a time with Athena.
 
@@ -182,7 +182,7 @@ What is the most appropriate solution to record these different types of events?
     * C) Log critical events using the PutRecords API method, and log informational events using the Kinesis Producer Library.
     * D) Log all events using the PutRecords API method.
 
-C – The core of this question is how to send event messages to Kinesis synchronously vs. asynchronously. The critical events must be sent synchronously, and the informational events can be sent asynchronously. **The Kinesis Producer Library (KPL) implements an asynchronous send function, so it can be used for the informational messages. PutRecords is a synchronous send function, so it must be used for the critical events.**
+C â€“ The core of this question is how to send event messages to Kinesis synchronously vs. asynchronously. The critical events must be sent synchronously, and the informational events can be sent asynchronously. **The Kinesis Producer Library (KPL) implements an asynchronous send function, so it can be used for the informational messages. PutRecords is a synchronous send function, so it must be used for the critical events.**
 
 * Q4. An administrator decides to use the Amazon Machine Learning service to classify social media posts that mention your company into two categories: posts that require a response and posts that do not. The training dataset of 10,000 posts contains the details of each post, including the timestamp, author, and full text of the post. You are missing the target labels that are required for training. Which two options will create valid target label data?
 
@@ -210,10 +210,10 @@ Which course of action should the company take to achieve these requirements in 
 
     * A) Store the files in S3 Glacier with a Deny Delete vault lock policy for archives less than seven years old and a vault access policy that restricts read access to the analytics IAM group and write access to the log writer service role.
     * B) Store the files in S3 Standard with a lifecycle policy to transition the storage class to Standard - IA after three months. After a year, transition the files to Glacier and add a Deny Delete vault lock policy for archives less than seven years old.
-    * C) Store the files in S3 Standard with lifecycle policies to transition the storage class to Standard – IA after three months and delete them after a year. Simultaneously store the files in Amazon Glacier with a Deny Delete vault lock policy for archives less than seven years old.
+    * C) Store the files in S3 Standard with lifecycle policies to transition the storage class to Standard â€“ IA after three months and delete them after a year. Simultaneously store the files in Amazon Glacier with a Deny Delete vault lock policy for archives less than seven years old.
     * D) Store the files in S3 Standard with a lifecycle policy to remove them after a year. Simultaneously store the files in Amazon S3 Glacier with a Deny Delete vault lock policy for archives less than seven years old.
 
-C – There are two aspects to this question: setting up a lifecycle policy to ensure that objects are stored in the most cost-effective storage, and ensuring that the regulatory control is met. The lifecycle policy will store the objects on S3 Standard during the three months of active use, and then move the objects to S3 Standard – IA when access will be infrequent. That narrows the possible answer set to B and C. **The Deny Delete vault lock policy will ensure that the regulatory policy is met, but that policy must be applied over the entire lifecycle of the object, not just after it is moved to Glacier after the first year. Option C has the Deny Delete vault lock applied over the entire lifecycle of the object and is the right answer**.
+C â€“ There are two aspects to this question: setting up a lifecycle policy to ensure that objects are stored in the most cost-effective storage, and ensuring that the regulatory control is met. The lifecycle policy will store the objects on S3 Standard during the three months of active use, and then move the objects to S3 Standard â€“ IA when access will be infrequent. That narrows the possible answer set to B and C. **The Deny Delete vault lock policy will ensure that the regulatory policy is met, but that policy must be applied over the entire lifecycle of the object, not just after it is moved to Glacier after the first year. Option C has the Deny Delete vault lock applied over the entire lifecycle of the object and is the right answer**.
 
 # Whizlab
 ## Collection
@@ -232,13 +232,13 @@ C – There are two aspects to this question: setting up a lifecycle policy to ens
     * Verify s3 copy object use ETag: https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonResponseHeaders.html
     * Amazon S3 Encryption Options 
 
-| Options  | Athena   | Redshift Unload| 
-| :--- | :-------------------------- | :------------------ |
-| SSE-S3  | X | X |
-| SSE-KMS  | X  |  X  |
-| SSE-C  |  |  |
-| CSE-KMS  | X | |
-| CSE-CMK  |  |  X |	
+| Options  | Athena   | Redshift Unload| EMR|
+| :--- | :-------------------------- | :------------------ |:------------------ |
+| SSE-S3  | X | X |X |
+| SSE-KMS  | X  |  X  |X |
+| SSE-C  |  |  | |
+| CSE-KMS  | X | |X |
+| CSE-CMK  |  |  X |	X |
 * DynamoDB: When creating a new table, you can choose one of the following customer master keys (CMK) to encrypt your table:
     * AWS owned CMK - Default encryption type. The key is owned by DynamoDB (no additional charge).
     * AWS managed CMK - The key is stored in your account and is managed by AWS KMS (AWS KMS charges apply).
