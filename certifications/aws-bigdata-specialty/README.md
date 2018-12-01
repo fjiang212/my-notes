@@ -66,3 +66,4 @@
 # Experiences
 * 认真审题，理解到底问什么
 * 采用排除法， 特别是在答案不能完全满足题目要求的情况下
+* Use EMR for processing, Use Elsticserach for analysis
