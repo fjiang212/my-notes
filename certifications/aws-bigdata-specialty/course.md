@@ -95,20 +95,20 @@ aws s3 cp $HOME/redshiftdata s3://bigdatalabsk/redshiftdata --recursive
 
 # Chapter 5: Analysis
 ## Redshift Architecture
-- [ ] https://d0.awsstatic.com/whitepapers/enterprise-data-warehousing-on-aws.pdf
+- [x] https://d0.awsstatic.com/whitepapers/enterprise-data-warehousing-on-aws.pdf
 
 ## Redshift Table Design
-- [ ] https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-preamble-prerequisites-and-prioritization/
-- [ ] https://aws.amazon.com/blogs/big-data/optimizing-for-star-schemas-and-interleaved-sorting-on-amazon-redshift/
+- [x] https://aws.amazon.com/blogs/big-data/amazon-redshift-engineerings-advanced-table-design-playbook-preamble-prerequisites-and-prioritization/
+- [x] https://aws.amazon.com/blogs/big-data/optimizing-for-star-schemas-and-interleaved-sorting-on-amazon-redshift/
 
 ## Redshift Maintenance and Operations 
-- [ ] http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html
-- [ ] https://github.com/awslabs/amazon-redshift-utils/tree/master/src/AnalyzeVacuumUtility
-- [ ] http://docs.aws.amazon.com/redshift/latest/dg/performing-a-deep-copy.html
-- [ ] https://github.com/awslabs/amazon-redshift-utils/tree/master/src/SnapshotManager
-- [ ] https://github.com/awslabs/amazon-redshift-monitoring
-- [ ] https://github.com/sko71/aws-bigdata-specialty/tree/master/Domain%204
-- [ ] http://docs.aws.amazon.com/redshift/latest/dg/c-query-performance.html
+- [x] http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html
+- [x] https://github.com/awslabs/amazon-redshift-utils/tree/master/src/AnalyzeVacuumUtility
+- [x] http://docs.aws.amazon.com/redshift/latest/dg/performing-a-deep-copy.html
+- [x] https://github.com/awslabs/amazon-redshift-utils/tree/master/src/SnapshotManager
+- [x] https://github.com/awslabs/amazon-redshift-monitoring
+- [x] https://github.com/sko71/aws-bigdata-specialty/tree/master/Domain%204
+- [x] http://docs.aws.amazon.com/redshift/latest/dg/c-query-performance.html
 
 ## Machine Learning
 - [ ] https://aws.amazon.com/blogs/big-data/building-a-multi-class-ml-model-with-amazon-machine-learning/
@@ -117,8 +117,8 @@ aws s3 cp $HOME/redshiftdata s3://bigdatalabsk/redshiftdata --recursive
 - [ ] https://github.com/sko71/aws-bigdata-specialty/tree/master/Domain%204
 
 ## Elasticsearch
-- [ ] https://aws.amazon.com/blogs/security/how-to-visualize-and-refine-your-networks-security-by-adding-security-group-ids-to-your-vpc-flow-logs/#more-3559
-- [ ] http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains.html
+- [x] https://aws.amazon.com/blogs/security/how-to-visualize-and-refine-your-networks-security-by-adding-security-group-ids-to-your-vpc-flow-logs/#more-3559
+- [x] http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains.html
 
 ## RStudio
 - [ ] https://aws.amazon.com/blogs/big-data/connecting-r-with-amazon-redshift/
