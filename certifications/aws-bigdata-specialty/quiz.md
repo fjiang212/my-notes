@@ -223,8 +223,15 @@ C – There are two aspects to this question: setting up a lifecycle policy to e
 ## Processing
 
 ## Analysis
+| Machine Learning  | score    | Note|
+| :--- | :-------------------------- | :------------------ |
+| Binary  | AUC (Area-Under-the-Curve) |  | 
+| Multi-Class  |  F1-measure  | 0-1  |
+| Regression  |  |  | 
 
+AWS machine learning read csv from s3. or copy data from Redshift/RDS to s3 first. 
 ## Visualization
+Quick sign KPI is used to compare single metrir. Multiple breadown can use tree map to compare values.
 
 ## Security
 ### Encrpytion
