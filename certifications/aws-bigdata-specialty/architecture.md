@@ -14,7 +14,7 @@
 | IOT Rule Engine  | S3, Redshift, DynamoDB  | Data store or stream  | 
 | Data Pipeline  |From DynamoDBDataNode,SqlDataNode,RedshiftDataNode,S3DataNode   |   | 
 | Athena  |  |   | 
-| R |   |  | 
+| R | S3, RDS, Redshift   |  | 
 | Quick Sight  |  |   | 
 
 # Collection
