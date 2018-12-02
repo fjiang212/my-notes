@@ -6,13 +6,14 @@
 ![Database](images/architecture/database.png)
 
 * Connected services
+
 | Serivce | Downstream services    | Note | 
 | :--- | :-------------------------- | :--- | 
 | Kinesis Connector Library  | S3, Redshift, Elasticsearch, DynamoDB |  Data store only | 
 | Kinesis Firehose  |S3, Redshift, Elasticsearch, Splunk |  Data store only | 
 | IOT Rule Engine  | S3, Redshift, DynamoDB  | Data store or stream  | 
-| Data Pipeline  |From DynamoDBDataNode,SqlDataNode,RedshiftDataNode,S3DataNode   |  | 
-| Athena  | |   | 
+| Data Pipeline  |From DynamoDBDataNode,SqlDataNode,RedshiftDataNode,S3DataNode   |   | 
+| Athena  |  |   | 
 | R |   |  | 
 | Quick Sight  |  |   | 
 
