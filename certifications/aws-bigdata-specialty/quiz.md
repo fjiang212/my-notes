@@ -221,6 +221,7 @@ C – There are two aspects to this question: setting up a lifecycle policy to e
 ## Storage
 
 ## Processing
+s3n:// means "A regular file, readable from the outside world, at this S3 url". s3:// refers to an HDFS file system mapped into an S3 bucket which is sitting on AWS storage cluster
 
 ## Analysis
 | Machine Learning  | score    | Note|
