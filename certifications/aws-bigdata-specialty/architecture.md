@@ -111,7 +111,10 @@ To manually migrate an Amazon Redshift cluster to another AWS account, follow th
     * Share the cluster snapshot with another AWS account to view and restore the snapshot.
     * Before you copy a snapshot to another region, first enable cross-region snapshots.
     * In the destination AWS account, restore the shared cluster snapshot.
-    
+
+* Amazon Redshift Enhanced VPC Routing
+
+When you use Amazon Redshift Enhanced VPC Routing, Amazon Redshift forces all COPY and UNLOAD traffic between your cluster and your data repositories through your Amazon VPC
 ## Machine Learning
 
 Input data is the data that you use to create a datasource. You must save your input data in the comma-separated values (.csv) format.
