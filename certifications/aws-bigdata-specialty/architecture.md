@@ -56,12 +56,15 @@ AWS Data Pipeline is a web service that makes it easy to schedule regular data m
 * HBase vs Redshift
 ![HBase vs Redshift ](images/architecture/hbase_redshift.png)
 
+## Impala different than Hive?
+Impala executes SQL queries using a massively parallel processing (MPP) engine, while Hive executes SQL queries using MapReduce. Impala avoids Hive’s overhead from creating MapReduce jobs, giving it faster query times than Hive. However, Impala uses significant memory resources and the cluster’s available memory places a constraint on how much memory any query can consume.
 ## Mics
 * Compression
 ![Compression](images/architecture/compression.png)
 
 * File Format
 ![ File Format](images/architecture/format.png)
+
 # Analysis
 ## [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
 AWS Glue is a fully managed ETL (extract, transform, and load) service that can categorize your data,
