@@ -111,27 +111,27 @@ aws s3 cp $HOME/redshiftdata s3://bigdatalabsk/redshiftdata --recursive
 - [x] http://docs.aws.amazon.com/redshift/latest/dg/c-query-performance.html
 
 ## Machine Learning
-- [ ] https://aws.amazon.com/blogs/big-data/building-a-multi-class-ml-model-with-amazon-machine-learning/
-- [ ] https://aws.amazon.com/blogs/big-data/building-a-binary-classification-model-with-amazon-machine-learning-and-amazon-redshift/
-- [ ] https://aws.amazon.com/blogs/big-data/building-a-numeric-regression-model-with-amazon-machine-learning/
-- [ ] https://github.com/sko71/aws-bigdata-specialty/tree/master/Domain%204
+- [x] https://aws.amazon.com/blogs/big-data/building-a-multi-class-ml-model-with-amazon-machine-learning/
+- [x] https://aws.amazon.com/blogs/big-data/building-a-binary-classification-model-with-amazon-machine-learning-and-amazon-redshift/
+- [x] https://aws.amazon.com/blogs/big-data/building-a-numeric-regression-model-with-amazon-machine-learning/
+- [x] https://github.com/sko71/aws-bigdata-specialty/tree/master/Domain%204
 
 ## Elasticsearch
 - [x] https://aws.amazon.com/blogs/security/how-to-visualize-and-refine-your-networks-security-by-adding-security-group-ids-to-your-vpc-flow-logs/#more-3559
 - [x] http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains.html
 
 ## RStudio
-- [ ] https://aws.amazon.com/blogs/big-data/connecting-r-with-amazon-redshift/
-- [ ] https://aws.amazon.com/blogs/big-data/statistical-analysis-with-open-source-r-and-rstudio-on-amazon-emr/
-- [ ] https://aws.amazon.com/blogs/big-data/crunching-statistics-at-scale-with-sparkr-on-amazon-emr/
-- [ ] https://aws.amazon.com/blogs/big-data/running-r-on-aws/
-- [ ] https://media.acloud.guru/aws-certified-big-data-specialty/resource/e576d80a-0495-4a08-fa97-b539da26fd79_0e6e3d38-d599-2d48-1736-9e658b8c5327/aws-certified-big-data-specialty-cdf30666-712b-4622-b610-da45a318a564.txt?Expires=1542049143&Signature=Zyhso9E0ENsnOWMjFEW/G9AdJ5kcCFH8z9T9+riZYlST0mEhsOXfs4m7STlg9UJhx+nVQ61X+2jq2A2bcJmIwb2OYIZeRoheEN5t9QTJUSI/2ea33QU/zwBAvxC908whzqWSp/F2i+PFKyIAaIXAD11+KsV3cpx28oOKh4vuJ2dmvHcckY2wUfEAgtdySpaHJwpbamcEfuzaJ9F7CShxvFgaJFLd3K6QEEuX8MscXdwUTy8uaHMggCM4qtEadqDISKILpdADze7sqi/JsnZYomtbOZjSHgzxB7IZJUPVLfo0FOAMbQWjGxEbfFmyMGlbAXuEF0OcU5FEFrJLU9qqiQ==&Key-Pair-Id=APKAISLU6JPYU7SF6EUA
+- [x] https://aws.amazon.com/blogs/big-data/connecting-r-with-amazon-redshift/
+- [x] https://aws.amazon.com/blogs/big-data/statistical-analysis-with-open-source-r-and-rstudio-on-amazon-emr/
+- [x] https://aws.amazon.com/blogs/big-data/crunching-statistics-at-scale-with-sparkr-on-amazon-emr/
+- [x] https://aws.amazon.com/blogs/big-data/running-r-on-aws/
+- [x] https://media.acloud.guru/aws-certified-big-data-specialty/resource/e576d80a-0495-4a08-fa97-b539da26fd79_0e6e3d38-d599-2d48-1736-9e658b8c5327/aws-certified-big-data-specialty-cdf30666-712b-4622-b610-da45a318a564.txt?Expires=1542049143&Signature=Zyhso9E0ENsnOWMjFEW/G9AdJ5kcCFH8z9T9+riZYlST0mEhsOXfs4m7STlg9UJhx+nVQ61X+2jq2A2bcJmIwb2OYIZeRoheEN5t9QTJUSI/2ea33QU/zwBAvxC908whzqWSp/F2i+PFKyIAaIXAD11+KsV3cpx28oOKh4vuJ2dmvHcckY2wUfEAgtdySpaHJwpbamcEfuzaJ9F7CShxvFgaJFLd3K6QEEuX8MscXdwUTy8uaHMggCM4qtEadqDISKILpdADze7sqi/JsnZYomtbOZjSHgzxB7IZJUPVLfo0FOAMbQWjGxEbfFmyMGlbAXuEF0OcU5FEFrJLU9qqiQ==&Key-Pair-Id=APKAISLU6JPYU7SF6EUA
 
 # Chapter 6: Visualization
-- [ ] https://aws.amazon.com/blogs/big-data/analyze-realtime-data-from-amazon-kinesis-streams-using-zeppelin-and-spark-streaming/
-- [ ] https://aws.amazon.com/blogs/big-data/running-jupyter-notebook-and-jupyterhub-on-amazon-emr/
+- [x] https://aws.amazon.com/blogs/big-data/analyze-realtime-data-from-amazon-kinesis-streams-using-zeppelin-and-spark-streaming/
+- [x] https://aws.amazon.com/blogs/big-data/running-jupyter-notebook-and-jupyterhub-on-amazon-emr/
 
 # Chapter 7: Security
-- [ ] https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html
-- [ ] http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html
+- [x] https://hadoop.apache.org/docs/r2.7.1/hadoop-mapreduce-client/hadoop-mapreduce-client-core/EncryptedShuffle.html
+- [x] http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html
 - [x] https://docs.aws.amazon.com/kms/latest/developerguide/service-integration.html
