@@ -231,6 +231,9 @@ s3n:// means "A regular file, readable from the outside world, at this S3 url". 
 | Regression  |  |  | 
 
 AWS machine learning read csv from s3. or copy data from Redshift/RDS to s3 first. 
+
+Amazon ML can support up to 100 GB of data, terabyte-scale ingestion of data is not currently supported. Using Amazon EMR to run Spark’s Machine Learning Library (MLlib) is a common tool for such a use case.
+
 ## Visualization
 Quick sign KPI is used to compare single metrir. Multiple breadown can use tree map to compare values.
 
