@@ -16,6 +16,7 @@
 | Athena  |  |   | 
 | R | S3, RDS, Redshift   |  | 
 | Quick Sight  |  |   | 
+|Glue  |S3, Redshift, RDS, DB on EC2, On-Prem DB   |  Can use for move data from On-Prem to AWS  | 
 
 # Collection
 ## Kinesis
