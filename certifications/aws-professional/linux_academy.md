@@ -8,8 +8,8 @@
 * [x] Storage and Archival Options
 * [x] State Management
 * [x] **Database and Replication Methodologies**
-* [ ] Self-Healing Techniques and Fault-Tolerant Services
-* [ ] Disaster Recovery And Fail-Over Strategies
+* [x] Self-Healing Techniques and Fault-Tolerant Services
+* [x] **Disaster Recovery And Fail-Over Strategies**
 * [ ] Application Migration Plans to AWS
 * [ ] Deployment and Management
 * [ ] Hands-On Lab: Configuring VPC DNS
