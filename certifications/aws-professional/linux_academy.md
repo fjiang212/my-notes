@@ -5,9 +5,9 @@
 * [x] Able to Design and Implement for Elasticity and Scalability
 * [x] Network Technologies as They Relate to AWS Networking, Including: DNS and load balancing, Amazon Virtual Private Cloud (VPC), and AWS Direct Connect
 * [x] Working with VPC DNS
-* [ ] Storage and Archival Options
-* [ ] State Management
-* [ ] Database and Replication Methodologies
+* [x] Storage and Archival Options
+* [x] State Management
+* [x] **Database and Replication Methodologies**
 * [ ] Self-Healing Techniques and Fault-Tolerant Services
 * [ ] Disaster Recovery And Fail-Over Strategies
 * [ ] Application Migration Plans to AWS
