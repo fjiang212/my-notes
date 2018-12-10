@@ -10,17 +10,17 @@
 * [x] **Database and Replication Methodologies**
 * [x] Self-Healing Techniques and Fault-Tolerant Services
 * [x] **Disaster Recovery And Fail-Over Strategies**
-* [ ] Application Migration Plans to AWS
-* [ ] Deployment and Management
-* [ ] Hands-On Lab: Configuring VPC DNS
+* [x] Application Migration Plans to AWS
+* [x] Deployment and Management
+* [x] Hands-On Lab: Configuring VPC DNS
 ## Enterprise Account Management
 * [x] Consolidated Billing
 * [x] Consolidated Billing and EC2 Reserved Instances
 * [x] **Cross Account IAM User Strategies**
 * [x] **Creating Cross Account Roles**
-* [ ] Temporary Access Using Roles and STS
-* [ ] Federated Access Using SAML
-* [ ] Web Identity Federation
+* [x] Temporary Access Using Roles and STS
+* [x] **Federated Access Using SAML**
+* [x] Web Identity Federation
 * [ ] Costing and Resource Tagging
 * [ ] Resource Groups
 * [ ] AWS Config
