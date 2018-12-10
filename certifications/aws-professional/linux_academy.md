@@ -14,10 +14,10 @@
 * [ ] Deployment and Management
 * [ ] Hands-On Lab: Configuring VPC DNS
 ## Enterprise Account Management
-* [ ] Consolidated Billing
-* [ ] Consolidated Billing and EC2 Reserved Instances
-* [ ] Cross Account IAM User Strategies
-* [ ] Creating Cross Account Roles
+* [x] Consolidated Billing
+* [x] Consolidated Billing and EC2 Reserved Instances
+* [x] **Cross Account IAM User Strategies**
+* [x] **Creating Cross Account Roles**
 * [ ] Temporary Access Using Roles and STS
 * [ ] Federated Access Using SAML
 * [ ] Web Identity Federation
