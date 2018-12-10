@@ -21,25 +21,25 @@
 * [x] Temporary Access Using Roles and STS
 * [x] **Federated Access Using SAML**
 * [x] Web Identity Federation
-* [ ] Costing and Resource Tagging
-* [ ] Resource Groups
-* [ ] AWS Config
-* [ ] Budgets and CloudWatch Alarms
+* [x] Costing and Resource Tagging
+* [x] Resource Groups
+* [x] AWS Config
+* [x] Budgets and CloudWatch Alarms
 * [ ] Exercise: Playing With Web Identity Federation
 
 # Required Services
 ## Amazon CloudTrail
-* [ ] Amazon CloudTrail Overview
-* [ ] Configuring CloudTrail in the Console
-* [ ] Monitoring CloudTrail Events with CloudWatch
+* [x] Amazon CloudTrail Overview
+* [x] Configuring CloudTrail in the Console
+* [x] Monitoring CloudTrail Events with CloudWatch
 
 ## AWS Key Management Service
-* [ ] AWS KMS Overview
-* [ ] Using The CLI to Encrpyt and De* [ ] crypt Data with the CMK
+* [x] AWS KMS Overview
+* [x] Using The CLI to Encrpyt and De* [ ] crypt Data with the CMK
 
 ## Amazon Kinesis
-* [ ] Amazon Kinesis Overview
-* [ ] Kinesis Mobile IOT Scenario Example
+* [x] Amazon Kinesis Overview
+* [x] Kinesis Mobile IOT Scenario Example
 
 ## Amazon EC2 And Design Patterns
 * [ ] Integrating CloudWatch Logging with EC2
