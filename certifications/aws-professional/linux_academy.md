@@ -42,20 +42,20 @@
 * [x] Kinesis Mobile IOT Scenario Example
 
 ## Amazon EC2 And Design Patterns
-* [ ] Integrating CloudWatch Logging with EC2
-* [ ] Real-Time Processing of Log Files with Amazon Kinesis
-* [ ] Protecting Production Resources
-* [ ] Migrating EC2 Resources to Another Region
-* [ ] EC2 Backup Strategies
-* [ ] HPC (High Performance Computing) on EC2
-* [ ] HPC with Cluster and Grid Computing
-* [ ] Architecting for Performance
-* [ ] Increasing Performance with EBS Raid Configurations
-* [ ] High Availability and Disaster Recovery with Multi-Region Design
-* [ ]  Hands-On: Route 53 Complex Configurations
-* [ ] Mitigating DDoS Attacks with AWS
-* [ ] Supporting Legacy Applications in the Cloud
-* [ ]  Elastic Load Balancer Design Patterns
+* [x] Integrating CloudWatch Logging with EC2
+* [x] Real-Time Processing of Log Files with Amazon Kinesis
+* [x] Protecting Production Resources
+* [x] Migrating EC2 Resources to Another Region
+* [x] EC2 Backup Strategies
+* [x] HPC (High Performance Computing) on EC2
+* [x] HPC with Cluster and Grid Computing
+* [x] Architecting for Performance
+* [x] Increasing Performance with EBS Raid Configurations
+* [x] High Availability and Disaster Recovery with Multi-Region Design
+* [x] Hands-On: Route 53 Complex Configurations
+* [x] Mitigating DDoS Attacks with AWS
+* [x] Supporting Legacy Applications in the Cloud
+* [x] Elastic Load Balancer Design Patterns
 * [ ] Exercise: Protecting Production Resources
 * [ ] Hands-On Lab: Configuring Proxy Protocol on an ELB and Nginx
 * [ ] Hands-On Lab: Configuring EBS Volume RAID 0
