@@ -1,6 +1,8 @@
 
 # Core Knowledge
+
 ## AWS And General IT Knowledge
+
 * [x] Security Features that AWS Provides and Best Practices
 * [x] Able to Design and Implement for Elasticity and Scalability
 * [x] Network Technologies as They Relate to AWS Networking, Including: DNS and load balancing, Amazon Virtual Private Cloud (VPC), and AWS Direct Connect
@@ -13,7 +15,9 @@
 * [x] Application Migration Plans to AWS
 * [x] Deployment and Management
 * [x] Hands-On Lab: Configuring VPC DNS
+
 ## Enterprise Account Management
+
 * [x] Consolidated Billing
 * [x] Consolidated Billing and EC2 Reserved Instances
 * [x] **Cross Account IAM User Strategies**
@@ -28,20 +32,25 @@
 * [ ] Exercise: Playing With Web Identity Federation
 
 # Required Services
+
 ## Amazon CloudTrail
+
 * [x] Amazon CloudTrail Overview
 * [x] Configuring CloudTrail in the Console
 * [x] Monitoring CloudTrail Events with CloudWatch
 
 ## AWS Key Management Service
+
 * [x] AWS KMS Overview
 * [x] Using The CLI to Encrpyt and De* [ ] crypt Data with the CMK
 
 ## Amazon Kinesis
+
 * [x] Amazon Kinesis Overview
 * [x] Kinesis Mobile IOT Scenario Example
 
 ## Amazon EC2 And Design Patterns
+
 * [x] Integrating CloudWatch Logging with EC2
 * [x] Real-Time Processing of Log Files with Amazon Kinesis
 * [x] Protecting Production Resources
@@ -63,6 +72,7 @@
 * [ ] Hands-On Lab: Creating Complex Routing Policies
 
 ## Virtual Private Cloud (VPC)
+
 * [ ] Network and Data Security
 * [ ] Network Monitoring with VPC Flow Logs
 * [ ] Extending On-Premise Networks with VPN
@@ -72,18 +82,22 @@
 * [ ] Hands-On Lab: Configuring VPC S3 Endpoints and NAT Gateways
 
 ## AWS Direct Connect
+
 * [ ] Working with AWS Direct Connect Virtual Interfaces
 * [ ] Accessing Remote Regions
 
 ## Amazon ElastiCache
+
 * [ ] ElastiCache Overview
 * [ ] ElastiCache: Memcache
 * [ ] ElastiCache: Redis
 
 ## Amazon Redshift
+
 * [ ] Redshift Overview
 
 ## Amazon CloudFront
+
 * [ ] CloudFront Key Concepts and Overview
 * [ ] Dynamic Content with CloudFront
 * [ ] CloudFront Reporting
@@ -94,11 +108,13 @@
 * [ ] Creating a Multi-Region CloudFront Solution
 
 ## Amazon Elastic Transcoder
+
 * [ ] ElasticTranscoder Overview
 * [ ] Streaming With S3, CloudFront, and Elastic Transcoder
 * [ ] Hands-On Lab: Streaming Video with Elastic Transcoder, S3, and CloudFront
 
 ## AWS Data Pipeline
+
 * [ ] Introduction to Data Pipeline
 * [ ] Using Data Pipeline to Replicate DynamoDB Data Across Regions
 * [ ] Hands-On Lab: Using Data Pipeline to Copy DynamoDB Data to S3
@@ -110,24 +126,29 @@
 * [ ] MSSQL DB on RDS
 
 ## Amazon CloudSearch
+
 * [ ] Amazon CloudSearch
 
 ## Amazon EMR
+
 * [ ] Amazon EMR
 * [ ] Hands-On Lab: Analyzing Log Files with EMR
 
 ## Deployment Concepts On AWS Services
+
 * [ ] CloudFormation
 * [ ] Cloudformation Hands-on
 * [ ] OpsWorks
 * [ ] OpsWorks Hands-on
 
 ## Amazon SQS
+
 * [ ] Message Priority
 * [ ] Batch Processing Job Observer
 * [ ] Hands-On Lab: Auto Scaling Based off of SQS Message Queue Size
 
 ## DynamoDB
+
 * [ ] DynamoDB Overview and Some Design Patterns
 * [ ] Secondary Indexes
 * [ ] DynamoDB Multi-Region Replication
