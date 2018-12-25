@@ -73,18 +73,18 @@
 
 ## Virtual Private Cloud (VPC)
 
-* [ ] Network and Data Security
-* [ ] Network Monitoring with VPC Flow Logs
-* [ ] Extending On-Premise Networks with VPN
-* [ ] Using Directory Service to Connect Hybrid Architectures
-* [ ] Security Zones
-* [ ] Understanding AWS IP Subnet Reservations
+* [x] Network and Data Security
+* [x] Network Monitoring with VPC Flow Logs
+* [x Extending On-Premise Networks with VPN
+* [x] Using Directory Service to Connect Hybrid Architectures
+* [x] Security Zones
+* [x] Understanding AWS IP Subnet Reservations
 * [ ] Hands-On Lab: Configuring VPC S3 Endpoints and NAT Gateways
 
 ## AWS Direct Connect
 
-* [ ] Working with AWS Direct Connect Virtual Interfaces
-* [ ] Accessing Remote Regions
+* [x] Working with AWS Direct Connect Virtual Interfaces
+* [x] Accessing Remote Regions
 
 ## Amazon ElastiCache
 
@@ -120,6 +120,7 @@
 * [ ] Hands-On Lab: Using Data Pipeline to Copy DynamoDB Data to S3
 
 ## Amazon RDS
+
 * [ ] RDS Overview and Security Options
 * [ ] MySQL and MariaDB on RDS: Multi-region Delivery, Migrating Data from On-Premise, and Disaster Recovery
 * [ ] Oracle DB on RDS
