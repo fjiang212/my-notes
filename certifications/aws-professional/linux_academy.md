@@ -42,7 +42,7 @@
 ## AWS Key Management Service
 
 * [x] AWS KMS Overview
-* [x] Using The CLI to Encrpyt and De* [ ] crypt Data with the CMK
+* [x] Using The CLI to Encrpyt and Decrypt Data with the CMK
 
 ## Amazon Kinesis
 
@@ -75,7 +75,7 @@
 
 * [x] Network and Data Security
 * [x] Network Monitoring with VPC Flow Logs
-* [x Extending On-Premise Networks with VPN
+* [x] Extending On-Premise Networks with VPN
 * [x] Using Directory Service to Connect Hybrid Architectures
 * [x] Security Zones
 * [x] Understanding AWS IP Subnet Reservations
@@ -88,24 +88,24 @@
 
 ## Amazon ElastiCache
 
-* [ ] ElastiCache Overview
-* [ ] ElastiCache: Memcache
-* [ ] ElastiCache: Redis
+* [x] ElastiCache Overview
+* [x] ElastiCache: Memcache
+* [x] ElastiCache: Redis
 
 ## Amazon Redshift
 
-* [ ] Redshift Overview
+* [x] Redshift Overview
 
 ## Amazon CloudFront
 
-* [ ] CloudFront Key Concepts and Overview
-* [ ] Dynamic Content with CloudFront
-* [ ] CloudFront Reporting
-* [ ] CloudFront Security
-* [ ] CloudFront Performance Considerations
-* [ ]  Streaming Media with CloudFront
-* [ ] Forcing HTTPS to The Origin
-* [ ] Creating a Multi-Region CloudFront Solution
+* [x] CloudFront Key Concepts and Overview
+* [x] Dynamic Content with CloudFront
+* [x] CloudFront Reporting
+* [x] CloudFront Security
+* [x] CloudFront Performance Considerations
+* [x] Streaming Media with CloudFront
+* [x] Forcing HTTPS to The Origin
+* [x] Creating a Multi-Region CloudFront Solution
 
 ## Amazon Elastic Transcoder
 
