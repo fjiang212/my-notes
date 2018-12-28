@@ -109,47 +109,47 @@
 
 ## Amazon Elastic Transcoder
 
-* [ ] ElasticTranscoder Overview
-* [ ] Streaming With S3, CloudFront, and Elastic Transcoder
-* [ ] Hands-On Lab: Streaming Video with Elastic Transcoder, S3, and CloudFront
+* [x] ElasticTranscoder Overview
+* [x] Streaming With S3, CloudFront, and Elastic Transcoder
+* [x] Hands-On Lab: Streaming Video with Elastic Transcoder, S3, and CloudFront
 
 ## AWS Data Pipeline
 
-* [ ] Introduction to Data Pipeline
-* [ ] Using Data Pipeline to Replicate DynamoDB Data Across Regions
-* [ ] Hands-On Lab: Using Data Pipeline to Copy DynamoDB Data to S3
+* [x] Introduction to Data Pipeline
+* [x] Using Data Pipeline to Replicate DynamoDB Data Across Regions
+* [x] Hands-On Lab: Using Data Pipeline to Copy DynamoDB Data to S3
 
 ## Amazon RDS
 
-* [ ] RDS Overview and Security Options
-* [ ] MySQL and MariaDB on RDS: Multi-region Delivery, Migrating Data from On-Premise, and Disaster Recovery
-* [ ] Oracle DB on RDS
-* [ ] MSSQL DB on RDS
+* [x] RDS Overview and Security Options
+* [x] MySQL and MariaDB on RDS: Multi-region Delivery, Migrating Data from On-Premise, and Disaster Recovery
+* [x] Oracle DB on RDS
+* [x] MSSQL DB on RDS
 
 ## Amazon CloudSearch
 
-* [ ] Amazon CloudSearch
+* [x] Amazon CloudSearch
 
 ## Amazon EMR
 
-* [ ] Amazon EMR
-* [ ] Hands-On Lab: Analyzing Log Files with EMR
+* [x] Amazon EMR
+* [x] Hands-On Lab: Analyzing Log Files with EMR
 
 ## Deployment Concepts On AWS Services
 
-* [ ] CloudFormation
-* [ ] Cloudformation Hands-on
-* [ ] OpsWorks
-* [ ] OpsWorks Hands-on
+* [x] CloudFormation
+* [x] Cloudformation Hands-on
+* [x] OpsWorks
+* [x] OpsWorks Hands-on
 
 ## Amazon SQS
 
-* [ ] Message Priority
-* [ ] Batch Processing Job Observer
-* [ ] Hands-On Lab: Auto Scaling Based off of SQS Message Queue Size
+* [x] Message Priority
+* [x] Batch Processing Job Observer
+* [x] Hands-On Lab: Auto Scaling Based off of SQS Message Queue Size
 
 ## DynamoDB
 
-* [ ] DynamoDB Overview and Some Design Patterns
-* [ ] Secondary Indexes
-* [ ] DynamoDB Multi-Region Replication
+* [x] DynamoDB Overview and Some Design Patterns
+* [x] Secondary Indexes
+* [x] DynamoDB Multi-Region Replication
