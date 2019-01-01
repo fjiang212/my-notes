@@ -55,15 +55,16 @@ Use instance store backed instances and stripe the attached ephemeral storage de
 
  * Q9. After having created a VPC with CIDR block 10.0.0.0/24 and launching it as a working network you decide a few weeks later that it is too small and you wish to make it larger. Which of the below options would accomplish this successfully?
 
-* Q10.  The Dynamic Host Configuration Protocol (DHCP) provides a standard for passing configuration information to hosts on a TCP/IP network. You can have multiple sets of DHCP options, but you can associate only one set of DHCP options with a VPC at a time. You have just created your first set of DHCP options, associated it with your VPC but now realize that you have made an error in setting them up and you need to change the options. Which of the following options do you need to take to achieve this?
-
-Correct answer
-You must create a new set of DHCP options and associate them with your VPC.
 Correct answer
 Add a CIDR to the VPC with CIDR 10.1.0.0/16
 
 Explanation
 Amazon Virtual Private Cloud (VPC) now allows customers to expand their VPCs by adding secondary IPv4 address ranges (CIDRs) to their VPCs. Customers can add the secondary CIDR blocks to the VPC directly from the console or by using the CLI after they have created the VPC with the primary CIDR block.
+
+* Q10.  The Dynamic Host Configuration Protocol (DHCP) provides a standard for passing configuration information to hosts on a TCP/IP network. You can have multiple sets of DHCP options, but you can associate only one set of DHCP options with a VPC at a time. You have just created your first set of DHCP options, associated it with your VPC but now realize that you have made an error in setting them up and you need to change the options. Which of the following options do you need to take to achieve this?
+
+Correct answer
+You must create a new set of DHCP options and associate them with your VPC.
 
 * Q11. You are excited that your company has just purchased a Direct Connect link from AWS as everything you now do on AWS should be much faster and more reliable. Your company is based in Sydney, Australia so obviously the Direct Connect Link to AWS will go into the Asia Pacific (Sydney) region. Your first job after the new link purchase is to create a multi-region design across the Asia Pacific(Sydney) region and the US West (N. California) region. You soon discover that all the infrastructure you deploy in the Asia Pacific(Sydney) region is extremely fast and reliable, however the infrastructure you deploy in the US West(N. California) region is much slower and unreliable. Which of the following would be the best option to make the US West(N. California) region a more reliable connection?
 
